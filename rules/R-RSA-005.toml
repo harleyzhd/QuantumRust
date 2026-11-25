@@ -1,0 +1,24 @@
+id = "R-RSA-005"
+description = "RSASSA-PKCS1-v1_5 signing/verifying key construction via the `rsa` crate."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rsa::pkcs1v15::SigningKey::new",
+    "rsa::pkcs1v15::SigningKey::new_unprefixed",
+    "rsa::pkcs1v15::SigningKey::random",
+    "rsa::pkcs1v15::VerifyingKey::new",
+    "rsa::pkcs1v15::VerifyingKey::new_unprefixed",
+    "rsa::Pkcs1v15Sign::new",
+    "rsa::Pkcs1v15Sign::new_unprefixed",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "RSASSA-PKCS1"
+crypto_functions = ["keygen"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

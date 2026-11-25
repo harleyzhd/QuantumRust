@@ -1,0 +1,38 @@
+
+== age-0.12.1
+  configuration                          findings   src uncomp   dev other | vs QR default, src: both   QR tool | files: both   QR tool
+  quantumrust default                          39    38      0     0     0 |                      38    0    0 |           6    0    0
+  quantumrust --descend                        49    48      0     0     0 |                      38    0   10 |           6    0    4
+  postquant default                             9     2      5     2     0 |                       2   36    0 |           2    4    0
+  postquant --show-all                          9     2      5     2     0 |                       2   36    0 |           2    4    0
+  cryptoscan default                          197    72     58    11    53 |                      12   26   60 |           6    0    8
+  cryptoscan --include-quantum-safe           247    77     99    14    53 |                      13   25   64 |           6    0    8
+  crypto-scanner default                      196    61     56    76     1 |                       6   32   55 |           5    1    8
+  codeql rust-code-scanning                    28    27      0     1     0 |                       0   38   27 |           2    4    2
+  codeql security-extended                     28    27      0     1     0 |                       0   38   27 |           2    4    2
+
+== jsonwebtoken-11.1.0
+  configuration                          findings   src uncomp   dev other | vs QR default, src: both   QR tool | files: both   QR tool
+  quantumrust default                         100    42      1     0     0 |                      42    0    0 |           8    0    0
+  quantumrust --descend                       100    42      1     0     0 |                      42    0    0 |           8    0    0
+  postquant default                            17    15      2     0     0 |                      13   29    2 |           3    5    0
+  postquant --show-all                         17    15      2     0     0 |                      13   29    2 |           3    5    0
+  cryptoscan default                          169    89     30    45     1 |                       2   40   87 |           6    2    6
+  cryptoscan --include-quantum-safe           198   112     33    45     1 |                       5   37  107 |           6    2    6
+  crypto-scanner default                      227   110     51    16     2 |                       6   36  104 |           6    2    3
+  codeql rust-code-scanning                     0     0      0     0     0 |                       0   42    0 |           0    8    0
+  codeql security-extended                      0     0      0     0     0 |                       0   42    0 |           0    8    0
+
+== sequoia-openpgp-2.4.1
+  configuration                          findings   src uncomp   dev other | vs QR default, src: both   QR tool | files: both   QR tool
+  quantumrust default                         257   223      0     0     0 |                     223    0    0 |          11    0    0
+  quantumrust --descend                       257   223      0     0     0 |                     223    0    0 |          11    0    0
+  postquant default                            18    13      5     0     0 |                      12  211    1 |           2    9    0
+  postquant --show-all                         18    13      5     0     0 |                      12  211    1 |           2    9    0
+  cryptoscan default                         2693  1762    705    66    83 |                      28  195 1734 |          11    0   40
+  cryptoscan --include-quantum-safe          3475  2116   1084    87    83 |                      49  174 2067 |          11    0   47
+  crypto-scanner default                     2447  1460    774    29    13 |                      24  199 1436 |          10    1   38
+  codeql rust-code-scanning                   214   169     26    13     0 |                       0  223  169 |           3    8   21
+  codeql security-extended                    214   169     26    13     0 |                       0  223  169 |           3    8   21
+
+Columns after `findings` count distinct (file, line) sites by bucket (see the module docstring).

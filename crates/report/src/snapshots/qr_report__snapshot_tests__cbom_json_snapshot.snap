@@ -1,0 +1,177 @@
+---
+source: crates/report/src/lib.rs
+assertion_line: 1415
+expression: "emit_cbom(&representative(), &RuleSet::builtin())"
+---
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "crypto-ddf84394bd686abc",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 21,
+            "location": "src/main.rs",
+            "symbol": "rsa::RsaPrivateKey::new"
+          }
+        ]
+      },
+      "name": "rsa::RsaPrivateKey::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:21 -> src/main.rs:23"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-d9bfbe78a92f1713",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "sign"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "signature"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-002",
+            "line": 29,
+            "location": "src/main.rs",
+            "symbol": "<dyn rsa::signature::Signer>::sign"
+          }
+        ]
+      },
+      "name": "<dyn rsa::signature::Signer>::sign",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-1beef56dfdf34dbd",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 23,
+            "location": "src/main.rs",
+            "symbol": "rsa::sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "rsa::sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-c47f425f74a39048",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "AES",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 1,
+          "parameterSetIdentifier": "AES-128",
+          "primitive": "block-cipher"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-AES-002",
+            "line": 40,
+            "location": "src/main.rs",
+            "symbol": "<aes::Aes128 as crypto_common::KeyInit>::new"
+          }
+        ]
+      },
+      "name": "<aes::Aes128 as crypto_common::KeyInit>::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-AES-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "deprecated"
+        }
+      ],
+      "type": "cryptographic-asset"
+    }
+  ],
+  "metadata": {
+    "tools": {
+      "components": [
+        {
+          "name": "quantumrust",
+          "type": "application",
+          "version": "1.0.0"
+        }
+      ]
+    }
+  },
+  "specVersion": "1.7",
+  "version": 1
+}

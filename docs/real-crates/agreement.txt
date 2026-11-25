@@ -1,0 +1,32 @@
+== age-0.12.1  (QuantumRust default: 38 sites in compiled source)
+  configuration                        sites | exact: both   QR  tool | within 3:   QR  tool
+  postquant default                        2 |           2   36     0 |            36     0
+  postquant --show-all                     2 |           2   36     0 |            36     0
+  cryptoscan default                      72 |          12   26    60 |            18    58
+  cryptoscan --include-quantum-safe       77 |          13   25    64 |            17    62
+  crypto-scanner default                  61 |           6   32    55 |            26    52
+  codeql rust-code-scanning               27 |           0   38    27 |            38    27
+  codeql security-extended                27 |           0   38    27 |            38    27
+  scanner-only and nowhere near QuantumRust, any configuration: 124; sampled 30
+
+== jsonwebtoken-11.1.0  (QuantumRust default: 42 sites in compiled source)
+  configuration                        sites | exact: both   QR  tool | within 3:   QR  tool
+  postquant default                       15 |          13   29     2 |            21     2
+  postquant --show-all                    15 |          13   29     2 |            21     2
+  cryptoscan default                      89 |           2   40    87 |            38    86
+  cryptoscan --include-quantum-safe      112 |           5   37   107 |            35   106
+  crypto-scanner default                 110 |           6   36   104 |            27    98
+  codeql rust-code-scanning                0 |           0   42     0 |            42     0
+  codeql security-extended                 0 |           0   42     0 |            42     0
+  scanner-only and nowhere near QuantumRust, any configuration: 158; sampled 30
+
+== sequoia-openpgp-2.4.1  (QuantumRust default: 223 sites in compiled source)
+  configuration                        sites | exact: both   QR  tool | within 3:   QR  tool
+  postquant default                       13 |          12  211     1 |           205     1
+  postquant --show-all                    13 |          12  211     1 |           205     1
+  cryptoscan default                    1762 |          28  195  1734 |           121  1683
+  cryptoscan --include-quantum-safe     2116 |          49  174  2067 |            92  1989
+  crypto-scanner default                1460 |          24  199  1436 |           132  1381
+  codeql rust-code-scanning              169 |           0  223   169 |           223   169
+  codeql security-extended               169 |           0  223   169 |           223   169
+  scanner-only and nowhere near QuantumRust, any configuration: 2757; sampled 30

@@ -1,0 +1,23 @@
+id = "R-AES-003"
+description = "AES-192 block cipher via the `aes` crate — below the 256-bit bar CNSA 2.0 requires."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+signatures = [
+    "aes::Aes192::new",
+    "aes::Aes192::new_from_slice",
+    "aes::Aes192Enc::new",
+    "aes::Aes192Dec::new",
+]
+
+type_names = ["aes::Aes192", "aes::Aes192Enc", "aes::Aes192Dec"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "AES"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "AES-192"
+nist_quantum_security_level = 3

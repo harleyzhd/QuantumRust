@@ -1,0 +1,29 @@
+  ran dual default descend
+  ran mir-only default descend
+  ran llvm-only default descend
+  ran dual cfg-union descend
+  ran mir-only cfg-union descend
+  ran llvm-only cfg-union descend
+
+E2b: 114 positive, 18 negative mutants; window +-2 lines
+
+  configuration                precision   recall      F1  TP  FP  FN   recall +-2   Tier 1   named   classified
+  dual default descend            96.2%    89.5%   92.7% 102   4  12      89.5%   30/34   102/102 102/102
+  mir-only default descend        96.2%    89.5%   92.7% 102   4  12      89.5%   30/34    95/102  95/102
+  llvm-only default descend       96.2%    89.5%   92.7% 102   4  12      89.5%   30/34   102/102 102/102
+  dual cfg-union descend          96.6%   100.0%   98.3% 114   4   0     100.0%   34/34   114/114 114/114
+  mir-only cfg-union descend      96.6%   100.0%   98.3% 114   4   0     100.0%   34/34   107/114 107/114
+  llvm-only cfg-union descend     96.6%   100.0%   98.3% 114   4   0     100.0%   34/34   114/114 114/114
+
+  recall by failure mode (line-exact, then w = within +-2 lines)
+                                        M0         M1        M10         M2         M3         M4      M5         M6      M7         M8      M9
+    dual default descend         12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12    0/12 w0  2/2 w2  12/12 w12  8/8 w8  12/12 w12  8/8 w8
+    mir-only default descend     12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12    0/12 w0  2/2 w2  12/12 w12  8/8 w8  12/12 w12  8/8 w8
+    llvm-only default descend    12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12    0/12 w0  2/2 w2  12/12 w12  8/8 w8  12/12 w12  8/8 w8
+    dual cfg-union descend       12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12  2/2 w2  12/12 w12  8/8 w8  12/12 w12  8/8 w8
+    mir-only cfg-union descend   12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12  2/2 w2  12/12 w12  8/8 w8  12/12 w12  8/8 w8
+    llvm-only cfg-union descend  12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12  12/12 w12  2/2 w2  12/12 w12  8/8 w8  12/12 w12  8/8 w8
+
+  H4, per feature policy: does dual beat both ablations on F1, at precision no lower?
+    default: vs mir-only: F1 92.7% vs 92.7%, precision 96.2% vs 96.2% -> does not beat; vs llvm-only: F1 92.7% vs 92.7%, precision 96.2% vs 96.2% -> does not beat
+    cfg-union: vs mir-only: F1 98.3% vs 98.3%, precision 96.6% vs 96.6% -> does not beat; vs llvm-only: F1 98.3% vs 98.3%, precision 96.6% vs 96.6% -> does not beat

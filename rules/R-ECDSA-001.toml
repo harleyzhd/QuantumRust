@@ -1,0 +1,64 @@
+id = "R-ECDSA-001"
+description = "ECDSA signing/verifying key generation and import via the `ecdsa` crate and its curve backends."
+
+algorithm_class = "Ecdsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ecdsa::SigningKey::random",
+    "ecdsa::SigningKey::from_bytes",
+    "ecdsa::SigningKey::from_slice",
+    "ecdsa::SigningKey::verifying_key",
+    "ecdsa::VerifyingKey::from_sec1_bytes",
+    "ecdsa::VerifyingKey::from_encoded_point",
+    "ecdsa::VerifyingKey::from_public_key_der",
+    "ecdsa::VerifyingKey::from_public_key_pem",
+    "p256::SecretKey::random",
+    "p384::SecretKey::random",
+    "p521::SecretKey::random",
+    "k256::SecretKey::random",
+    "p256::SecretKey::from_slice",
+    "p384::SecretKey::from_slice",
+    "p521::SecretKey::from_slice",
+    "k256::SecretKey::from_slice",
+]
+
+[taint]
+sinks = [
+    "to_sec1_der",
+    "to_sec1_pem",
+    "to_bytes_be",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "ECDSA"
+crypto_functions = ["keygen"]
+oid = "1.2.840.10045.2.1"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "P-256"
+name = "ECDSA-P256"
+nist_quantum_security_level = 0
+type_names = ["p256::NistP256"]
+
+[[parameter_sets]]
+identifier = "P-384"
+name = "ECDSA-P384"
+nist_quantum_security_level = 0
+type_names = ["p384::NistP384"]
+
+[[parameter_sets]]
+identifier = "P-521"
+name = "ECDSA-P521"
+nist_quantum_security_level = 0
+type_names = ["p521::NistP521"]
+
+[[parameter_sets]]
+identifier = "secp256k1"
+name = "ECDSA-secp256k1"
+nist_quantum_security_level = 0
+type_names = ["k256::Secp256k1"]

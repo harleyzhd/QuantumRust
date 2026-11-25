@@ -1,0 +1,52 @@
+id = "R-PQC-999"
+description = "Any other API of a post-quantum crate that no enumerated PQC rule names."
+
+algorithm_class = "Unknown"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+crates = [
+    "pqcrypto",
+    "ml_kem",
+    "ml_dsa",
+    "slh_dsa",
+    "fips203",
+    "fips204",
+    "fips205",
+    "oqs",
+    "kyber",
+    "dilithium",
+    "saber",
+    "classic_mceliece",
+]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "encode",
+    "decode",
+    "try_from",
+    "from",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[crypto]
+primitive = "unknown"

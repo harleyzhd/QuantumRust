@@ -1,0 +1,56 @@
+id = "R-ED25519-999"
+description = "Any other API of the EdDSA crates that no enumerated EdDSA rule names."
+
+algorithm_class = "EdDsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+crates = ["ed25519", "ed448", "cx448"]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "from_bytes",
+    "from_slice",
+    "to_bytes",
+    "to_vec",
+    "as_bytes",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[crypto]
+primitive = "unknown"
+algorithm_family = "EdDSA"
+oid = "1.3.101.112"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "Ed25519"
+name = "Ed25519"
+nist_quantum_security_level = 0
+crates = ["ed25519"]
+
+[[parameter_sets]]
+identifier = "Ed448"
+name = "Ed448"
+nist_quantum_security_level = 0
+crates = ["ed448"]
+paths = ["cx448::SigningKey", "cx448::VerifyingKey", "cx448::SecretKey"]

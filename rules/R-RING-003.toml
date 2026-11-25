@@ -1,0 +1,33 @@
+id = "R-RING-003"
+description = "Ed25519 and ECDSA key pair construction and signing via `ring`."
+
+algorithm_class = "EdDsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ring::signature::Ed25519KeyPair::generate_pkcs8",
+    "ring::signature::Ed25519KeyPair::from_pkcs8",
+    "ring::signature::Ed25519KeyPair::from_pkcs8_maybe_unchecked",
+    "ring::signature::Ed25519KeyPair::from_seed_unchecked",
+    "ring::signature::Ed25519KeyPair::from_seed_and_public_key",
+    "ring::signature::Ed25519KeyPair::sign",
+    "ring::ec::curve25519::ed25519::signing::Ed25519KeyPair::sign",
+    "ring::ec::curve25519::ed25519::signing::Ed25519KeyPair::from_seed_unchecked",
+    "ring::ec::curve25519::ed25519::signing::Ed25519KeyPair::from_pkcs8",
+    "ring::ec::curve25519::ed25519::signing::Ed25519KeyPair::from_seed_and_public_key",
+    "ring::signature::EcdsaKeyPair::generate_pkcs8",
+    "ring::signature::EcdsaKeyPair::from_pkcs8",
+    "ring::signature::EcdsaKeyPair::from_private_key_and_public_key",
+    "ring::signature::EcdsaKeyPair::sign",
+]
+
+[taint]
+sinks = ["sign"]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["keygen", "sign"]
+oid = "1.3.101.112"
+nist_quantum_security_level = 0

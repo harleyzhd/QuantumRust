@@ -1,0 +1,70 @@
+
+E3 on E1 fold B: 69 positives, 47 found (22 not found — no score to check)
+
+E3.1 monotonicity
+  E1 (all fold-B findings)     findings   49  violating pairs 0  tier-3 non-zero 0  f(0)!=1 0
+  age                          findings   34  violating pairs 0  tier-3 non-zero 0  f(0)!=1 0
+  jsonwebtoken                 findings   71  violating pairs 0  tier-3 non-zero 0  f(0)!=1 0
+  sequoia                      findings  241  violating pairs 0  tier-3 non-zero 0  f(0)!=1 0
+
+E3.2 stability, bracketed: fallback (no edge for unresolved dispatch) vs CHA (every local candidate). Rupta itself cannot build any corpus here (R9).
+  E1 fold B (pooled)       findings   49, blast moved for 0  (no CPG: intervals only)
+      all                pairs   1176  same order at both ends 100.00%  guaranteed for every provider between: by intervals 100.00%, with reachability 100.00%
+      same tier, scored  pairs    191  same order at both ends 100.00%  guaranteed for every provider between: by intervals 100.00%, with reachability 100.00%
+  age                      findings   34, blast moved for 6, 364 edges added
+      all                pairs    561  same order at both ends 98.40%  guaranteed for every provider between: by intervals 98.40%, with reachability 98.40%
+      same tier, scored  pairs    120  same order at both ends 92.50%  guaranteed for every provider between: by intervals 92.50%, with reachability 92.50%
+      flips: src/native/tagpq/kem.rs:180 blast 48->48  vs  src/native/x25519.rs:89 blast 16->1164
+      flips: src/native/tagpq/kem.rs:180 blast 48->48  vs  src/native/x25519.rs:89 blast 16->1164
+      flips: src/native/tagpq/kem.rs:188 blast 48->48  vs  src/native/x25519.rs:89 blast 16->1164
+      flips: src/native/tagpq/kem.rs:209 blast 48->48  vs  src/native/x25519.rs:89 blast 16->1164
+      flips: src/native/tagpq/kem.rs:210 blast 48->48  vs  src/native/x25519.rs:89 blast 16->1164
+      ... 4 more
+  sequoia, dyn only        findings  241, blast moved for 173, 11589 edges added
+      all                pairs  28920  same order at both ends 100.00%  guaranteed for every provider between: by intervals 82.95%, with reachability 99.97%
+      same tier, scored  pairs   7868  same order at both ends 100.00%  guaranteed for every provider between: by intervals 37.34%, with reachability 99.87%
+  sequoia, all unresolved  findings  241, blast moved for 193, 127223 edges added
+      all                pairs  28920  same order at both ends 100.00%  guaranteed for every provider between: by intervals 82.81%, with reachability 99.82%
+      same tier, scored  pairs   7868  same order at both ends 100.00%  guaranteed for every provider between: by intervals 36.81%, with reachability 99.34%
+  jsonwebtoken, dyn only   findings   71, blast moved for 33, 96 edges added
+      all                pairs   2485  same order at both ends 98.83%  guaranteed for every provider between: by intervals 91.19%, with reachability 98.23%
+      same tier, scored  pairs   1225  same order at both ends 97.63%  guaranteed for every provider between: by intervals 82.12%, with reachability 96.41%
+      flips: src/crypto/rust_crypto/ecdsa.rs:36 blast 5->5  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/ecdsa.rs:36 blast 5->5  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/ecdsa.rs:69 blast 9->9  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/ecdsa.rs:69 blast 9->9  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/eddsa.rs:28 blast 3->3  vs  src/decoding.rs:360 blast 1->100
+      ... 24 more
+  jsonwebtoken, all unresolved findings   71, blast moved for 33, 2602 edges added
+      all                pairs   2485  same order at both ends 98.83%  guaranteed for every provider between: by intervals 91.19%, with reachability 98.23%
+      same tier, scored  pairs   1225  same order at both ends 97.63%  guaranteed for every provider between: by intervals 82.12%, with reachability 96.41%
+      flips: src/crypto/rust_crypto/ecdsa.rs:36 blast 5->5  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/ecdsa.rs:36 blast 5->5  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/ecdsa.rs:69 blast 9->9  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/ecdsa.rs:69 blast 9->9  vs  src/decoding.rs:360 blast 1->100
+      flips: src/crypto/rust_crypto/eddsa.rs:28 blast 3->3  vs  src/decoding.rs:360 blast 1->100
+      ... 24 more
+
+E3.3 differentiation across the labels' NIST tiers
+  per mutant, all                    n={1: 17, 2: 11, 3: 19}  Kruskal-Wallis H=43.86 p=3.00e-10
+      Cliff's delta: T1>T2 +1.000 (large)  T1>T3 +1.000 (large)  T2>T3 +1.000 (large)
+  per mutant, without conservative   n={1: 17, 2: 11, 3: 19}  Kruskal-Wallis H=43.86 p=3.00e-10
+      Cliff's delta: T1>T2 +1.000 (large)  T1>T3 +1.000 (large)  T2>T3 +1.000 (large)
+  per cell, all                      n={1: 4, 2: 3, 3: 5}  Kruskal-Wallis H=10.46 p=5.35e-03 (exact permutation p=0.0000)
+      Cliff's delta: T1>T2 +1.000 (large)  T1>T3 +1.000 (large)  T2>T3 +1.000 (large)
+  per cell, without conservative     n={1: 4, 2: 3, 3: 5}  Kruskal-Wallis H=10.46 p=5.35e-03 (exact permutation p=0.0000)
+      Cliff's delta: T1>T2 +1.000 (large)  T1>T3 +1.000 (large)  T2>T3 +1.000 (large)
+  conservatively mapped among found positives: 0
+
+E3.4 agreement with the IR 8547 partial order
+  E1 fold B, label tiers                         719/719 = 100.00%  ties 0  inversions 0
+  E1 fold B, label tiers, without conservative   719/719 = 100.00%  ties 0  inversions 0
+  age, tool tiers                                288/288 = 100.00%  ties 0  inversions 0
+  jsonwebtoken, tool tiers                       1050/1050 = 100.00%  ties 0  inversions 0
+  sequoia, tool tiers                            19099/19099 = 100.00%  ties 0  inversions 0
+
+R7c, historical: E3.4 under the old multiplicative score, by Tier1:Tier2 ratio (was shipped at 2.0), against tier-first
+  E1 fold B    1:86.79%  1.1:95.55%  1.25:95.55%  1.5:95.55%  1.75:98.05%  2:98.05%  2.5:98.05%  3:98.05%  4:100.00%  6:100.00%  8:100.00%  | tier-first:100.00%
+  age          1:100.00%  1.1:100.00%  1.25:100.00%  1.5:100.00%  1.75:100.00%  2:100.00%  2.5:100.00%  3:100.00%  4:100.00%  6:100.00%  8:100.00%  | tier-first:100.00%
+  jsonwebtoken 1:100.00%  1.1:100.00%  1.25:100.00%  1.5:100.00%  1.75:100.00%  2:100.00%  2.5:100.00%  3:100.00%  4:100.00%  6:100.00%  8:100.00%  | tier-first:100.00%
+  sequoia      1:84.58%  1.1:100.00%  1.25:100.00%  1.5:100.00%  1.75:100.00%  2:100.00%  2.5:100.00%  3:100.00%  4:100.00%  6:100.00%  8:100.00%  | tier-first:100.00%

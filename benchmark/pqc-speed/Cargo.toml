@@ -1,0 +1,34 @@
+# Times each classical scheme and its post-quantum replacement; run it with
+# docs/scripts/pqc_speed.py. Standalone, so these crypto crates are never linked
+# into the tool. The versions are the ones sequoia-openpgp 2.4.1 locks, except
+# k256, which sequoia does not use: it is the newest 0.13 release.
+[package]
+name = "pqc-speed"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+ml-kem = { version = "=0.3.2", default-features = false }
+ml-dsa = { version = "=0.1.1", default-features = false }
+slh-dsa = { version = "=0.0.3", default-features = false }
+rsa = "=0.9.10"
+sha2 = { version = "0.10", features = ["oid"] }
+p256 = { version = "=0.13.2", features = ["ecdsa", "ecdh"] }
+p384 = { version = "=0.13.1", features = ["ecdsa", "ecdh"] }
+p521 = { version = "=0.13.3", features = ["ecdsa", "ecdh"] }
+k256 = { version = "=0.13.4", features = ["ecdsa", "ecdh"] }
+dsa = "=0.6.3"
+# X448 and Ed448: the crate sequoia's RustCrypto backend uses for both.
+cx448 = "=0.1.1"
+ed25519-dalek = { version = "=2.2.0", features = ["rand_core"] }
+x25519-dalek = { version = "=2.0.1", features = ["static_secrets"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
+serde_json = "1"
+
+[profile.release]
+# Time the crates as a downstream release build compiles them.
+opt-level = 3
+
+# Not a member of the repository's workspace.
+[workspace]

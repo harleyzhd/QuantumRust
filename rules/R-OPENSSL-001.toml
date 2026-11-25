@@ -1,0 +1,50 @@
+id = "R-OPENSSL-001"
+description = "RSA, DSA, DH and EC operations via the `openssl` safe bindings."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "openssl::rsa::Rsa::generate",
+    "openssl::rsa::Rsa::generate_with_e",
+    "openssl::rsa::Rsa::private_key_from_pem",
+    "openssl::rsa::Rsa::private_key_from_der",
+    "openssl::rsa::Rsa::public_key_from_pem",
+    "openssl::rsa::Rsa::public_key_from_der",
+    "openssl::rsa::Rsa::private_encrypt",
+    "openssl::rsa::Rsa::private_decrypt",
+    "openssl::rsa::Rsa::public_encrypt",
+    "openssl::rsa::Rsa::public_decrypt",
+    "openssl::dsa::Dsa::generate",
+    "openssl::dh::Dh::generate_params",
+    "openssl::dh::Dh::compute_key",
+    "openssl::ec::EcKey::generate",
+    "openssl::ec::EcKey::from_private_components",
+    "openssl::ecdsa::EcdsaSig::sign",
+    "openssl::ecdsa::EcdsaSig::verify",
+    "openssl::rsa::RsaRef::private_encrypt",
+    "openssl::rsa::RsaRef::private_decrypt",
+    "openssl::rsa::RsaRef::public_encrypt",
+    "openssl::rsa::RsaRef::public_decrypt",
+    "openssl::rsa::RsaRef::private_key_to_pem",
+    "openssl::rsa::RsaRef::private_key_to_der",
+    "openssl::dsa::DsaRef::sign",
+    "openssl::dh::DhRef::compute_key",
+    "openssl::ec::EcKeyRef::private_key_to_pem",
+]
+
+[taint]
+sinks = [
+    "private_encrypt",
+    "private_decrypt",
+    "sign_to_vec",
+    "compute_key",
+]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["keygen", "sign", "verify"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

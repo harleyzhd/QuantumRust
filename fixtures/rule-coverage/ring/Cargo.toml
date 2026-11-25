@@ -1,0 +1,13 @@
+[package]
+name = "rule-coverage-ring"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[workspace]
+
+[dependencies]
+ring = "0.17"

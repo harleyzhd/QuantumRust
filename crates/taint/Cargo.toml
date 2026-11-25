@@ -1,0 +1,11 @@
+[package]
+name = "qr-taint"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Interprocedural key-material taint analysis over the fused CPG."
+
+[dependencies]
+cpg-core.workspace = true
+qr-rules.workspace = true

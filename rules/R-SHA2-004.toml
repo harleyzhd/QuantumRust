@@ -1,0 +1,25 @@
+id = "R-SHA2-004"
+description = "SHA-224 hashing via the `sha2` crate — below the 256-bit quantum-resistance bar."
+
+algorithm_class = "Hash"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+signatures = [
+    "sha2::Sha224::new",
+    "sha2::Sha224::digest",
+    "sha2::Sha224::new_with_prefix",
+    "sha2::Sha512_224::new",
+    "sha2::Sha512_224::digest",
+]
+
+type_names = ["sha2::OidSha224", "sha2::OidSha512_224", "sha2::Sha224"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "SHA-2"
+crypto_functions = ["digest"]
+oid = "2.16.840.1.101.3.4.2.4"
+parameter_set_identifier = "SHA-224"
+nist_quantum_security_level = 1

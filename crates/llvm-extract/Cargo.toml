@@ -1,0 +1,12 @@
+[package]
+name = "llvm-extract"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "LLVM-IR extraction from the textual output of rustc --emit=llvm-ir."
+
+[dependencies]
+cpg-core.workspace = true
+rustc-demangle.workspace = true
+tracing.workspace = true

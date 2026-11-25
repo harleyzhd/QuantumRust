@@ -1,0 +1,30 @@
+id = "R-RSA-004"
+description = "RSA encryption and decryption (PKCS#1 v1.5 / OAEP) via the `rsa` crate and the OpenSSL FFI."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rsa::RsaPublicKey::encrypt",
+    "rsa::RsaPrivateKey::decrypt",
+    "rsa::RsaPrivateKey::decrypt_blinded",
+    "RSA_public_encrypt",
+    "RSA_private_decrypt",
+]
+
+[taint]
+sinks = [
+    "encrypt",
+    "decrypt",
+    "decrypt_blinded",
+    "RSA_public_encrypt",
+    "RSA_private_decrypt",
+]
+
+[crypto]
+primitive = "pke"
+crypto_functions = ["encrypt", "decrypt"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

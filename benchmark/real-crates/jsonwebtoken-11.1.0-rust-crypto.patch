@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -49,7 +49,7 @@
+ 
+ [features]
+ aws_lc_rs = ["dep:aws-lc-rs"]
+-default = ["use_pem"]
++default = ["use_pem", "rust_crypto"]
+ rust_crypto = [
+     "dep:ed25519-dalek",
+     "dep:hmac",

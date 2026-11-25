@@ -1,0 +1,18 @@
+id = "R-RING-007"
+description = "HMAC keys, signing and verification via `ring`."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "ring::hmac::sign",
+    "ring::hmac::verify",
+    "ring::hmac::Key::new",
+]
+
+[crypto]
+primitive = "mac"
+crypto_functions = ["tag", "verify"]
+nist_quantum_security_level = 2

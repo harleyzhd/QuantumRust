@@ -1,0 +1,29 @@
+id = "R-OPENSSL-004"
+description = "SHA-2 digests via the `openssl` safe bindings."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "openssl::sha::sha256",
+    "openssl::sha::sha384",
+    "openssl::sha::sha512",
+    "openssl::sha::Sha256::new",
+    "openssl::sha::Sha384::new",
+    "openssl::sha::Sha512::new",
+    "openssl::hash::MessageDigest::sha256",
+    "openssl::hash::MessageDigest::sha384",
+    "openssl::hash::MessageDigest::sha512",
+    "openssl::hash::MessageDigest::sha3_256",
+    "openssl::hash::MessageDigest::sha3_384",
+    "openssl::hash::MessageDigest::sha3_512",
+]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "SHA-2"
+crypto_functions = ["digest"]
+oid = "2.16.840.1.101.3.4.2.1"
+nist_quantum_security_level = 2

@@ -1,0 +1,28 @@
+configuration                          crate      sites in src: total  comment   use  string  code
+quantumrust default                    age        QR's own sites:    38        0     0       0    38
+quantumrust --descend                  age        QR's own sites:    48        0     0       0    48
+postquant default                      age            tool-only:     0        0     0       0     0
+postquant --show-all                   age            tool-only:     0        0     0       0     0
+cryptoscan default                     age            tool-only:    60        0     8       0    52
+cryptoscan --include-quantum-safe      age            tool-only:    64        0    10       0    54
+crypto-scanner default                 age            tool-only:    55        0    10       0    45
+codeql rust-code-scanning              age            tool-only:    27        0     0       0    27
+codeql security-extended               age            tool-only:    27        0     0       0    27
+quantumrust default                    jsonwebtoken QR's own sites:    42        0     0       0    42
+quantumrust --descend                  jsonwebtoken QR's own sites:    42        0     0       0    42
+postquant default                      jsonwebtoken     tool-only:     2        0     2       0     0
+postquant --show-all                   jsonwebtoken     tool-only:     2        0     2       0     0
+cryptoscan default                     jsonwebtoken     tool-only:    87        0     6       2    79
+cryptoscan --include-quantum-safe      jsonwebtoken     tool-only:   107        0     8       2    97
+crypto-scanner default                 jsonwebtoken     tool-only:   104        0     7       1    96
+codeql rust-code-scanning              jsonwebtoken     tool-only:     0        0     0       0     0
+codeql security-extended               jsonwebtoken     tool-only:     0        0     0       0     0
+quantumrust default                    sequoia    QR's own sites:   223        0     0       0   223
+quantumrust --descend                  sequoia    QR's own sites:   223        0     0       0   223
+postquant default                      sequoia        tool-only:     1        0     0       0     1
+postquant --show-all                   sequoia        tool-only:     1        0     0       0     1
+cryptoscan default                     sequoia        tool-only:  1734       11    49      68  1606
+cryptoscan --include-quantum-safe      sequoia        tool-only:  2067       11    53      79  1924
+crypto-scanner default                 sequoia        tool-only:  1436        0    28      52  1356
+codeql rust-code-scanning              sequoia        tool-only:   169        0     0       6   163
+codeql security-extended               sequoia        tool-only:   169        0     0       6   163

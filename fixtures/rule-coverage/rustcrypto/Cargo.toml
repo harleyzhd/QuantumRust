@@ -1,0 +1,27 @@
+[package]
+name = "rule-coverage-rustcrypto"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[workspace]
+
+[dependencies]
+rand = "0.8"
+rand_core = { version = "0.6", features = ["getrandom"] }
+rsa = { version = "0.9", features = ["sha2"] }
+sha2 = { version = "0.10", features = ["oid"] }
+p256 = { version = "0.13", features = ["ecdsa", "ecdh"] }
+p384 = { version = "0.13", features = ["ecdsa"] }
+ecdsa = "0.16"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+x25519-dalek = { version = "2", features = ["static_secrets"] }
+dsa = "0.6"
+cx448 = { version = "0.1.1", default-features = false, features = ["signing", "zeroize"] }
+ml-kem = "0.2"
+ml-dsa = { version = "0.1.1", default-features = false, features = ["zeroize"] }
+slh-dsa = { version = "0.0.3", default-features = false }
+signature = "2"

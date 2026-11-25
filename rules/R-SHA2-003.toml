@@ -1,0 +1,23 @@
+id = "R-SHA2-003"
+description = "SHA-512 hashing via the `sha2` crate."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "sha2::Sha512::new",
+    "sha2::Sha512::digest",
+    "sha2::Sha512::new_with_prefix",
+]
+
+type_names = ["sha2::OidSha512", "sha2::Sha512"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "SHA-2"
+crypto_functions = ["digest"]
+oid = "2.16.840.1.101.3.4.2.3"
+parameter_set_identifier = "SHA-512"
+nist_quantum_security_level = 5

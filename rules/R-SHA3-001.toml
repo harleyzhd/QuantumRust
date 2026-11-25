@@ -1,0 +1,39 @@
+id = "R-SHA3-001"
+description = "SHA3-256/384/512, Keccak-256 and SHAKE-256 via the `sha3` crate."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "sha3::Sha3_256::new",
+    "sha3::Sha3_256::digest",
+    "sha3::Sha3_384::new",
+    "sha3::Sha3_384::digest",
+    "sha3::Sha3_512::new",
+    "sha3::Sha3_512::digest",
+    "sha3::Keccak256::new",
+    "sha3::Keccak256::digest",
+    "sha3::Keccak384::new",
+    "sha3::Keccak512::new",
+    "sha3::Shake256::default",
+    "sha3::Shake256::new",
+]
+
+type_names = [
+    "sha3::Sha3_256Core",
+    "sha3::Sha3_384Core",
+    "sha3::Sha3_512Core",
+    "sha3::Keccak256Core",
+    "sha3::Keccak384Core",
+    "sha3::Keccak512Core",
+    "sha3::Shake256Core",
+]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "SHA-3"
+crypto_functions = ["digest"]
+oid = "2.16.840.1.101.3.4.2.8"
+nist_quantum_security_level = 2

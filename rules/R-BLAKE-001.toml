@@ -1,0 +1,36 @@
+id = "R-BLAKE-001"
+description = "BLAKE2b and BLAKE2s hashing."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "blake2::Blake2b512::new",
+    "blake2::Blake2b512::digest",
+    "blake2::Blake2s256::new",
+    "blake2::Blake2s256::digest",
+    "blake2::Blake2b::new",
+    "blake2::Blake2s::new",
+]
+
+type_names = ["blake2::Blake2bVarCore", "blake2::Blake2sVarCore"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "BLAKE2"
+crypto_functions = ["digest"]
+nist_quantum_security_level = 2
+
+[[parameter_sets]]
+identifier = "BLAKE2b"
+name = "BLAKE2b"
+nist_quantum_security_level = 2
+type_names = ["blake2::Blake2bVarCore"]
+
+[[parameter_sets]]
+identifier = "BLAKE2s"
+name = "BLAKE2s"
+nist_quantum_security_level = 2
+type_names = ["blake2::Blake2sVarCore"]

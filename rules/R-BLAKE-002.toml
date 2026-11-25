@@ -1,0 +1,23 @@
+id = "R-BLAKE-002"
+description = "BLAKE3 hashing, keyed hashing and key derivation."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "blake3::hash",
+    "blake3::keyed_hash",
+    "blake3::derive_key",
+    "blake3::Hasher::new",
+    "blake3::Hasher::new_keyed",
+    "blake3::Hasher::new_derive_key",
+]
+type_names = ["blake3::Hasher"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "BLAKE3"
+crypto_functions = ["digest"]
+nist_quantum_security_level = 2

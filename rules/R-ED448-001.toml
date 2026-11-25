@@ -1,0 +1,29 @@
+id = "R-ED448-001"
+description = "Ed448 key generation, signing and verification via `cx448`."
+
+algorithm_class = "EdDsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "cx448::SigningKey::generate",
+    "cx448::SigningKey::verifying_key",
+    "cx448::SigningKey::sign_raw",
+    "cx448::SigningKey::sign_ctx",
+    "cx448::SigningKey::sign_prehashed",
+    "cx448::VerifyingKey::verify_raw",
+    "cx448::VerifyingKey::verify_ctx",
+    "cx448::VerifyingKey::verify_prehashed",
+]
+
+[taint]
+sinks = ["sign_raw", "sign_ctx", "sign_prehashed"]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "EdDSA"
+crypto_functions = ["keygen", "sign", "verify"]
+oid = "1.3.101.113"
+parameter_set_identifier = "Ed448"
+nist_quantum_security_level = 0

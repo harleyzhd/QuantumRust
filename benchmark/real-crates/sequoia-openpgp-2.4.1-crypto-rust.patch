@@ -1,0 +1,13 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -146,7 +146,9 @@
+ ]
+ default = [
+     "compression",
+-    "crypto-nettle",
++    "crypto-rust",
++    "allow-experimental-crypto",
++    "allow-variable-time-crypto",
+ ]
+ 
+ [lib]

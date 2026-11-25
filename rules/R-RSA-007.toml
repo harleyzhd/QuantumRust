@@ -1,0 +1,19 @@
+id = "R-RSA-007"
+description = "An RSASSA-PKCS1 key or signature identified by type, when the call's symbol names only the generic signing trait."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+type_names = [
+    "rsa::pkcs1v15::SigningKey",
+    "rsa::pkcs1v15::VerifyingKey",
+    "rsa::pkcs1v15::Signature",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "RSASSA-PKCS1"
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

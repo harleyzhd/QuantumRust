@@ -1,0 +1,21 @@
+id = "R-RSA-003"
+description = "RSA signature verification via the `rsa` crate's verifying keys and the OpenSSL FFI."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rsa::verify",
+    "rsa::verify_prehash",
+    "rsa::verify_digest",
+    "RSA_verify",
+    "RSA_public_decrypt",
+]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["verify"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

@@ -1,0 +1,6227 @@
+{
+  "dual default descend": {
+    "flags": [
+      "--ablation",
+      "dual",
+      "--descend"
+    ],
+    "findings": {
+      "M0-F-RSA-2048-p-0000": [
+        {
+          "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-2048-p-0001": [
+        {
+          "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-2048-p-0002": [
+        {
+          "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-2048-p-0003": [
+        {
+          "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-2048-p-0004": [],
+      "M5-F-RSA-2048-p-0005": [
+        {
+          "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-RSA-3072-p-0006": [
+        {
+          "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-3072-p-0007": [
+        {
+          "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-3072-p-0008": [
+        {
+          "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-3072-p-0009": [
+        {
+          "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-3072-p-0010": [],
+      "M5-F-RSA-3072-p-0011": [
+        {
+          "file": "M5-F-RSA-3072-p-0011/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-ECC-P-256-p-0012": [
+        {
+          "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M1-F-ECC-P-256-p-0013": [
+        {
+          "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M2-F-ECC-P-256-p-0014": [
+        {
+          "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M3-F-ECC-P-256-p-0015": [
+        {
+          "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M4-F-ECC-P-256-p-0016": [],
+      "M0-F-KEX-X25519-p-0017": [
+        {
+          "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M1-F-KEX-X25519-p-0018": [
+        {
+          "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M2-F-KEX-X25519-p-0019": [
+        {
+          "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M3-F-KEX-X25519-p-0020": [
+        {
+          "file": "M3-F-KEX-X25519-p-0020/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M4-F-KEX-X25519-p-0021": [],
+      "M0-F-HASH-SHA-256-p-0022": [
+        {
+          "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M1-F-HASH-SHA-256-p-0023": [
+        {
+          "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M2-F-HASH-SHA-256-p-0024": [
+        {
+          "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M3-F-HASH-SHA-256-p-0025": [
+        {
+          "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M4-F-HASH-SHA-256-p-0026": [],
+      "M0-F-HASH-SHA-512-p-0027": [
+        {
+          "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M1-F-HASH-SHA-512-p-0028": [
+        {
+          "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M2-F-HASH-SHA-512-p-0029": [
+        {
+          "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M3-F-HASH-SHA-512-p-0030": [
+        {
+          "file": "M3-F-HASH-SHA-512-p-0030/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M4-F-HASH-SHA-512-p-0031": [],
+      "M0-F-HASH-DEP-SHA-1-p-0032": [
+        {
+          "file": "M0-F-HASH-DEP-SHA-1-p-0032/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M1-F-HASH-DEP-SHA-1-p-0033": [
+        {
+          "file": "M1-F-HASH-DEP-SHA-1-p-0033/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M2-F-HASH-DEP-SHA-1-p-0034": [
+        {
+          "file": "M2-F-HASH-DEP-SHA-1-p-0034/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M3-F-HASH-DEP-SHA-1-p-0035": [
+        {
+          "file": "M3-F-HASH-DEP-SHA-1-p-0035/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M4-F-HASH-DEP-SHA-1-p-0036": [],
+      "M0-F-HASH-DEP-MD5-p-0037": [
+        {
+          "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M1-F-HASH-DEP-MD5-p-0038": [
+        {
+          "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M2-F-HASH-DEP-MD5-p-0039": [
+        {
+          "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M3-F-HASH-DEP-MD5-p-0040": [
+        {
+          "file": "M3-F-HASH-DEP-MD5-p-0040/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M4-F-HASH-DEP-MD5-p-0041": [],
+      "M0-F-SYM-AES-128-p-0042": [
+        {
+          "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M1-F-SYM-AES-128-p-0043": [
+        {
+          "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M2-F-SYM-AES-128-p-0044": [
+        {
+          "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+          "line": 13,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M3-F-SYM-AES-128-p-0045": [
+        {
+          "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M4-F-SYM-AES-128-p-0046": [],
+      "M0-F-SYM-AES-256-p-0047": [
+        {
+          "file": "M0-F-SYM-AES-256-p-0047/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M1-F-SYM-AES-256-p-0048": [
+        {
+          "file": "M1-F-SYM-AES-256-p-0048/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M2-F-SYM-AES-256-p-0049": [
+        {
+          "file": "M2-F-SYM-AES-256-p-0049/src/lib.rs",
+          "line": 13,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M3-F-SYM-AES-256-p-0050": [
+        {
+          "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M4-F-SYM-AES-256-p-0051": [],
+      "M0-F-SYM-ChaCha20-p-0052": [
+        {
+          "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M1-F-SYM-ChaCha20-p-0053": [
+        {
+          "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M2-F-SYM-ChaCha20-p-0054": [
+        {
+          "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M3-F-SYM-ChaCha20-p-0055": [
+        {
+          "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M4-F-SYM-ChaCha20-p-0056": [],
+      "M0-F-PQC-ML-KEM-768-p-0057": [
+        {
+          "file": "M0-F-PQC-ML-KEM-768-p-0057/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M1-F-PQC-ML-KEM-768-p-0058": [
+        {
+          "file": "M1-F-PQC-ML-KEM-768-p-0058/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M2-F-PQC-ML-KEM-768-p-0059": [
+        {
+          "file": "M2-F-PQC-ML-KEM-768-p-0059/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M3-F-PQC-ML-KEM-768-p-0060": [
+        {
+          "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M4-F-PQC-ML-KEM-768-p-0061": [],
+      "N0-n-0062": [
+        {
+          "file": "N0-n-0062/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N0-n-0063": [
+        {
+          "file": "N0-n-0063/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0064": [
+        {
+          "file": "N1-n-0064/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0065": [
+        {
+          "file": "N1-n-0065/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N2-n-0066": [],
+      "N2-n-0067": [],
+      "N3-n-0068": [],
+      "N3-n-0069": [],
+      "N4-n-0070": [],
+      "N4-n-0071": [],
+      "N5-n-0072": [],
+      "N5-n-0073": [],
+      "N5-n-0074": [],
+      "N5-n-0075": [],
+      "N5-n-0076": [],
+      "N5-n-0077": [],
+      "M6-F-RSA-2048-p-0078": [
+        {
+          "file": "M6-F-RSA-2048-p-0078/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-RSA-3072-p-0079": [
+        {
+          "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-ECC-P-256-p-0080": [
+        {
+          "file": "M6-F-ECC-P-256-p-0080/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M6-F-KEX-X25519-p-0081": [
+        {
+          "file": "M6-F-KEX-X25519-p-0081/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M6-F-HASH-SHA-256-p-0082": [
+        {
+          "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M6-F-HASH-SHA-512-p-0083": [
+        {
+          "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M6-F-HASH-DEP-SHA-1-p-0084": [
+        {
+          "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M6-F-HASH-DEP-MD5-p-0085": [
+        {
+          "file": "M6-F-HASH-DEP-MD5-p-0085/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M6-F-SYM-AES-128-p-0086": [
+        {
+          "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M6-F-SYM-AES-256-p-0087": [
+        {
+          "file": "M6-F-SYM-AES-256-p-0087/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M6-F-SYM-ChaCha20-p-0088": [
+        {
+          "file": "M6-F-SYM-ChaCha20-p-0088/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M6-F-PQC-ML-KEM-768-p-0089": [
+        {
+          "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M7-F-HASH-SHA-256-p-0090": [
+        {
+          "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M7-F-HASH-SHA-512-p-0091": [
+        {
+          "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M7-F-HASH-DEP-SHA-1-p-0092": [
+        {
+          "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M7-F-HASH-DEP-MD5-p-0093": [
+        {
+          "file": "M7-F-HASH-DEP-MD5-p-0093/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M7-F-SYM-AES-128-p-0094": [
+        {
+          "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M7-F-SYM-AES-256-p-0095": [
+        {
+          "file": "M7-F-SYM-AES-256-p-0095/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M7-F-SYM-ChaCha20-p-0096": [
+        {
+          "file": "M7-F-SYM-ChaCha20-p-0096/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M7-F-PQC-ML-KEM-768-p-0097": [
+        {
+          "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M8-F-RSA-2048-p-0098": [
+        {
+          "file": "M8-F-RSA-2048-p-0098/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-RSA-3072-p-0099": [
+        {
+          "file": "M8-F-RSA-3072-p-0099/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-ECC-P-256-p-0100": [
+        {
+          "file": "M8-F-ECC-P-256-p-0100/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M8-F-KEX-X25519-p-0101": [
+        {
+          "file": "M8-F-KEX-X25519-p-0101/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M8-F-HASH-SHA-256-p-0102": [
+        {
+          "file": "M8-F-HASH-SHA-256-p-0102/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M8-F-HASH-SHA-512-p-0103": [
+        {
+          "file": "M8-F-HASH-SHA-512-p-0103/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M8-F-HASH-DEP-SHA-1-p-0104": [
+        {
+          "file": "M8-F-HASH-DEP-SHA-1-p-0104/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M8-F-HASH-DEP-MD5-p-0105": [
+        {
+          "file": "M8-F-HASH-DEP-MD5-p-0105/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M8-F-SYM-AES-128-p-0106": [
+        {
+          "file": "M8-F-SYM-AES-128-p-0106/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M8-F-SYM-AES-256-p-0107": [
+        {
+          "file": "M8-F-SYM-AES-256-p-0107/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M8-F-SYM-ChaCha20-p-0108": [
+        {
+          "file": "M8-F-SYM-ChaCha20-p-0108/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M8-F-PQC-ML-KEM-768-p-0109": [
+        {
+          "file": "M8-F-PQC-ML-KEM-768-p-0109/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M9-F-HASH-SHA-256-p-0110": [
+        {
+          "file": "M9-F-HASH-SHA-256-p-0110/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M9-F-HASH-SHA-512-p-0111": [
+        {
+          "file": "M9-F-HASH-SHA-512-p-0111/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M9-F-HASH-DEP-SHA-1-p-0112": [
+        {
+          "file": "M9-F-HASH-DEP-SHA-1-p-0112/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M9-F-HASH-DEP-MD5-p-0113": [
+        {
+          "file": "M9-F-HASH-DEP-MD5-p-0113/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M9-F-SYM-AES-128-p-0114": [
+        {
+          "file": "M9-F-SYM-AES-128-p-0114/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M9-F-SYM-AES-256-p-0115": [
+        {
+          "file": "M9-F-SYM-AES-256-p-0115/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M9-F-SYM-ChaCha20-p-0116": [
+        {
+          "file": "M9-F-SYM-ChaCha20-p-0116/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M9-F-PQC-ML-KEM-768-p-0117": [
+        {
+          "file": "M9-F-PQC-ML-KEM-768-p-0117/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M10-F-RSA-2048-p-0118": [
+        {
+          "file": "M10-F-RSA-2048-p-0118/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-RSA-3072-p-0119": [
+        {
+          "file": "M10-F-RSA-3072-p-0119/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-ECC-P-256-p-0120": [
+        {
+          "file": "M10-F-ECC-P-256-p-0120/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M10-F-KEX-X25519-p-0121": [
+        {
+          "file": "M10-F-KEX-X25519-p-0121/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M10-F-HASH-SHA-256-p-0122": [
+        {
+          "file": "M10-F-HASH-SHA-256-p-0122/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M10-F-HASH-SHA-512-p-0123": [
+        {
+          "file": "M10-F-HASH-SHA-512-p-0123/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M10-F-HASH-DEP-SHA-1-p-0124": [
+        {
+          "file": "M10-F-HASH-DEP-SHA-1-p-0124/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M10-F-HASH-DEP-MD5-p-0125": [
+        {
+          "file": "M10-F-HASH-DEP-MD5-p-0125/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M10-F-SYM-AES-128-p-0126": [
+        {
+          "file": "M10-F-SYM-AES-128-p-0126/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M10-F-SYM-AES-256-p-0127": [
+        {
+          "file": "M10-F-SYM-AES-256-p-0127/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M10-F-SYM-ChaCha20-p-0128": [
+        {
+          "file": "M10-F-SYM-ChaCha20-p-0128/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M10-F-PQC-ML-KEM-768-p-0129": [
+        {
+          "file": "M10-F-PQC-ML-KEM-768-p-0129/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N6-n-0130": [],
+      "N6-n-0131": []
+    }
+  },
+  "mir-only default descend": {
+    "flags": [
+      "--ablation",
+      "mir-only",
+      "--descend"
+    ],
+    "findings": {
+      "M0-F-RSA-2048-p-0000": [
+        {
+          "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-2048-p-0001": [
+        {
+          "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-2048-p-0002": [
+        {
+          "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-2048-p-0003": [
+        {
+          "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-2048-p-0004": [],
+      "M5-F-RSA-2048-p-0005": [
+        {
+          "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-RSA-3072-p-0006": [
+        {
+          "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-3072-p-0007": [
+        {
+          "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-3072-p-0008": [
+        {
+          "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-3072-p-0009": [
+        {
+          "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-3072-p-0010": [],
+      "M5-F-RSA-3072-p-0011": [
+        {
+          "file": "M5-F-RSA-3072-p-0011/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-ECC-P-256-p-0012": [
+        {
+          "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M1-F-ECC-P-256-p-0013": [
+        {
+          "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M2-F-ECC-P-256-p-0014": [
+        {
+          "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M3-F-ECC-P-256-p-0015": [
+        {
+          "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M4-F-ECC-P-256-p-0016": [],
+      "M0-F-KEX-X25519-p-0017": [
+        {
+          "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M1-F-KEX-X25519-p-0018": [
+        {
+          "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M2-F-KEX-X25519-p-0019": [
+        {
+          "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M3-F-KEX-X25519-p-0020": [
+        {
+          "file": "M3-F-KEX-X25519-p-0020/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M4-F-KEX-X25519-p-0021": [],
+      "M0-F-HASH-SHA-256-p-0022": [
+        {
+          "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M1-F-HASH-SHA-256-p-0023": [
+        {
+          "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M2-F-HASH-SHA-256-p-0024": [
+        {
+          "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M3-F-HASH-SHA-256-p-0025": [
+        {
+          "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M4-F-HASH-SHA-256-p-0026": [],
+      "M0-F-HASH-SHA-512-p-0027": [
+        {
+          "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M1-F-HASH-SHA-512-p-0028": [
+        {
+          "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M2-F-HASH-SHA-512-p-0029": [
+        {
+          "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M3-F-HASH-SHA-512-p-0030": [
+        {
+          "file": "M3-F-HASH-SHA-512-p-0030/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M4-F-HASH-SHA-512-p-0031": [],
+      "M0-F-HASH-DEP-SHA-1-p-0032": [
+        {
+          "file": "M0-F-HASH-DEP-SHA-1-p-0032/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M1-F-HASH-DEP-SHA-1-p-0033": [
+        {
+          "file": "M1-F-HASH-DEP-SHA-1-p-0033/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M2-F-HASH-DEP-SHA-1-p-0034": [
+        {
+          "file": "M2-F-HASH-DEP-SHA-1-p-0034/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M3-F-HASH-DEP-SHA-1-p-0035": [
+        {
+          "file": "M3-F-HASH-DEP-SHA-1-p-0035/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M4-F-HASH-DEP-SHA-1-p-0036": [],
+      "M0-F-HASH-DEP-MD5-p-0037": [
+        {
+          "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M1-F-HASH-DEP-MD5-p-0038": [
+        {
+          "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M2-F-HASH-DEP-MD5-p-0039": [
+        {
+          "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M3-F-HASH-DEP-MD5-p-0040": [
+        {
+          "file": "M3-F-HASH-DEP-MD5-p-0040/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M4-F-HASH-DEP-MD5-p-0041": [],
+      "M0-F-SYM-AES-128-p-0042": [
+        {
+          "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M1-F-SYM-AES-128-p-0043": [
+        {
+          "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M2-F-SYM-AES-128-p-0044": [
+        {
+          "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+          "line": 13,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M3-F-SYM-AES-128-p-0045": [
+        {
+          "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M4-F-SYM-AES-128-p-0046": [],
+      "M0-F-SYM-AES-256-p-0047": [
+        {
+          "file": "M0-F-SYM-AES-256-p-0047/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M1-F-SYM-AES-256-p-0048": [
+        {
+          "file": "M1-F-SYM-AES-256-p-0048/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M2-F-SYM-AES-256-p-0049": [
+        {
+          "file": "M2-F-SYM-AES-256-p-0049/src/lib.rs",
+          "line": 13,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M3-F-SYM-AES-256-p-0050": [
+        {
+          "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M4-F-SYM-AES-256-p-0051": [],
+      "M0-F-SYM-ChaCha20-p-0052": [
+        {
+          "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M1-F-SYM-ChaCha20-p-0053": [
+        {
+          "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M2-F-SYM-ChaCha20-p-0054": [
+        {
+          "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M3-F-SYM-ChaCha20-p-0055": [
+        {
+          "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M4-F-SYM-ChaCha20-p-0056": [],
+      "M0-F-PQC-ML-KEM-768-p-0057": [
+        {
+          "file": "M0-F-PQC-ML-KEM-768-p-0057/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M1-F-PQC-ML-KEM-768-p-0058": [
+        {
+          "file": "M1-F-PQC-ML-KEM-768-p-0058/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M2-F-PQC-ML-KEM-768-p-0059": [
+        {
+          "file": "M2-F-PQC-ML-KEM-768-p-0059/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M3-F-PQC-ML-KEM-768-p-0060": [
+        {
+          "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M4-F-PQC-ML-KEM-768-p-0061": [],
+      "N0-n-0062": [
+        {
+          "file": "N0-n-0062/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N0-n-0063": [
+        {
+          "file": "N0-n-0063/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0064": [
+        {
+          "file": "N1-n-0064/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0065": [
+        {
+          "file": "N1-n-0065/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N2-n-0066": [],
+      "N2-n-0067": [],
+      "N3-n-0068": [],
+      "N3-n-0069": [],
+      "N4-n-0070": [],
+      "N4-n-0071": [],
+      "N5-n-0072": [],
+      "N5-n-0073": [],
+      "N5-n-0074": [],
+      "N5-n-0075": [],
+      "N5-n-0076": [],
+      "N5-n-0077": [],
+      "M6-F-RSA-2048-p-0078": [
+        {
+          "file": "M6-F-RSA-2048-p-0078/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-RSA-3072-p-0079": [
+        {
+          "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-ECC-P-256-p-0080": [
+        {
+          "file": "M6-F-ECC-P-256-p-0080/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M6-F-KEX-X25519-p-0081": [
+        {
+          "file": "M6-F-KEX-X25519-p-0081/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M6-F-HASH-SHA-256-p-0082": [
+        {
+          "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M6-F-HASH-SHA-512-p-0083": [
+        {
+          "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M6-F-HASH-DEP-SHA-1-p-0084": [
+        {
+          "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M6-F-HASH-DEP-MD5-p-0085": [
+        {
+          "file": "M6-F-HASH-DEP-MD5-p-0085/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M6-F-SYM-AES-128-p-0086": [
+        {
+          "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M6-F-SYM-AES-256-p-0087": [
+        {
+          "file": "M6-F-SYM-AES-256-p-0087/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M6-F-SYM-ChaCha20-p-0088": [
+        {
+          "file": "M6-F-SYM-ChaCha20-p-0088/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M6-F-PQC-ML-KEM-768-p-0089": [
+        {
+          "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M7-F-HASH-SHA-256-p-0090": [
+        {
+          "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "sha2::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-HASH-SHA-512-p-0091": [
+        {
+          "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "sha2::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-HASH-DEP-SHA-1-p-0092": [
+        {
+          "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "sha1::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-HASH-DEP-MD5-p-0093": [
+        {
+          "file": "M7-F-HASH-DEP-MD5-p-0093/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "md5::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-SYM-AES-128-p-0094": [
+        {
+          "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+          "line": 9,
+          "status": "unknown",
+          "name": "aes::cipher::KeyInit::new",
+          "rule": "R-SYM-999"
+        }
+      ],
+      "M7-F-SYM-AES-256-p-0095": [
+        {
+          "file": "M7-F-SYM-AES-256-p-0095/src/lib.rs",
+          "line": 9,
+          "status": "unknown",
+          "name": "aes::cipher::KeyInit::new",
+          "rule": "R-SYM-999"
+        }
+      ],
+      "M7-F-SYM-ChaCha20-p-0096": [
+        {
+          "file": "M7-F-SYM-ChaCha20-p-0096/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "chacha20poly1305::KeyInit::new",
+          "rule": "R-SYM-999"
+        }
+      ],
+      "M7-F-PQC-ML-KEM-768-p-0097": [
+        {
+          "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M8-F-RSA-2048-p-0098": [
+        {
+          "file": "M8-F-RSA-2048-p-0098/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-RSA-3072-p-0099": [
+        {
+          "file": "M8-F-RSA-3072-p-0099/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-ECC-P-256-p-0100": [
+        {
+          "file": "M8-F-ECC-P-256-p-0100/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M8-F-KEX-X25519-p-0101": [
+        {
+          "file": "M8-F-KEX-X25519-p-0101/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M8-F-HASH-SHA-256-p-0102": [
+        {
+          "file": "M8-F-HASH-SHA-256-p-0102/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M8-F-HASH-SHA-512-p-0103": [
+        {
+          "file": "M8-F-HASH-SHA-512-p-0103/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M8-F-HASH-DEP-SHA-1-p-0104": [
+        {
+          "file": "M8-F-HASH-DEP-SHA-1-p-0104/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M8-F-HASH-DEP-MD5-p-0105": [
+        {
+          "file": "M8-F-HASH-DEP-MD5-p-0105/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M8-F-SYM-AES-128-p-0106": [
+        {
+          "file": "M8-F-SYM-AES-128-p-0106/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M8-F-SYM-AES-256-p-0107": [
+        {
+          "file": "M8-F-SYM-AES-256-p-0107/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M8-F-SYM-ChaCha20-p-0108": [
+        {
+          "file": "M8-F-SYM-ChaCha20-p-0108/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M8-F-PQC-ML-KEM-768-p-0109": [
+        {
+          "file": "M8-F-PQC-ML-KEM-768-p-0109/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M9-F-HASH-SHA-256-p-0110": [
+        {
+          "file": "M9-F-HASH-SHA-256-p-0110/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M9-F-HASH-SHA-512-p-0111": [
+        {
+          "file": "M9-F-HASH-SHA-512-p-0111/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M9-F-HASH-DEP-SHA-1-p-0112": [
+        {
+          "file": "M9-F-HASH-DEP-SHA-1-p-0112/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M9-F-HASH-DEP-MD5-p-0113": [
+        {
+          "file": "M9-F-HASH-DEP-MD5-p-0113/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M9-F-SYM-AES-128-p-0114": [
+        {
+          "file": "M9-F-SYM-AES-128-p-0114/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M9-F-SYM-AES-256-p-0115": [
+        {
+          "file": "M9-F-SYM-AES-256-p-0115/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M9-F-SYM-ChaCha20-p-0116": [
+        {
+          "file": "M9-F-SYM-ChaCha20-p-0116/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M9-F-PQC-ML-KEM-768-p-0117": [
+        {
+          "file": "M9-F-PQC-ML-KEM-768-p-0117/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M10-F-RSA-2048-p-0118": [
+        {
+          "file": "M10-F-RSA-2048-p-0118/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-RSA-3072-p-0119": [
+        {
+          "file": "M10-F-RSA-3072-p-0119/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-ECC-P-256-p-0120": [
+        {
+          "file": "M10-F-ECC-P-256-p-0120/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M10-F-KEX-X25519-p-0121": [
+        {
+          "file": "M10-F-KEX-X25519-p-0121/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M10-F-HASH-SHA-256-p-0122": [
+        {
+          "file": "M10-F-HASH-SHA-256-p-0122/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M10-F-HASH-SHA-512-p-0123": [
+        {
+          "file": "M10-F-HASH-SHA-512-p-0123/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M10-F-HASH-DEP-SHA-1-p-0124": [
+        {
+          "file": "M10-F-HASH-DEP-SHA-1-p-0124/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M10-F-HASH-DEP-MD5-p-0125": [
+        {
+          "file": "M10-F-HASH-DEP-MD5-p-0125/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M10-F-SYM-AES-128-p-0126": [
+        {
+          "file": "M10-F-SYM-AES-128-p-0126/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M10-F-SYM-AES-256-p-0127": [
+        {
+          "file": "M10-F-SYM-AES-256-p-0127/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M10-F-SYM-ChaCha20-p-0128": [
+        {
+          "file": "M10-F-SYM-ChaCha20-p-0128/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M10-F-PQC-ML-KEM-768-p-0129": [
+        {
+          "file": "M10-F-PQC-ML-KEM-768-p-0129/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N6-n-0130": [],
+      "N6-n-0131": []
+    }
+  },
+  "llvm-only default descend": {
+    "flags": [
+      "--ablation",
+      "llvm-only",
+      "--descend"
+    ],
+    "findings": {
+      "M0-F-RSA-2048-p-0000": [
+        {
+          "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-2048-p-0001": [
+        {
+          "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-2048-p-0002": [
+        {
+          "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-2048-p-0003": [
+        {
+          "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-2048-p-0004": [],
+      "M5-F-RSA-2048-p-0005": [
+        {
+          "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-RSA-3072-p-0006": [
+        {
+          "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-3072-p-0007": [
+        {
+          "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-3072-p-0008": [
+        {
+          "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-3072-p-0009": [
+        {
+          "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-3072-p-0010": [],
+      "M5-F-RSA-3072-p-0011": [
+        {
+          "file": "M5-F-RSA-3072-p-0011/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-ECC-P-256-p-0012": [
+        {
+          "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M1-F-ECC-P-256-p-0013": [
+        {
+          "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M2-F-ECC-P-256-p-0014": [
+        {
+          "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M3-F-ECC-P-256-p-0015": [
+        {
+          "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M4-F-ECC-P-256-p-0016": [],
+      "M0-F-KEX-X25519-p-0017": [
+        {
+          "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M1-F-KEX-X25519-p-0018": [
+        {
+          "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M2-F-KEX-X25519-p-0019": [
+        {
+          "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M3-F-KEX-X25519-p-0020": [
+        {
+          "file": "M3-F-KEX-X25519-p-0020/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M4-F-KEX-X25519-p-0021": [],
+      "M0-F-HASH-SHA-256-p-0022": [
+        {
+          "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M1-F-HASH-SHA-256-p-0023": [
+        {
+          "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M2-F-HASH-SHA-256-p-0024": [
+        {
+          "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M3-F-HASH-SHA-256-p-0025": [
+        {
+          "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M4-F-HASH-SHA-256-p-0026": [],
+      "M0-F-HASH-SHA-512-p-0027": [
+        {
+          "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M1-F-HASH-SHA-512-p-0028": [
+        {
+          "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M2-F-HASH-SHA-512-p-0029": [
+        {
+          "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M3-F-HASH-SHA-512-p-0030": [
+        {
+          "file": "M3-F-HASH-SHA-512-p-0030/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M4-F-HASH-SHA-512-p-0031": [],
+      "M0-F-HASH-DEP-SHA-1-p-0032": [
+        {
+          "file": "M0-F-HASH-DEP-SHA-1-p-0032/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M1-F-HASH-DEP-SHA-1-p-0033": [
+        {
+          "file": "M1-F-HASH-DEP-SHA-1-p-0033/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M2-F-HASH-DEP-SHA-1-p-0034": [
+        {
+          "file": "M2-F-HASH-DEP-SHA-1-p-0034/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M3-F-HASH-DEP-SHA-1-p-0035": [
+        {
+          "file": "M3-F-HASH-DEP-SHA-1-p-0035/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M4-F-HASH-DEP-SHA-1-p-0036": [],
+      "M0-F-HASH-DEP-MD5-p-0037": [
+        {
+          "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M1-F-HASH-DEP-MD5-p-0038": [
+        {
+          "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M2-F-HASH-DEP-MD5-p-0039": [
+        {
+          "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M3-F-HASH-DEP-MD5-p-0040": [
+        {
+          "file": "M3-F-HASH-DEP-MD5-p-0040/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M4-F-HASH-DEP-MD5-p-0041": [],
+      "M0-F-SYM-AES-128-p-0042": [
+        {
+          "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M1-F-SYM-AES-128-p-0043": [
+        {
+          "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M2-F-SYM-AES-128-p-0044": [
+        {
+          "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+          "line": 13,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M3-F-SYM-AES-128-p-0045": [
+        {
+          "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M4-F-SYM-AES-128-p-0046": [],
+      "M0-F-SYM-AES-256-p-0047": [
+        {
+          "file": "M0-F-SYM-AES-256-p-0047/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M1-F-SYM-AES-256-p-0048": [
+        {
+          "file": "M1-F-SYM-AES-256-p-0048/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M2-F-SYM-AES-256-p-0049": [
+        {
+          "file": "M2-F-SYM-AES-256-p-0049/src/lib.rs",
+          "line": 13,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M3-F-SYM-AES-256-p-0050": [
+        {
+          "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M4-F-SYM-AES-256-p-0051": [],
+      "M0-F-SYM-ChaCha20-p-0052": [
+        {
+          "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M1-F-SYM-ChaCha20-p-0053": [
+        {
+          "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M2-F-SYM-ChaCha20-p-0054": [
+        {
+          "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M3-F-SYM-ChaCha20-p-0055": [
+        {
+          "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M4-F-SYM-ChaCha20-p-0056": [],
+      "M0-F-PQC-ML-KEM-768-p-0057": [
+        {
+          "file": "M0-F-PQC-ML-KEM-768-p-0057/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M1-F-PQC-ML-KEM-768-p-0058": [
+        {
+          "file": "M1-F-PQC-ML-KEM-768-p-0058/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M2-F-PQC-ML-KEM-768-p-0059": [
+        {
+          "file": "M2-F-PQC-ML-KEM-768-p-0059/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M3-F-PQC-ML-KEM-768-p-0060": [
+        {
+          "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M4-F-PQC-ML-KEM-768-p-0061": [],
+      "N0-n-0062": [
+        {
+          "file": "N0-n-0062/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N0-n-0063": [
+        {
+          "file": "N0-n-0063/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0064": [
+        {
+          "file": "N1-n-0064/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0065": [
+        {
+          "file": "N1-n-0065/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N2-n-0066": [],
+      "N2-n-0067": [],
+      "N3-n-0068": [],
+      "N3-n-0069": [],
+      "N4-n-0070": [],
+      "N4-n-0071": [],
+      "N5-n-0072": [],
+      "N5-n-0073": [],
+      "N5-n-0074": [],
+      "N5-n-0075": [],
+      "N5-n-0076": [],
+      "N5-n-0077": [],
+      "M6-F-RSA-2048-p-0078": [
+        {
+          "file": "M6-F-RSA-2048-p-0078/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-RSA-3072-p-0079": [
+        {
+          "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-ECC-P-256-p-0080": [
+        {
+          "file": "M6-F-ECC-P-256-p-0080/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M6-F-KEX-X25519-p-0081": [
+        {
+          "file": "M6-F-KEX-X25519-p-0081/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M6-F-HASH-SHA-256-p-0082": [
+        {
+          "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M6-F-HASH-SHA-512-p-0083": [
+        {
+          "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M6-F-HASH-DEP-SHA-1-p-0084": [
+        {
+          "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M6-F-HASH-DEP-MD5-p-0085": [
+        {
+          "file": "M6-F-HASH-DEP-MD5-p-0085/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M6-F-SYM-AES-128-p-0086": [
+        {
+          "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M6-F-SYM-AES-256-p-0087": [
+        {
+          "file": "M6-F-SYM-AES-256-p-0087/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M6-F-SYM-ChaCha20-p-0088": [
+        {
+          "file": "M6-F-SYM-ChaCha20-p-0088/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M6-F-PQC-ML-KEM-768-p-0089": [
+        {
+          "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M7-F-HASH-SHA-256-p-0090": [
+        {
+          "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M7-F-HASH-SHA-512-p-0091": [
+        {
+          "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M7-F-HASH-DEP-SHA-1-p-0092": [
+        {
+          "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M7-F-HASH-DEP-MD5-p-0093": [
+        {
+          "file": "M7-F-HASH-DEP-MD5-p-0093/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M7-F-SYM-AES-128-p-0094": [
+        {
+          "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M7-F-SYM-AES-256-p-0095": [
+        {
+          "file": "M7-F-SYM-AES-256-p-0095/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M7-F-SYM-ChaCha20-p-0096": [
+        {
+          "file": "M7-F-SYM-ChaCha20-p-0096/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M7-F-PQC-ML-KEM-768-p-0097": [
+        {
+          "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M8-F-RSA-2048-p-0098": [
+        {
+          "file": "M8-F-RSA-2048-p-0098/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-RSA-3072-p-0099": [
+        {
+          "file": "M8-F-RSA-3072-p-0099/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-ECC-P-256-p-0100": [
+        {
+          "file": "M8-F-ECC-P-256-p-0100/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M8-F-KEX-X25519-p-0101": [
+        {
+          "file": "M8-F-KEX-X25519-p-0101/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M8-F-HASH-SHA-256-p-0102": [
+        {
+          "file": "M8-F-HASH-SHA-256-p-0102/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M8-F-HASH-SHA-512-p-0103": [
+        {
+          "file": "M8-F-HASH-SHA-512-p-0103/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M8-F-HASH-DEP-SHA-1-p-0104": [
+        {
+          "file": "M8-F-HASH-DEP-SHA-1-p-0104/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M8-F-HASH-DEP-MD5-p-0105": [
+        {
+          "file": "M8-F-HASH-DEP-MD5-p-0105/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M8-F-SYM-AES-128-p-0106": [
+        {
+          "file": "M8-F-SYM-AES-128-p-0106/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M8-F-SYM-AES-256-p-0107": [
+        {
+          "file": "M8-F-SYM-AES-256-p-0107/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M8-F-SYM-ChaCha20-p-0108": [
+        {
+          "file": "M8-F-SYM-ChaCha20-p-0108/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M8-F-PQC-ML-KEM-768-p-0109": [
+        {
+          "file": "M8-F-PQC-ML-KEM-768-p-0109/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M9-F-HASH-SHA-256-p-0110": [
+        {
+          "file": "M9-F-HASH-SHA-256-p-0110/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M9-F-HASH-SHA-512-p-0111": [
+        {
+          "file": "M9-F-HASH-SHA-512-p-0111/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M9-F-HASH-DEP-SHA-1-p-0112": [
+        {
+          "file": "M9-F-HASH-DEP-SHA-1-p-0112/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M9-F-HASH-DEP-MD5-p-0113": [
+        {
+          "file": "M9-F-HASH-DEP-MD5-p-0113/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M9-F-SYM-AES-128-p-0114": [
+        {
+          "file": "M9-F-SYM-AES-128-p-0114/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M9-F-SYM-AES-256-p-0115": [
+        {
+          "file": "M9-F-SYM-AES-256-p-0115/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M9-F-SYM-ChaCha20-p-0116": [
+        {
+          "file": "M9-F-SYM-ChaCha20-p-0116/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M9-F-PQC-ML-KEM-768-p-0117": [
+        {
+          "file": "M9-F-PQC-ML-KEM-768-p-0117/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M10-F-RSA-2048-p-0118": [
+        {
+          "file": "M10-F-RSA-2048-p-0118/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-RSA-3072-p-0119": [
+        {
+          "file": "M10-F-RSA-3072-p-0119/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-ECC-P-256-p-0120": [
+        {
+          "file": "M10-F-ECC-P-256-p-0120/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M10-F-KEX-X25519-p-0121": [
+        {
+          "file": "M10-F-KEX-X25519-p-0121/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M10-F-HASH-SHA-256-p-0122": [
+        {
+          "file": "M10-F-HASH-SHA-256-p-0122/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M10-F-HASH-SHA-512-p-0123": [
+        {
+          "file": "M10-F-HASH-SHA-512-p-0123/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M10-F-HASH-DEP-SHA-1-p-0124": [
+        {
+          "file": "M10-F-HASH-DEP-SHA-1-p-0124/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M10-F-HASH-DEP-MD5-p-0125": [
+        {
+          "file": "M10-F-HASH-DEP-MD5-p-0125/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M10-F-SYM-AES-128-p-0126": [
+        {
+          "file": "M10-F-SYM-AES-128-p-0126/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M10-F-SYM-AES-256-p-0127": [
+        {
+          "file": "M10-F-SYM-AES-256-p-0127/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M10-F-SYM-ChaCha20-p-0128": [
+        {
+          "file": "M10-F-SYM-ChaCha20-p-0128/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M10-F-PQC-ML-KEM-768-p-0129": [
+        {
+          "file": "M10-F-PQC-ML-KEM-768-p-0129/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N6-n-0130": [],
+      "N6-n-0131": []
+    }
+  },
+  "dual cfg-union descend": {
+    "flags": [
+      "--ablation",
+      "dual",
+      "--cfg-union",
+      "--descend"
+    ],
+    "findings": {
+      "M0-F-RSA-2048-p-0000": [
+        {
+          "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-2048-p-0001": [
+        {
+          "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-2048-p-0002": [
+        {
+          "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-2048-p-0003": [
+        {
+          "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-2048-p-0004": [
+        {
+          "file": "M4-F-RSA-2048-p-0004/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M5-F-RSA-2048-p-0005": [
+        {
+          "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-RSA-3072-p-0006": [
+        {
+          "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-3072-p-0007": [
+        {
+          "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-3072-p-0008": [
+        {
+          "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-3072-p-0009": [
+        {
+          "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-3072-p-0010": [
+        {
+          "file": "M4-F-RSA-3072-p-0010/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M5-F-RSA-3072-p-0011": [
+        {
+          "file": "M5-F-RSA-3072-p-0011/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-ECC-P-256-p-0012": [
+        {
+          "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M1-F-ECC-P-256-p-0013": [
+        {
+          "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M2-F-ECC-P-256-p-0014": [
+        {
+          "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M3-F-ECC-P-256-p-0015": [
+        {
+          "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M4-F-ECC-P-256-p-0016": [
+        {
+          "file": "M4-F-ECC-P-256-p-0016/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M0-F-KEX-X25519-p-0017": [
+        {
+          "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M1-F-KEX-X25519-p-0018": [
+        {
+          "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M2-F-KEX-X25519-p-0019": [
+        {
+          "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M3-F-KEX-X25519-p-0020": [
+        {
+          "file": "M3-F-KEX-X25519-p-0020/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M4-F-KEX-X25519-p-0021": [
+        {
+          "file": "M4-F-KEX-X25519-p-0021/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M0-F-HASH-SHA-256-p-0022": [
+        {
+          "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M1-F-HASH-SHA-256-p-0023": [
+        {
+          "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M2-F-HASH-SHA-256-p-0024": [
+        {
+          "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M3-F-HASH-SHA-256-p-0025": [
+        {
+          "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M4-F-HASH-SHA-256-p-0026": [
+        {
+          "file": "M4-F-HASH-SHA-256-p-0026/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M0-F-HASH-SHA-512-p-0027": [
+        {
+          "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M1-F-HASH-SHA-512-p-0028": [
+        {
+          "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M2-F-HASH-SHA-512-p-0029": [
+        {
+          "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M3-F-HASH-SHA-512-p-0030": [
+        {
+          "file": "M3-F-HASH-SHA-512-p-0030/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M4-F-HASH-SHA-512-p-0031": [
+        {
+          "file": "M4-F-HASH-SHA-512-p-0031/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M0-F-HASH-DEP-SHA-1-p-0032": [
+        {
+          "file": "M0-F-HASH-DEP-SHA-1-p-0032/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M1-F-HASH-DEP-SHA-1-p-0033": [
+        {
+          "file": "M1-F-HASH-DEP-SHA-1-p-0033/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M2-F-HASH-DEP-SHA-1-p-0034": [
+        {
+          "file": "M2-F-HASH-DEP-SHA-1-p-0034/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M3-F-HASH-DEP-SHA-1-p-0035": [
+        {
+          "file": "M3-F-HASH-DEP-SHA-1-p-0035/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M4-F-HASH-DEP-SHA-1-p-0036": [
+        {
+          "file": "M4-F-HASH-DEP-SHA-1-p-0036/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M0-F-HASH-DEP-MD5-p-0037": [
+        {
+          "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M1-F-HASH-DEP-MD5-p-0038": [
+        {
+          "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M2-F-HASH-DEP-MD5-p-0039": [
+        {
+          "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M3-F-HASH-DEP-MD5-p-0040": [
+        {
+          "file": "M3-F-HASH-DEP-MD5-p-0040/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M4-F-HASH-DEP-MD5-p-0041": [
+        {
+          "file": "M4-F-HASH-DEP-MD5-p-0041/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M0-F-SYM-AES-128-p-0042": [
+        {
+          "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M1-F-SYM-AES-128-p-0043": [
+        {
+          "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M2-F-SYM-AES-128-p-0044": [
+        {
+          "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+          "line": 13,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M3-F-SYM-AES-128-p-0045": [
+        {
+          "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M4-F-SYM-AES-128-p-0046": [
+        {
+          "file": "M4-F-SYM-AES-128-p-0046/src/lib.rs",
+          "line": 12,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M0-F-SYM-AES-256-p-0047": [
+        {
+          "file": "M0-F-SYM-AES-256-p-0047/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M1-F-SYM-AES-256-p-0048": [
+        {
+          "file": "M1-F-SYM-AES-256-p-0048/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M2-F-SYM-AES-256-p-0049": [
+        {
+          "file": "M2-F-SYM-AES-256-p-0049/src/lib.rs",
+          "line": 13,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M3-F-SYM-AES-256-p-0050": [
+        {
+          "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M4-F-SYM-AES-256-p-0051": [
+        {
+          "file": "M4-F-SYM-AES-256-p-0051/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M0-F-SYM-ChaCha20-p-0052": [
+        {
+          "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M1-F-SYM-ChaCha20-p-0053": [
+        {
+          "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M2-F-SYM-ChaCha20-p-0054": [
+        {
+          "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M3-F-SYM-ChaCha20-p-0055": [
+        {
+          "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M4-F-SYM-ChaCha20-p-0056": [
+        {
+          "file": "M4-F-SYM-ChaCha20-p-0056/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M0-F-PQC-ML-KEM-768-p-0057": [
+        {
+          "file": "M0-F-PQC-ML-KEM-768-p-0057/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M1-F-PQC-ML-KEM-768-p-0058": [
+        {
+          "file": "M1-F-PQC-ML-KEM-768-p-0058/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M2-F-PQC-ML-KEM-768-p-0059": [
+        {
+          "file": "M2-F-PQC-ML-KEM-768-p-0059/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M3-F-PQC-ML-KEM-768-p-0060": [
+        {
+          "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M4-F-PQC-ML-KEM-768-p-0061": [
+        {
+          "file": "M4-F-PQC-ML-KEM-768-p-0061/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N0-n-0062": [
+        {
+          "file": "N0-n-0062/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N0-n-0063": [
+        {
+          "file": "N0-n-0063/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0064": [
+        {
+          "file": "N1-n-0064/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0065": [
+        {
+          "file": "N1-n-0065/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N2-n-0066": [],
+      "N2-n-0067": [],
+      "N3-n-0068": [],
+      "N3-n-0069": [],
+      "N4-n-0070": [],
+      "N4-n-0071": [],
+      "N5-n-0072": [],
+      "N5-n-0073": [],
+      "N5-n-0074": [],
+      "N5-n-0075": [],
+      "N5-n-0076": [],
+      "N5-n-0077": [],
+      "M6-F-RSA-2048-p-0078": [
+        {
+          "file": "M6-F-RSA-2048-p-0078/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-RSA-3072-p-0079": [
+        {
+          "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-ECC-P-256-p-0080": [
+        {
+          "file": "M6-F-ECC-P-256-p-0080/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M6-F-KEX-X25519-p-0081": [
+        {
+          "file": "M6-F-KEX-X25519-p-0081/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M6-F-HASH-SHA-256-p-0082": [
+        {
+          "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M6-F-HASH-SHA-512-p-0083": [
+        {
+          "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M6-F-HASH-DEP-SHA-1-p-0084": [
+        {
+          "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M6-F-HASH-DEP-MD5-p-0085": [
+        {
+          "file": "M6-F-HASH-DEP-MD5-p-0085/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M6-F-SYM-AES-128-p-0086": [
+        {
+          "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M6-F-SYM-AES-256-p-0087": [
+        {
+          "file": "M6-F-SYM-AES-256-p-0087/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M6-F-SYM-ChaCha20-p-0088": [
+        {
+          "file": "M6-F-SYM-ChaCha20-p-0088/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M6-F-PQC-ML-KEM-768-p-0089": [
+        {
+          "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M7-F-HASH-SHA-256-p-0090": [
+        {
+          "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M7-F-HASH-SHA-512-p-0091": [
+        {
+          "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M7-F-HASH-DEP-SHA-1-p-0092": [
+        {
+          "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M7-F-HASH-DEP-MD5-p-0093": [
+        {
+          "file": "M7-F-HASH-DEP-MD5-p-0093/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M7-F-SYM-AES-128-p-0094": [
+        {
+          "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M7-F-SYM-AES-256-p-0095": [
+        {
+          "file": "M7-F-SYM-AES-256-p-0095/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M7-F-SYM-ChaCha20-p-0096": [
+        {
+          "file": "M7-F-SYM-ChaCha20-p-0096/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M7-F-PQC-ML-KEM-768-p-0097": [
+        {
+          "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M8-F-RSA-2048-p-0098": [
+        {
+          "file": "M8-F-RSA-2048-p-0098/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-RSA-3072-p-0099": [
+        {
+          "file": "M8-F-RSA-3072-p-0099/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-ECC-P-256-p-0100": [
+        {
+          "file": "M8-F-ECC-P-256-p-0100/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M8-F-KEX-X25519-p-0101": [
+        {
+          "file": "M8-F-KEX-X25519-p-0101/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M8-F-HASH-SHA-256-p-0102": [
+        {
+          "file": "M8-F-HASH-SHA-256-p-0102/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M8-F-HASH-SHA-512-p-0103": [
+        {
+          "file": "M8-F-HASH-SHA-512-p-0103/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M8-F-HASH-DEP-SHA-1-p-0104": [
+        {
+          "file": "M8-F-HASH-DEP-SHA-1-p-0104/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M8-F-HASH-DEP-MD5-p-0105": [
+        {
+          "file": "M8-F-HASH-DEP-MD5-p-0105/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M8-F-SYM-AES-128-p-0106": [
+        {
+          "file": "M8-F-SYM-AES-128-p-0106/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M8-F-SYM-AES-256-p-0107": [
+        {
+          "file": "M8-F-SYM-AES-256-p-0107/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M8-F-SYM-ChaCha20-p-0108": [
+        {
+          "file": "M8-F-SYM-ChaCha20-p-0108/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M8-F-PQC-ML-KEM-768-p-0109": [
+        {
+          "file": "M8-F-PQC-ML-KEM-768-p-0109/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M9-F-HASH-SHA-256-p-0110": [
+        {
+          "file": "M9-F-HASH-SHA-256-p-0110/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M9-F-HASH-SHA-512-p-0111": [
+        {
+          "file": "M9-F-HASH-SHA-512-p-0111/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M9-F-HASH-DEP-SHA-1-p-0112": [
+        {
+          "file": "M9-F-HASH-DEP-SHA-1-p-0112/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M9-F-HASH-DEP-MD5-p-0113": [
+        {
+          "file": "M9-F-HASH-DEP-MD5-p-0113/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M9-F-SYM-AES-128-p-0114": [
+        {
+          "file": "M9-F-SYM-AES-128-p-0114/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M9-F-SYM-AES-256-p-0115": [
+        {
+          "file": "M9-F-SYM-AES-256-p-0115/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M9-F-SYM-ChaCha20-p-0116": [
+        {
+          "file": "M9-F-SYM-ChaCha20-p-0116/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M9-F-PQC-ML-KEM-768-p-0117": [
+        {
+          "file": "M9-F-PQC-ML-KEM-768-p-0117/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M10-F-RSA-2048-p-0118": [
+        {
+          "file": "M10-F-RSA-2048-p-0118/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-RSA-3072-p-0119": [
+        {
+          "file": "M10-F-RSA-3072-p-0119/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-ECC-P-256-p-0120": [
+        {
+          "file": "M10-F-ECC-P-256-p-0120/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M10-F-KEX-X25519-p-0121": [
+        {
+          "file": "M10-F-KEX-X25519-p-0121/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M10-F-HASH-SHA-256-p-0122": [
+        {
+          "file": "M10-F-HASH-SHA-256-p-0122/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M10-F-HASH-SHA-512-p-0123": [
+        {
+          "file": "M10-F-HASH-SHA-512-p-0123/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M10-F-HASH-DEP-SHA-1-p-0124": [
+        {
+          "file": "M10-F-HASH-DEP-SHA-1-p-0124/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M10-F-HASH-DEP-MD5-p-0125": [
+        {
+          "file": "M10-F-HASH-DEP-MD5-p-0125/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M10-F-SYM-AES-128-p-0126": [
+        {
+          "file": "M10-F-SYM-AES-128-p-0126/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M10-F-SYM-AES-256-p-0127": [
+        {
+          "file": "M10-F-SYM-AES-256-p-0127/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M10-F-SYM-ChaCha20-p-0128": [
+        {
+          "file": "M10-F-SYM-ChaCha20-p-0128/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M10-F-PQC-ML-KEM-768-p-0129": [
+        {
+          "file": "M10-F-PQC-ML-KEM-768-p-0129/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N6-n-0130": [],
+      "N6-n-0131": []
+    }
+  },
+  "mir-only cfg-union descend": {
+    "flags": [
+      "--ablation",
+      "mir-only",
+      "--cfg-union",
+      "--descend"
+    ],
+    "findings": {
+      "M0-F-RSA-2048-p-0000": [
+        {
+          "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-2048-p-0001": [
+        {
+          "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-2048-p-0002": [
+        {
+          "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-2048-p-0003": [
+        {
+          "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-2048-p-0004": [
+        {
+          "file": "M4-F-RSA-2048-p-0004/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M5-F-RSA-2048-p-0005": [
+        {
+          "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-RSA-3072-p-0006": [
+        {
+          "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-3072-p-0007": [
+        {
+          "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-3072-p-0008": [
+        {
+          "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-3072-p-0009": [
+        {
+          "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-3072-p-0010": [
+        {
+          "file": "M4-F-RSA-3072-p-0010/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M5-F-RSA-3072-p-0011": [
+        {
+          "file": "M5-F-RSA-3072-p-0011/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "openssl_sys::RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-ECC-P-256-p-0012": [
+        {
+          "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M1-F-ECC-P-256-p-0013": [
+        {
+          "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M2-F-ECC-P-256-p-0014": [
+        {
+          "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M3-F-ECC-P-256-p-0015": [
+        {
+          "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M4-F-ECC-P-256-p-0016": [
+        {
+          "file": "M4-F-ECC-P-256-p-0016/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M0-F-KEX-X25519-p-0017": [
+        {
+          "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M1-F-KEX-X25519-p-0018": [
+        {
+          "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M2-F-KEX-X25519-p-0019": [
+        {
+          "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M3-F-KEX-X25519-p-0020": [
+        {
+          "file": "M3-F-KEX-X25519-p-0020/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M4-F-KEX-X25519-p-0021": [
+        {
+          "file": "M4-F-KEX-X25519-p-0021/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M0-F-HASH-SHA-256-p-0022": [
+        {
+          "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M1-F-HASH-SHA-256-p-0023": [
+        {
+          "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M2-F-HASH-SHA-256-p-0024": [
+        {
+          "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M3-F-HASH-SHA-256-p-0025": [
+        {
+          "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M4-F-HASH-SHA-256-p-0026": [
+        {
+          "file": "M4-F-HASH-SHA-256-p-0026/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M0-F-HASH-SHA-512-p-0027": [
+        {
+          "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M1-F-HASH-SHA-512-p-0028": [
+        {
+          "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M2-F-HASH-SHA-512-p-0029": [
+        {
+          "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M3-F-HASH-SHA-512-p-0030": [
+        {
+          "file": "M3-F-HASH-SHA-512-p-0030/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M4-F-HASH-SHA-512-p-0031": [
+        {
+          "file": "M4-F-HASH-SHA-512-p-0031/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M0-F-HASH-DEP-SHA-1-p-0032": [
+        {
+          "file": "M0-F-HASH-DEP-SHA-1-p-0032/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M1-F-HASH-DEP-SHA-1-p-0033": [
+        {
+          "file": "M1-F-HASH-DEP-SHA-1-p-0033/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M2-F-HASH-DEP-SHA-1-p-0034": [
+        {
+          "file": "M2-F-HASH-DEP-SHA-1-p-0034/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M3-F-HASH-DEP-SHA-1-p-0035": [
+        {
+          "file": "M3-F-HASH-DEP-SHA-1-p-0035/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M4-F-HASH-DEP-SHA-1-p-0036": [
+        {
+          "file": "M4-F-HASH-DEP-SHA-1-p-0036/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M0-F-HASH-DEP-MD5-p-0037": [
+        {
+          "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M1-F-HASH-DEP-MD5-p-0038": [
+        {
+          "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M2-F-HASH-DEP-MD5-p-0039": [
+        {
+          "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M3-F-HASH-DEP-MD5-p-0040": [
+        {
+          "file": "M3-F-HASH-DEP-MD5-p-0040/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M4-F-HASH-DEP-MD5-p-0041": [
+        {
+          "file": "M4-F-HASH-DEP-MD5-p-0041/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M0-F-SYM-AES-128-p-0042": [
+        {
+          "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M1-F-SYM-AES-128-p-0043": [
+        {
+          "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M2-F-SYM-AES-128-p-0044": [
+        {
+          "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+          "line": 13,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M3-F-SYM-AES-128-p-0045": [
+        {
+          "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M4-F-SYM-AES-128-p-0046": [
+        {
+          "file": "M4-F-SYM-AES-128-p-0046/src/lib.rs",
+          "line": 12,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M0-F-SYM-AES-256-p-0047": [
+        {
+          "file": "M0-F-SYM-AES-256-p-0047/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M1-F-SYM-AES-256-p-0048": [
+        {
+          "file": "M1-F-SYM-AES-256-p-0048/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M2-F-SYM-AES-256-p-0049": [
+        {
+          "file": "M2-F-SYM-AES-256-p-0049/src/lib.rs",
+          "line": 13,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M3-F-SYM-AES-256-p-0050": [
+        {
+          "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M4-F-SYM-AES-256-p-0051": [
+        {
+          "file": "M4-F-SYM-AES-256-p-0051/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M0-F-SYM-ChaCha20-p-0052": [
+        {
+          "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M1-F-SYM-ChaCha20-p-0053": [
+        {
+          "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M2-F-SYM-ChaCha20-p-0054": [
+        {
+          "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M3-F-SYM-ChaCha20-p-0055": [
+        {
+          "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M4-F-SYM-ChaCha20-p-0056": [
+        {
+          "file": "M4-F-SYM-ChaCha20-p-0056/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M0-F-PQC-ML-KEM-768-p-0057": [
+        {
+          "file": "M0-F-PQC-ML-KEM-768-p-0057/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M1-F-PQC-ML-KEM-768-p-0058": [
+        {
+          "file": "M1-F-PQC-ML-KEM-768-p-0058/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M2-F-PQC-ML-KEM-768-p-0059": [
+        {
+          "file": "M2-F-PQC-ML-KEM-768-p-0059/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M3-F-PQC-ML-KEM-768-p-0060": [
+        {
+          "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M4-F-PQC-ML-KEM-768-p-0061": [
+        {
+          "file": "M4-F-PQC-ML-KEM-768-p-0061/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N0-n-0062": [
+        {
+          "file": "N0-n-0062/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N0-n-0063": [
+        {
+          "file": "N0-n-0063/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0064": [
+        {
+          "file": "N1-n-0064/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0065": [
+        {
+          "file": "N1-n-0065/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N2-n-0066": [],
+      "N2-n-0067": [],
+      "N3-n-0068": [],
+      "N3-n-0069": [],
+      "N4-n-0070": [],
+      "N4-n-0071": [],
+      "N5-n-0072": [],
+      "N5-n-0073": [],
+      "N5-n-0074": [],
+      "N5-n-0075": [],
+      "N5-n-0076": [],
+      "N5-n-0077": [],
+      "M6-F-RSA-2048-p-0078": [
+        {
+          "file": "M6-F-RSA-2048-p-0078/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-RSA-3072-p-0079": [
+        {
+          "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "rsa::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-ECC-P-256-p-0080": [
+        {
+          "file": "M6-F-ECC-P-256-p-0080/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M6-F-KEX-X25519-p-0081": [
+        {
+          "file": "M6-F-KEX-X25519-p-0081/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M6-F-HASH-SHA-256-p-0082": [
+        {
+          "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M6-F-HASH-SHA-512-p-0083": [
+        {
+          "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M6-F-HASH-DEP-SHA-1-p-0084": [
+        {
+          "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M6-F-HASH-DEP-MD5-p-0085": [
+        {
+          "file": "M6-F-HASH-DEP-MD5-p-0085/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M6-F-SYM-AES-128-p-0086": [
+        {
+          "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M6-F-SYM-AES-256-p-0087": [
+        {
+          "file": "M6-F-SYM-AES-256-p-0087/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M6-F-SYM-ChaCha20-p-0088": [
+        {
+          "file": "M6-F-SYM-ChaCha20-p-0088/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M6-F-PQC-ML-KEM-768-p-0089": [
+        {
+          "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M7-F-HASH-SHA-256-p-0090": [
+        {
+          "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "sha2::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-HASH-SHA-512-p-0091": [
+        {
+          "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "sha2::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-HASH-DEP-SHA-1-p-0092": [
+        {
+          "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "sha1::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-HASH-DEP-MD5-p-0093": [
+        {
+          "file": "M7-F-HASH-DEP-MD5-p-0093/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "md5::Digest::digest",
+          "rule": "R-HASH-999"
+        }
+      ],
+      "M7-F-SYM-AES-128-p-0094": [
+        {
+          "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+          "line": 9,
+          "status": "unknown",
+          "name": "aes::cipher::KeyInit::new",
+          "rule": "R-SYM-999"
+        }
+      ],
+      "M7-F-SYM-AES-256-p-0095": [
+        {
+          "file": "M7-F-SYM-AES-256-p-0095/src/lib.rs",
+          "line": 9,
+          "status": "unknown",
+          "name": "aes::cipher::KeyInit::new",
+          "rule": "R-SYM-999"
+        }
+      ],
+      "M7-F-SYM-ChaCha20-p-0096": [
+        {
+          "file": "M7-F-SYM-ChaCha20-p-0096/src/lib.rs",
+          "line": 8,
+          "status": "unknown",
+          "name": "chacha20poly1305::KeyInit::new",
+          "rule": "R-SYM-999"
+        }
+      ],
+      "M7-F-PQC-ML-KEM-768-p-0097": [
+        {
+          "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M8-F-RSA-2048-p-0098": [
+        {
+          "file": "M8-F-RSA-2048-p-0098/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-RSA-3072-p-0099": [
+        {
+          "file": "M8-F-RSA-3072-p-0099/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-ECC-P-256-p-0100": [
+        {
+          "file": "M8-F-ECC-P-256-p-0100/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M8-F-KEX-X25519-p-0101": [
+        {
+          "file": "M8-F-KEX-X25519-p-0101/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M8-F-HASH-SHA-256-p-0102": [
+        {
+          "file": "M8-F-HASH-SHA-256-p-0102/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M8-F-HASH-SHA-512-p-0103": [
+        {
+          "file": "M8-F-HASH-SHA-512-p-0103/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M8-F-HASH-DEP-SHA-1-p-0104": [
+        {
+          "file": "M8-F-HASH-DEP-SHA-1-p-0104/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M8-F-HASH-DEP-MD5-p-0105": [
+        {
+          "file": "M8-F-HASH-DEP-MD5-p-0105/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M8-F-SYM-AES-128-p-0106": [
+        {
+          "file": "M8-F-SYM-AES-128-p-0106/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M8-F-SYM-AES-256-p-0107": [
+        {
+          "file": "M8-F-SYM-AES-256-p-0107/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M8-F-SYM-ChaCha20-p-0108": [
+        {
+          "file": "M8-F-SYM-ChaCha20-p-0108/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M8-F-PQC-ML-KEM-768-p-0109": [
+        {
+          "file": "M8-F-PQC-ML-KEM-768-p-0109/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M9-F-HASH-SHA-256-p-0110": [
+        {
+          "file": "M9-F-HASH-SHA-256-p-0110/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M9-F-HASH-SHA-512-p-0111": [
+        {
+          "file": "M9-F-HASH-SHA-512-p-0111/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M9-F-HASH-DEP-SHA-1-p-0112": [
+        {
+          "file": "M9-F-HASH-DEP-SHA-1-p-0112/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M9-F-HASH-DEP-MD5-p-0113": [
+        {
+          "file": "M9-F-HASH-DEP-MD5-p-0113/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M9-F-SYM-AES-128-p-0114": [
+        {
+          "file": "M9-F-SYM-AES-128-p-0114/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "aes::Aes128",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M9-F-SYM-AES-256-p-0115": [
+        {
+          "file": "M9-F-SYM-AES-256-p-0115/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "aes::Aes256",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M9-F-SYM-ChaCha20-p-0116": [
+        {
+          "file": "M9-F-SYM-ChaCha20-p-0116/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M9-F-PQC-ML-KEM-768-p-0117": [
+        {
+          "file": "M9-F-PQC-ML-KEM-768-p-0117/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M10-F-RSA-2048-p-0118": [
+        {
+          "file": "M10-F-RSA-2048-p-0118/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-RSA-3072-p-0119": [
+        {
+          "file": "M10-F-RSA-3072-p-0119/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "rsa::key::RsaPrivateKey::new",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-ECC-P-256-p-0120": [
+        {
+          "file": "M10-F-ECC-P-256-p-0120/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "ecdsa::signing::SigningKey::<C>::random",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M10-F-KEX-X25519-p-0121": [
+        {
+          "file": "M10-F-KEX-X25519-p-0121/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "x25519_dalek::x25519::StaticSecret::random_from_rng",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M10-F-HASH-SHA-256-p-0122": [
+        {
+          "file": "M10-F-HASH-SHA-256-p-0122/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M10-F-HASH-SHA-512-p-0123": [
+        {
+          "file": "M10-F-HASH-SHA-512-p-0123/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M10-F-HASH-DEP-SHA-1-p-0124": [
+        {
+          "file": "M10-F-HASH-DEP-SHA-1-p-0124/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M10-F-HASH-DEP-MD5-p-0125": [
+        {
+          "file": "M10-F-HASH-DEP-MD5-p-0125/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M10-F-SYM-AES-128-p-0126": [
+        {
+          "file": "M10-F-SYM-AES-128-p-0126/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M10-F-SYM-AES-256-p-0127": [
+        {
+          "file": "M10-F-SYM-AES-256-p-0127/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M10-F-SYM-ChaCha20-p-0128": [
+        {
+          "file": "M10-F-SYM-ChaCha20-p-0128/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M10-F-PQC-ML-KEM-768-p-0129": [
+        {
+          "file": "M10-F-PQC-ML-KEM-768-p-0129/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "ml_kem::KemCore::generate",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N6-n-0130": [],
+      "N6-n-0131": []
+    }
+  },
+  "llvm-only cfg-union descend": {
+    "flags": [
+      "--ablation",
+      "llvm-only",
+      "--cfg-union",
+      "--descend"
+    ],
+    "findings": {
+      "M0-F-RSA-2048-p-0000": [
+        {
+          "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-2048-p-0001": [
+        {
+          "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-2048-p-0002": [
+        {
+          "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-2048-p-0003": [
+        {
+          "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-2048-p-0004": [
+        {
+          "file": "M4-F-RSA-2048-p-0004/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M5-F-RSA-2048-p-0005": [
+        {
+          "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-RSA-3072-p-0006": [
+        {
+          "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M1-F-RSA-3072-p-0007": [
+        {
+          "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M2-F-RSA-3072-p-0008": [
+        {
+          "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M3-F-RSA-3072-p-0009": [
+        {
+          "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M4-F-RSA-3072-p-0010": [
+        {
+          "file": "M4-F-RSA-3072-p-0010/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M5-F-RSA-3072-p-0011": [
+        {
+          "file": "M5-F-RSA-3072-p-0011/src/lib.rs",
+          "line": 15,
+          "status": "quantum-vulnerable",
+          "name": "RSA_sign",
+          "rule": "R-RSA-002"
+        }
+      ],
+      "M0-F-ECC-P-256-p-0012": [
+        {
+          "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M1-F-ECC-P-256-p-0013": [
+        {
+          "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M2-F-ECC-P-256-p-0014": [
+        {
+          "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M3-F-ECC-P-256-p-0015": [
+        {
+          "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M4-F-ECC-P-256-p-0016": [
+        {
+          "file": "M4-F-ECC-P-256-p-0016/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M0-F-KEX-X25519-p-0017": [
+        {
+          "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M1-F-KEX-X25519-p-0018": [
+        {
+          "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M2-F-KEX-X25519-p-0019": [
+        {
+          "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+          "line": 12,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M3-F-KEX-X25519-p-0020": [
+        {
+          "file": "M3-F-KEX-X25519-p-0020/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M4-F-KEX-X25519-p-0021": [
+        {
+          "file": "M4-F-KEX-X25519-p-0021/src/lib.rs",
+          "line": 10,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M0-F-HASH-SHA-256-p-0022": [
+        {
+          "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M1-F-HASH-SHA-256-p-0023": [
+        {
+          "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M2-F-HASH-SHA-256-p-0024": [
+        {
+          "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M3-F-HASH-SHA-256-p-0025": [
+        {
+          "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M4-F-HASH-SHA-256-p-0026": [
+        {
+          "file": "M4-F-HASH-SHA-256-p-0026/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M0-F-HASH-SHA-512-p-0027": [
+        {
+          "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M1-F-HASH-SHA-512-p-0028": [
+        {
+          "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M2-F-HASH-SHA-512-p-0029": [
+        {
+          "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M3-F-HASH-SHA-512-p-0030": [
+        {
+          "file": "M3-F-HASH-SHA-512-p-0030/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M4-F-HASH-SHA-512-p-0031": [
+        {
+          "file": "M4-F-HASH-SHA-512-p-0031/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M0-F-HASH-DEP-SHA-1-p-0032": [
+        {
+          "file": "M0-F-HASH-DEP-SHA-1-p-0032/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M1-F-HASH-DEP-SHA-1-p-0033": [
+        {
+          "file": "M1-F-HASH-DEP-SHA-1-p-0033/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M2-F-HASH-DEP-SHA-1-p-0034": [
+        {
+          "file": "M2-F-HASH-DEP-SHA-1-p-0034/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M3-F-HASH-DEP-SHA-1-p-0035": [
+        {
+          "file": "M3-F-HASH-DEP-SHA-1-p-0035/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M4-F-HASH-DEP-SHA-1-p-0036": [
+        {
+          "file": "M4-F-HASH-DEP-SHA-1-p-0036/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M0-F-HASH-DEP-MD5-p-0037": [
+        {
+          "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M1-F-HASH-DEP-MD5-p-0038": [
+        {
+          "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M2-F-HASH-DEP-MD5-p-0039": [
+        {
+          "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M3-F-HASH-DEP-MD5-p-0040": [
+        {
+          "file": "M3-F-HASH-DEP-MD5-p-0040/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M4-F-HASH-DEP-MD5-p-0041": [
+        {
+          "file": "M4-F-HASH-DEP-MD5-p-0041/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M0-F-SYM-AES-128-p-0042": [
+        {
+          "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M1-F-SYM-AES-128-p-0043": [
+        {
+          "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M2-F-SYM-AES-128-p-0044": [
+        {
+          "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+          "line": 13,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M3-F-SYM-AES-128-p-0045": [
+        {
+          "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+          "line": 11,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M4-F-SYM-AES-128-p-0046": [
+        {
+          "file": "M4-F-SYM-AES-128-p-0046/src/lib.rs",
+          "line": 12,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M0-F-SYM-AES-256-p-0047": [
+        {
+          "file": "M0-F-SYM-AES-256-p-0047/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M1-F-SYM-AES-256-p-0048": [
+        {
+          "file": "M1-F-SYM-AES-256-p-0048/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M2-F-SYM-AES-256-p-0049": [
+        {
+          "file": "M2-F-SYM-AES-256-p-0049/src/lib.rs",
+          "line": 13,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M3-F-SYM-AES-256-p-0050": [
+        {
+          "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+          "line": 11,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M4-F-SYM-AES-256-p-0051": [
+        {
+          "file": "M4-F-SYM-AES-256-p-0051/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M0-F-SYM-ChaCha20-p-0052": [
+        {
+          "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M1-F-SYM-ChaCha20-p-0053": [
+        {
+          "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M2-F-SYM-ChaCha20-p-0054": [
+        {
+          "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M3-F-SYM-ChaCha20-p-0055": [
+        {
+          "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M4-F-SYM-ChaCha20-p-0056": [
+        {
+          "file": "M4-F-SYM-ChaCha20-p-0056/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M0-F-PQC-ML-KEM-768-p-0057": [
+        {
+          "file": "M0-F-PQC-ML-KEM-768-p-0057/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M1-F-PQC-ML-KEM-768-p-0058": [
+        {
+          "file": "M1-F-PQC-ML-KEM-768-p-0058/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M2-F-PQC-ML-KEM-768-p-0059": [
+        {
+          "file": "M2-F-PQC-ML-KEM-768-p-0059/src/lib.rs",
+          "line": 12,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M3-F-PQC-ML-KEM-768-p-0060": [
+        {
+          "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M4-F-PQC-ML-KEM-768-p-0061": [
+        {
+          "file": "M4-F-PQC-ML-KEM-768-p-0061/src/lib.rs",
+          "line": 10,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N0-n-0062": [
+        {
+          "file": "N0-n-0062/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N0-n-0063": [
+        {
+          "file": "N0-n-0063/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0064": [
+        {
+          "file": "N1-n-0064/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N1-n-0065": [
+        {
+          "file": "N1-n-0065/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "N2-n-0066": [],
+      "N2-n-0067": [],
+      "N3-n-0068": [],
+      "N3-n-0069": [],
+      "N4-n-0070": [],
+      "N4-n-0071": [],
+      "N5-n-0072": [],
+      "N5-n-0073": [],
+      "N5-n-0074": [],
+      "N5-n-0075": [],
+      "N5-n-0076": [],
+      "N5-n-0077": [],
+      "M6-F-RSA-2048-p-0078": [
+        {
+          "file": "M6-F-RSA-2048-p-0078/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-RSA-3072-p-0079": [
+        {
+          "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M6-F-ECC-P-256-p-0080": [
+        {
+          "file": "M6-F-ECC-P-256-p-0080/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M6-F-KEX-X25519-p-0081": [
+        {
+          "file": "M6-F-KEX-X25519-p-0081/src/lib.rs",
+          "line": 8,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M6-F-HASH-SHA-256-p-0082": [
+        {
+          "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M6-F-HASH-SHA-512-p-0083": [
+        {
+          "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M6-F-HASH-DEP-SHA-1-p-0084": [
+        {
+          "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M6-F-HASH-DEP-MD5-p-0085": [
+        {
+          "file": "M6-F-HASH-DEP-MD5-p-0085/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M6-F-SYM-AES-128-p-0086": [
+        {
+          "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M6-F-SYM-AES-256-p-0087": [
+        {
+          "file": "M6-F-SYM-AES-256-p-0087/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M6-F-SYM-ChaCha20-p-0088": [
+        {
+          "file": "M6-F-SYM-ChaCha20-p-0088/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M6-F-PQC-ML-KEM-768-p-0089": [
+        {
+          "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M7-F-HASH-SHA-256-p-0090": [
+        {
+          "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M7-F-HASH-SHA-512-p-0091": [
+        {
+          "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M7-F-HASH-DEP-SHA-1-p-0092": [
+        {
+          "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M7-F-HASH-DEP-MD5-p-0093": [
+        {
+          "file": "M7-F-HASH-DEP-MD5-p-0093/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M7-F-SYM-AES-128-p-0094": [
+        {
+          "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+          "line": 9,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M7-F-SYM-AES-256-p-0095": [
+        {
+          "file": "M7-F-SYM-AES-256-p-0095/src/lib.rs",
+          "line": 9,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M7-F-SYM-ChaCha20-p-0096": [
+        {
+          "file": "M7-F-SYM-ChaCha20-p-0096/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M7-F-PQC-ML-KEM-768-p-0097": [
+        {
+          "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M8-F-RSA-2048-p-0098": [
+        {
+          "file": "M8-F-RSA-2048-p-0098/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-RSA-3072-p-0099": [
+        {
+          "file": "M8-F-RSA-3072-p-0099/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M8-F-ECC-P-256-p-0100": [
+        {
+          "file": "M8-F-ECC-P-256-p-0100/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M8-F-KEX-X25519-p-0101": [
+        {
+          "file": "M8-F-KEX-X25519-p-0101/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M8-F-HASH-SHA-256-p-0102": [
+        {
+          "file": "M8-F-HASH-SHA-256-p-0102/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M8-F-HASH-SHA-512-p-0103": [
+        {
+          "file": "M8-F-HASH-SHA-512-p-0103/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M8-F-HASH-DEP-SHA-1-p-0104": [
+        {
+          "file": "M8-F-HASH-DEP-SHA-1-p-0104/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M8-F-HASH-DEP-MD5-p-0105": [
+        {
+          "file": "M8-F-HASH-DEP-MD5-p-0105/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M8-F-SYM-AES-128-p-0106": [
+        {
+          "file": "M8-F-SYM-AES-128-p-0106/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M8-F-SYM-AES-256-p-0107": [
+        {
+          "file": "M8-F-SYM-AES-256-p-0107/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M8-F-SYM-ChaCha20-p-0108": [
+        {
+          "file": "M8-F-SYM-ChaCha20-p-0108/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M8-F-PQC-ML-KEM-768-p-0109": [
+        {
+          "file": "M8-F-PQC-ML-KEM-768-p-0109/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M9-F-HASH-SHA-256-p-0110": [
+        {
+          "file": "M9-F-HASH-SHA-256-p-0110/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M9-F-HASH-SHA-512-p-0111": [
+        {
+          "file": "M9-F-HASH-SHA-512-p-0111/src/lib.rs",
+          "line": 7,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M9-F-HASH-DEP-SHA-1-p-0112": [
+        {
+          "file": "M9-F-HASH-DEP-SHA-1-p-0112/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M9-F-HASH-DEP-MD5-p-0113": [
+        {
+          "file": "M9-F-HASH-DEP-MD5-p-0113/src/lib.rs",
+          "line": 7,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M9-F-SYM-AES-128-p-0114": [
+        {
+          "file": "M9-F-SYM-AES-128-p-0114/src/lib.rs",
+          "line": 8,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M9-F-SYM-AES-256-p-0115": [
+        {
+          "file": "M9-F-SYM-AES-256-p-0115/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M9-F-SYM-ChaCha20-p-0116": [
+        {
+          "file": "M9-F-SYM-ChaCha20-p-0116/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M9-F-PQC-ML-KEM-768-p-0117": [
+        {
+          "file": "M9-F-PQC-ML-KEM-768-p-0117/src/lib.rs",
+          "line": 8,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "M10-F-RSA-2048-p-0118": [
+        {
+          "file": "M10-F-RSA-2048-p-0118/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-RSA-3072-p-0119": [
+        {
+          "file": "M10-F-RSA-3072-p-0119/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<rsa::key::RsaPrivateKey>::new::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-RSA-001"
+        }
+      ],
+      "M10-F-ECC-P-256-p-0120": [
+        {
+          "file": "M10-F-ECC-P-256-p-0120/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<ecdsa::signing::SigningKey<p256::NistP256>>::random::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-ECDSA-001"
+        }
+      ],
+      "M10-F-KEX-X25519-p-0121": [
+        {
+          "file": "M10-F-KEX-X25519-p-0121/src/lib.rs",
+          "line": 5,
+          "status": "quantum-vulnerable",
+          "name": "<x25519_dalek::x25519::StaticSecret>::random_from_rng::<&mut rand::rngs::thread::ThreadRng>",
+          "rule": "R-X25519-001"
+        }
+      ],
+      "M10-F-HASH-SHA-256-p-0122": [
+        {
+          "file": "M10-F-HASH-SHA-256-p-0122/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha256",
+          "rule": "R-SHA2-001"
+        }
+      ],
+      "M10-F-HASH-SHA-512-p-0123": [
+        {
+          "file": "M10-F-HASH-SHA-512-p-0123/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "sha2::OidSha512",
+          "rule": "R-SHA2-003"
+        }
+      ],
+      "M10-F-HASH-DEP-SHA-1-p-0124": [
+        {
+          "file": "M10-F-HASH-DEP-SHA-1-p-0124/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "sha1::Sha1Core",
+          "rule": "R-SHA1-001"
+        }
+      ],
+      "M10-F-HASH-DEP-MD5-p-0125": [
+        {
+          "file": "M10-F-HASH-DEP-MD5-p-0125/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "md5::Md5Core",
+          "rule": "R-MD5-001"
+        }
+      ],
+      "M10-F-SYM-AES-128-p-0126": [
+        {
+          "file": "M10-F-SYM-AES-128-p-0126/src/lib.rs",
+          "line": 5,
+          "status": "deprecated",
+          "name": "<aes::autodetect::Aes128 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-002"
+        }
+      ],
+      "M10-F-SYM-AES-256-p-0127": [
+        {
+          "file": "M10-F-SYM-AES-256-p-0127/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<aes::autodetect::Aes256 as crypto_common::KeyInit>::new",
+          "rule": "R-AES-001"
+        }
+      ],
+      "M10-F-SYM-ChaCha20-p-0128": [
+        {
+          "file": "M10-F-SYM-ChaCha20-p-0128/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "chacha20poly1305::ChaChaPoly1305",
+          "rule": "R-CHACHA-002"
+        }
+      ],
+      "M10-F-PQC-ML-KEM-768-p-0129": [
+        {
+          "file": "M10-F-PQC-ML-KEM-768-p-0129/src/lib.rs",
+          "line": 5,
+          "status": "quantum-resistant",
+          "name": "<ml_kem::kem::Kem<ml_kem::MlKem768Params> as ml_kem::KemCore>::generate::<rand::rngs::thread::ThreadRng>",
+          "rule": "R-MLKEM-001"
+        }
+      ],
+      "N6-n-0130": [],
+      "N6-n-0131": []
+    }
+  }
+}

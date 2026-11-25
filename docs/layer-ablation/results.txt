@@ -1,0 +1,29 @@
+  ran dual default
+  ran mir-only default
+  ran llvm-only default
+  ran dual cfg-union
+  ran mir-only cfg-union
+  ran llvm-only cfg-union
+
+E2b: 114 positive, 18 negative mutants; window +-2 lines
+
+  configuration        precision   recall      F1  TP  FP  FN   recall +-2   Tier 1   named   classified
+  dual default            94.6%    61.4%   74.5%  70   4  44      61.4%   22/34    70/70   70/70 
+  mir-only default        94.6%    61.4%   74.5%  70   4  44      61.4%   22/34    63/70   63/70 
+  llvm-only default       94.6%    61.4%   74.5%  70   4  44      61.4%   22/34    70/70   70/70 
+  dual cfg-union          95.3%    71.9%   82.0%  82   4  32      71.9%   26/34    82/82   82/82 
+  mir-only cfg-union      95.3%    71.9%   82.0%  82   4  32      71.9%   26/34    75/82   75/82 
+  llvm-only cfg-union     95.3%    71.9%   82.0%  82   4  32      71.9%   26/34    82/82   82/82 
+
+  recall by failure mode (line-exact, then w = within +-2 lines)
+                                M0         M1      M10         M2         M3         M4      M5         M6      M7       M8      M9
+    dual default         12/12 w12  12/12 w12  0/12 w0  12/12 w12  12/12 w12    0/12 w0  2/2 w2  12/12 w12  8/8 w8  0/12 w0  0/8 w0
+    mir-only default     12/12 w12  12/12 w12  0/12 w0  12/12 w12  12/12 w12    0/12 w0  2/2 w2  12/12 w12  8/8 w8  0/12 w0  0/8 w0
+    llvm-only default    12/12 w12  12/12 w12  0/12 w0  12/12 w12  12/12 w12    0/12 w0  2/2 w2  12/12 w12  8/8 w8  0/12 w0  0/8 w0
+    dual cfg-union       12/12 w12  12/12 w12  0/12 w0  12/12 w12  12/12 w12  12/12 w12  2/2 w2  12/12 w12  8/8 w8  0/12 w0  0/8 w0
+    mir-only cfg-union   12/12 w12  12/12 w12  0/12 w0  12/12 w12  12/12 w12  12/12 w12  2/2 w2  12/12 w12  8/8 w8  0/12 w0  0/8 w0
+    llvm-only cfg-union  12/12 w12  12/12 w12  0/12 w0  12/12 w12  12/12 w12  12/12 w12  2/2 w2  12/12 w12  8/8 w8  0/12 w0  0/8 w0
+
+  H4, per feature policy: does dual beat both ablations on F1, at precision no lower?
+    default: vs mir-only: F1 74.5% vs 74.5%, precision 94.6% vs 94.6% -> does not beat; vs llvm-only: F1 74.5% vs 74.5%, precision 94.6% vs 94.6% -> does not beat
+    cfg-union: vs mir-only: F1 82.0% vs 82.0%, precision 95.3% vs 95.3% -> does not beat; vs llvm-only: F1 82.0% vs 82.0%, precision 95.3% vs 95.3% -> does not beat

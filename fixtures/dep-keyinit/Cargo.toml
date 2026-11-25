@@ -1,0 +1,14 @@
+[package]
+name = "dep-keyinit"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "dep_keyinit"
+path = "src/lib.rs"
+
+[dependencies]
+vault = { path = "deps/vault" }
+
+[workspace]
+exclude = ["deps"]

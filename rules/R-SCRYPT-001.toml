@@ -1,0 +1,15 @@
+id = "R-SCRYPT-001"
+description = "scrypt key derivation via the `scrypt` crate."
+
+algorithm_class = "Kdf"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = ["scrypt::scrypt"]
+
+[crypto]
+primitive = "kdf"
+algorithm_family = "scrypt"
+crypto_functions = ["keyderive"]
+oid = "1.3.6.1.4.1.11591.4.11"

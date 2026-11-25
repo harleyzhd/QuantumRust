@@ -1,0 +1,19 @@
+id = "R-PBKDF2-001"
+description = "PBKDF2 key derivation via the `pbkdf2` crate."
+
+algorithm_class = "Kdf"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "pbkdf2::pbkdf2",
+    "pbkdf2::pbkdf2_hmac",
+    "pbkdf2::pbkdf2_hmac_array",
+]
+
+[crypto]
+primitive = "kdf"
+algorithm_family = "PBKDF2"
+crypto_functions = ["keyderive"]
+oid = "1.2.840.113549.1.5.12"

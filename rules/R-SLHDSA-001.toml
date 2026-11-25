@@ -1,0 +1,26 @@
+id = "R-SLHDSA-001"
+description = "SLH-DSA (FIPS 205) key generation, signing and verification."
+
+algorithm_class = "Unknown"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "slh_dsa::sign",
+    "slh_dsa::verify",
+    "slh_dsa::try_sign",
+    "fips205::try_keygen",
+    "fips205::try_sign",
+    "fips205::verify",
+    "pqcrypto_sphincsplus::keypair",
+    "pqcrypto_sphincsplus::detached_sign",
+    "pqcrypto_sphincsplus::verify_detached_signature",
+    "slh_dsa::SigningKey::new",
+    "slh_dsa::SigningKey::verifying_key",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "SLH-DSA"
+crypto_functions = ["keygen", "sign", "verify"]

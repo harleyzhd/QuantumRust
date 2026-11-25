@@ -1,0 +1,46 @@
+id = "R-EC-999"
+description = "An elliptic-curve key or curve operation whose scheme — signature or key agreement — the call site does not establish."
+
+algorithm_class = "EcKey"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+crates = ["p256", "p384", "p521", "k256", "elliptic_curve", "primeorder"]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "to_encoded_point",
+    "from_encoded_point",
+    "as_affine",
+    "to_affine",
+    "reduce_bytes",
+    "deref",
+    "deref_mut",
+    "raw_secret_bytes",
+    "r",
+    "s",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[crypto]
+primitive = "unknown"
+nist_quantum_security_level = 0

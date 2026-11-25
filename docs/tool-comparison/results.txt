@@ -1,0 +1,119 @@
+  ran quantumrust default (workspace HEAD)
+  ran quantumrust --cfg-union (workspace HEAD)
+  ran postquant default (0.7.0)
+  ran postquant --show-all (0.7.0)
+  ran cryptoscan default (cryptoscan 1.4.0 commit: 11f0e46)
+  ran cryptoscan --include-quantum-safe (cryptoscan 1.4.0 commit: 11f0e46)
+  ran codeql rust-code-scanning (2.27.2)
+  ran codeql security-extended (2.27.2)
+  ran crypto-scanner default (crypto-scanner v0.1.2)
+
+E2a: 114 positive, 18 negative mutants
+
+  all findings                       precision   recall      F1    TP  FP  FN   recall, file-level (secondary)
+  quantumrust default                   94.6%    61.4%   74.5%    70   4  44    61.4% (70/114)
+  quantumrust --cfg-union               95.3%    71.9%   82.0%    82   4  32    71.9% (82/114)
+  postquant default                     85.4%    30.7%   45.2%    35   6  79    31.6% (36/114)
+  postquant --show-all                  85.4%    30.7%   45.2%    35   6  79    31.6% (36/114)
+  cryptoscan default                    90.9%    17.5%   29.4%    20   2  94    43.9% (50/114)
+  cryptoscan --include-quantum-safe     71.4%    35.1%   47.1%    40  16  74    71.9% (82/114)
+  codeql rust-code-scanning              0.0%     0.0%    0.0%     0   2 114    21.1% (24/114)
+  codeql security-extended               0.0%     0.0%    0.0%     0   2 114    21.1% (24/114)
+  crypto-scanner default                71.4%    30.7%   42.9%    35  14  79    54.4% (62/114)
+  quantumrust default (vulnerable-only; QuantumRust only)    100.0%    35.1%   51.9%    40   0  74
+  quantumrust --cfg-union (vulnerable-only; QuantumRust only)    100.0%    41.2%   58.4%    47   0  67
+
+  recall by the labels' NIST tier (line-exact)
+                                       Tier 1, H1's target  Tier 1+2, needs migration  Tier 3, resistant
+    quantumrust default                          22/34 65%                  40/64 62%          30/50 60%
+    quantumrust --cfg-union                      26/34 76%                  47/64 73%          35/50 70%
+    postquant default                            15/34 44%                  20/64 31%          15/50 30%
+    postquant --show-all                         15/34 44%                  20/64 31%          15/50 30%
+    cryptoscan default                             0/34 0%                  10/64 16%          10/50 20%
+    cryptoscan --include-quantum-safe              0/34 0%                  15/64 23%          25/50 50%
+    codeql rust-code-scanning                      0/34 0%                    0/64 0%            0/50 0%
+    codeql security-extended                       0/34 0%                    0/64 0%            0/50 0%
+    crypto-scanner default                       10/34 29%                  15/64 23%          20/50 40%
+
+  recall by failure mode (line-exact, then file-level)
+                                              M0         M1      M10         M2         M3         M4      M5         M6      M7       M8      M9
+    quantumrust default                12/12 f12  12/12 f12  0/12 f0  12/12 f12  12/12 f12    0/12 f0  2/2 f2  12/12 f12  8/8 f8  0/12 f0  0/8 f0
+    quantumrust --cfg-union            12/12 f12  12/12 f12  0/12 f0  12/12 f12  12/12 f12  12/12 f12  2/2 f2  12/12 f12  8/8 f8  0/12 f0  0/8 f0
+    postquant default                    7/12 f7    7/12 f7  0/12 f0    7/12 f7    7/12 f7    7/12 f7  0/2 f0    0/12 f1  0/8 f0  0/12 f0  0/8 f0
+    postquant --show-all                 7/12 f7    7/12 f7  0/12 f0    7/12 f7    7/12 f7    7/12 f7  0/2 f0    0/12 f1  0/8 f0  0/12 f0  0/8 f0
+    cryptoscan default                   4/12 f7    4/12 f7  0/12 f0    4/12 f7    4/12 f7    4/12 f7  0/2 f0    0/12 f7  0/8 f4  0/12 f0  0/8 f4
+    cryptoscan --include-quantum-safe   8/12 f11   8/12 f11  0/12 f0   8/12 f11   8/12 f11   8/12 f11  0/2 f0   0/12 f11  0/8 f8  0/12 f0  0/8 f8
+    codeql rust-code-scanning            0/12 f3    0/12 f3  0/12 f0    0/12 f3    0/12 f3    0/12 f3  0/2 f0    0/12 f3  0/8 f3  0/12 f0  0/8 f3
+    codeql security-extended             0/12 f3    0/12 f3  0/12 f0    0/12 f3    0/12 f3    0/12 f3  0/2 f0    0/12 f3  0/8 f3  0/12 f0  0/8 f3
+    crypto-scanner default               7/12 f9    7/12 f9  0/12 f0    7/12 f9    7/12 f9    7/12 f9  0/2 f0    0/12 f7  0/8 f5  0/12 f0  0/8 f5
+
+  false positives by negative bucket
+                                       N0  N1  N2  N3  N4  N5  N6
+    quantumrust default                 2   2   0   0   0   0   0
+    quantumrust --cfg-union             2   2   0   0   0   0   0
+    postquant default                   2   2   0   2   0   0   0
+    postquant --show-all                2   2   0   2   0   0   0
+    cryptoscan default                  0   0   2   0   0   0   0
+    cryptoscan --include-quantum-safe   4   4   8   0   0   0   0
+    codeql rust-code-scanning           0   0   2   0   0   0   0
+    codeql security-extended            0   0   2   0   0   0   0
+    crypto-scanner default              4   4   4   2   0   0   0
+
+  quantumrust default: found, and missed by every comparator config: 26
+    M0-F-KEX-X25519-p-0017
+    M1-F-KEX-X25519-p-0018
+    M2-F-KEX-X25519-p-0019
+    M3-F-KEX-X25519-p-0020
+    M5-F-RSA-2048-p-0005
+    M5-F-RSA-3072-p-0011
+    M6-F-ECC-P-256-p-0080
+    M6-F-HASH-DEP-MD5-p-0085
+    M6-F-HASH-DEP-SHA-1-p-0084
+    M6-F-HASH-SHA-256-p-0082
+    M6-F-HASH-SHA-512-p-0083
+    M6-F-KEX-X25519-p-0081
+    M6-F-PQC-ML-KEM-768-p-0089
+    M6-F-RSA-2048-p-0078
+    M6-F-RSA-3072-p-0079
+    M6-F-SYM-AES-128-p-0086
+    M6-F-SYM-AES-256-p-0087
+    M6-F-SYM-ChaCha20-p-0088
+    M7-F-HASH-DEP-MD5-p-0093
+    M7-F-HASH-DEP-SHA-1-p-0092
+    M7-F-HASH-SHA-256-p-0090
+    M7-F-HASH-SHA-512-p-0091
+    M7-F-PQC-ML-KEM-768-p-0097
+    M7-F-SYM-AES-128-p-0094
+    M7-F-SYM-AES-256-p-0095
+    M7-F-SYM-ChaCha20-p-0096
+  quantumrust default: missed, and found by every comparator config: 0
+
+  quantumrust --cfg-union: found, and missed by every comparator config: 27
+    M0-F-KEX-X25519-p-0017
+    M1-F-KEX-X25519-p-0018
+    M2-F-KEX-X25519-p-0019
+    M3-F-KEX-X25519-p-0020
+    M4-F-KEX-X25519-p-0021
+    M5-F-RSA-2048-p-0005
+    M5-F-RSA-3072-p-0011
+    M6-F-ECC-P-256-p-0080
+    M6-F-HASH-DEP-MD5-p-0085
+    M6-F-HASH-DEP-SHA-1-p-0084
+    M6-F-HASH-SHA-256-p-0082
+    M6-F-HASH-SHA-512-p-0083
+    M6-F-KEX-X25519-p-0081
+    M6-F-PQC-ML-KEM-768-p-0089
+    M6-F-RSA-2048-p-0078
+    M6-F-RSA-3072-p-0079
+    M6-F-SYM-AES-128-p-0086
+    M6-F-SYM-AES-256-p-0087
+    M6-F-SYM-ChaCha20-p-0088
+    M7-F-HASH-DEP-MD5-p-0093
+    M7-F-HASH-DEP-SHA-1-p-0092
+    M7-F-HASH-SHA-256-p-0090
+    M7-F-HASH-SHA-512-p-0091
+    M7-F-PQC-ML-KEM-768-p-0097
+    M7-F-SYM-AES-128-p-0094
+    M7-F-SYM-AES-256-p-0095
+    M7-F-SYM-ChaCha20-p-0096
+  quantumrust --cfg-union: missed, and found by every comparator config: 0

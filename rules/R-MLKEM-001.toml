@@ -1,0 +1,54 @@
+id = "R-MLKEM-001"
+description = "ML-KEM (FIPS 203) key generation, encapsulation and decapsulation."
+
+algorithm_class = "Kem"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "pqcrypto_mlkem::keypair",
+    "pqcrypto_mlkem::encapsulate",
+    "pqcrypto_mlkem::decapsulate",
+    "ml_kem::generate",
+    "ml_kem::encapsulate",
+    "ml_kem::decapsulate",
+    "fips203::try_keygen",
+    "fips203::try_encaps",
+    "fips203::try_decaps",
+    "pqcrypto_kyber::keypair",
+    "pqcrypto_kyber::encapsulate",
+    "pqcrypto_kyber::decapsulate",
+    "ml_kem::DecapsulationKey::from_seed",
+    "ml_kem::DecapsulationKey::encapsulation_key",
+    "ml_kem::KemCore::generate",
+    "ml_kem::KemCore::generate_deterministic",
+    "ml_kem::EncapsulationKey::new",
+    "ml_kem::EncapsulationKey::encapsulate_deterministic",
+]
+
+[taint]
+sinks = ["encapsulate", "decapsulate", "try_encaps", "try_decaps"]
+
+[crypto]
+primitive = "kem"
+algorithm_family = "ML-KEM"
+crypto_functions = ["keygen", "encapsulate", "decapsulate"]
+
+[[parameter_sets]]
+identifier = "512"
+name = "ML-KEM-512"
+nist_quantum_security_level = 1
+type_names = ["ml_kem::MlKem512", "ml_kem::MlKem512Params"]
+
+[[parameter_sets]]
+identifier = "768"
+name = "ML-KEM-768"
+nist_quantum_security_level = 3
+type_names = ["ml_kem::MlKem768", "ml_kem::MlKem768Params"]
+
+[[parameter_sets]]
+identifier = "1024"
+name = "ML-KEM-1024"
+nist_quantum_security_level = 5
+type_names = ["ml_kem::MlKem1024", "ml_kem::MlKem1024Params"]

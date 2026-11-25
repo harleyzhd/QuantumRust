@@ -1,0 +1,23 @@
+id = "R-AES-002"
+description = "AES-128 block cipher via the `aes` crate — below the 256-bit bar CNSA 2.0 requires."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+signatures = [
+    "aes::Aes128::new",
+    "aes::Aes128::new_from_slice",
+    "aes::Aes128Enc::new",
+    "aes::Aes128Dec::new",
+]
+
+type_names = ["aes::Aes128", "aes::Aes128Enc", "aes::Aes128Dec"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "AES"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "AES-128"
+nist_quantum_security_level = 1

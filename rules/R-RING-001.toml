@@ -1,0 +1,25 @@
+id = "R-RING-001"
+description = "RSA key loading and signing via `ring`."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ring::rsa::KeyPair::from_pkcs8",
+    "ring::rsa::KeyPair::from_der",
+    "ring::rsa::KeyPair::sign",
+    "ring::signature::RsaKeyPair::from_pkcs8",
+    "ring::signature::RsaKeyPair::from_der",
+    "ring::signature::RsaKeyPair::sign",
+]
+
+[taint]
+sinks = ["sign"]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["sign"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

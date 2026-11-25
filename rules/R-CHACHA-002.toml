@@ -1,0 +1,19 @@
+id = "R-CHACHA-002"
+description = "A ChaCha-Poly1305 AEAD named only as a generic argument, whose variant the erased type does not establish."
+
+algorithm_class = "Aead"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+type_names = [
+    "chacha20poly1305::ChaChaPoly1305",
+    "chacha20::ChaChaCore",
+    "chacha20::XChaChaCore",
+]
+
+[crypto]
+primitive = "ae"
+algorithm_family = "ChaCha20"
+crypto_functions = ["encrypt", "decrypt"]
+nist_quantum_security_level = 5

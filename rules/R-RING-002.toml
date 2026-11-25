@@ -1,0 +1,17 @@
+id = "R-RING-002"
+description = "Signature verification via `ring`, with the scheme selected by a static argument."
+
+algorithm_class = "Unknown"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ring::signature::UnparsedPublicKey::new",
+    "ring::signature::UnparsedPublicKey::verify",
+]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["verify"]
+nist_quantum_security_level = 0

@@ -1,0 +1,133 @@
+[2m2026-10-28T06:42:13.191205Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m extracting dual-level CPG from /Users/harleyding/Desktop/Mad/ThesisB/analysed-crates/jsonwebtoken-11.1.0
+[2m2026-10-28T06:42:13.520567Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m dependency descent [3mdepth[0m[2m=[0m3 [3mcrates[0m[2m=[0m{}
+[2m2026-10-28T06:42:17.446892Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m fused dual-level CPG [3mmir_nodes[0m[2m=[0m5363 [3mllvm_nodes[0m[2m=[0m3302 [3mcross_layer_edges[0m[2m=[0m1134
+[2m2026-10-28T06:42:17.459265Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m loaded CPG [3mnodes[0m[2m=[0m8665 [3medges[0m[2m=[0m26201
+[2m2026-10-28T06:42:17.567493Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m matched rules [3mfindings[0m[2m=[0m100 [3mwith_taint_chain[0m[2m=[0m14
+[2m2026-10-28T06:42:17.569793Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m no criticality map: every finding scores the neutral Medium band
+
+Findings (100):
+  [R-RSA-001] rsa::pkcs8::DecodePrivateKey::from_pkcs8_der (Rsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:28  blast=793 tier=1 risk=10.63
+  [R-ECDSA-004] ecdsa::signing::SigningKey (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:28  blast=793 tier=1 risk=10.63
+  [R-ECDSA-002] ecdsa::recovery::<impl ecdsa::signing::SigningKey<C>>::sign_recoverable (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:36  blast=5 tier=1 risk=3.58
+        taint: src/crypto/rust_crypto/ecdsa.rs:36 -> src/crypto/rust_crypto/ecdsa.rs:36 -> src/crypto/rust_crypto/ecdsa.rs:36 -> src/crypto/rust_crypto/ecdsa.rs:37 -> src/crypto/rust_crypto/ecdsa.rs:35
+  [R-ECDSA-001] ecdsa::verifying::VerifyingKey::<C>::from_sec1_bytes (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:60  blast=793 tier=1 risk=10.63
+  [R-ECDSA-004] ecdsa::verifying::VerifyingKey (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:68  blast=9 tier=1 risk=4.32
+  [R-RSA-001] rsa::pkcs8::DecodePrivateKey::from_pkcs8_der (Rsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:20  blast=793 tier=1 risk=10.63
+  [R-ED25519-004] ed25519_dalek::SigningKey (EdDsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:20  blast=793 tier=1 risk=10.63
+  [R-ED25519-004] ed25519_dalek::SigningKey (EdDsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:28  blast=3 tier=1 risk=3.00
+        taint: src/crypto/rust_crypto/eddsa.rs:28 -> src/crypto/rust_crypto/eddsa.rs:28
+  [R-ED25519-001] ed25519_dalek::VerifyingKey::from_bytes (EdDsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:47  blast=793 tier=1 risk=10.63
+  [R-ED25519-004] ed25519_dalek::VerifyingKey (EdDsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:58  blast=7 tier=1 risk=4.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:27  blast=793 tier=3 risk=0.00
+  [R-SIG-999] signature::digest::CtOutput::<T>::into_bytes (Unknown, Unknown)  src/crypto/rust_crypto/hmac.rs:40  blast=7 tier=1 risk=4.00 (conservative: upper bound)
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:40  blast=7 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:27  blast=793 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:40  blast=7 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:27  blast=793 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:40  blast=7 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:63  blast=793 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:80  blast=6 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:63  blast=793 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:80  blast=6 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:63  blast=793 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/hmac.rs:80  blast=6 tier=3 risk=0.00
+  [R-RSA-001] rsa::pkcs1::DecodeRsaPrivateKey::from_pkcs1_der (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:33  blast=793 tier=1 risk=10.63
+        taint: src/crypto/rust_crypto/rsa.rs:33 -> src/crypto/rust_crypto/rsa.rs:33 -> src/crypto/rust_crypto/rsa.rs:33 -> src/crypto/rust_crypto/rsa.rs:36 -> src/crypto/rust_crypto/rsa.rs:37
+  [R-RSA-006] rsa::pss::BlindedSigningKey::<D>::new (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:36  blast=793 tier=1 risk=10.63
+        taint: src/crypto/rust_crypto/rsa.rs:36 -> src/crypto/rust_crypto/rsa.rs:37
+  [R-RSA-008] rsa::pss::BlindedSigningKey (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:37  blast=793 tier=1 risk=10.63
+        taint: src/crypto/rust_crypto/rsa.rs:37 -> src/crypto/rust_crypto/rsa.rs:37 -> src/crypto/rust_crypto/rsa.rs:85 -> src/crypto/rust_crypto/rsa.rs:84
+  [R-RSA-005] rsa::pkcs1v15::SigningKey::<D>::new (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:39  blast=793 tier=1 risk=10.63
+        taint: src/crypto/rust_crypto/rsa.rs:39 -> src/crypto/rust_crypto/rsa.rs:40
+  [R-RSA-007] rsa::pkcs1v15::SigningKey (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:40  blast=793 tier=1 risk=10.63
+        taint: src/crypto/rust_crypto/rsa.rs:40 -> src/crypto/rust_crypto/rsa.rs:40 -> src/crypto/rust_crypto/rsa.rs:85 -> src/crypto/rust_crypto/rsa.rs:84
+  [R-RSA-001] rsa::pkcs1::DecodeRsaPublicKey::from_pkcs1_der (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:54  blast=49 tier=1 risk=6.64
+  [R-RSA-003] rsa::RsaPublicKey::verify (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:54  blast=49 tier=1 risk=6.64
+  [R-RSA-999] rsa::BigUint::from_bytes_be (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:60  blast=49 tier=1 risk=6.64
+  [R-RSA-001] rsa::RsaPublicKey::new (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:60  blast=49 tier=1 risk=6.64
+  [R-RSA-003] rsa::RsaPublicKey::verify (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:60  blast=49 tier=1 risk=6.64
+  [R-RSA-005] rsa::Pkcs1v15Sign::new (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:120  blast=49 tier=1 risk=6.64
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:120  blast=49 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:120  blast=49 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:120  blast=49 tier=3 risk=0.00
+  [R-RSA-999] rsa::Pss::new (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:118  blast=49 tier=1 risk=6.64
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:118  blast=49 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:118  blast=49 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:118  blast=49 tier=3 risk=0.00
+  [R-RSA-001] rsa::pkcs1::DecodeRsaPrivateKey::from_pkcs1_der (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:24  blast=9 tier=1 risk=4.32
+        taint: src/crypto/rust_crypto/mod.rs:24 -> src/crypto/rust_crypto/mod.rs:24 -> src/crypto/rust_crypto/mod.rs:24 -> src/crypto/rust_crypto/mod.rs:26 -> src/crypto/rust_crypto/mod.rs:27 -> src/crypto/rust_crypto/mod.rs:27
+  [R-RSA-001] rsa::RsaPrivateKey::to_public_key (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:26  blast=9 tier=1 risk=4.32
+        taint: src/crypto/rust_crypto/mod.rs:26 -> src/crypto/rust_crypto/mod.rs:27 -> src/crypto/rust_crypto/mod.rs:27
+  [R-RSA-999] rsa::BigUint::to_bytes_be (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:27  blast=9 tier=1 risk=4.32
+  [R-RSA-001] rsa::pkcs1::DecodeRsaPublicKey::from_pkcs1_der (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:31  blast=8 tier=1 risk=4.17
+        taint: src/crypto/rust_crypto/mod.rs:31 -> src/crypto/rust_crypto/mod.rs:31 -> src/crypto/rust_crypto/mod.rs:31 -> src/crypto/rust_crypto/mod.rs:33 -> src/crypto/rust_crypto/mod.rs:33
+  [R-RSA-999] rsa::BigUint::to_bytes_be (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:33  blast=8 tier=1 risk=4.17
+  [R-RSA-001] rsa::pkcs8::DecodePrivateKey::from_pkcs8_der (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:54  blast=25 tier=1 risk=5.70
+  [R-ECDSA-004] ecdsa::signing::SigningKey (Ecdsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:54  blast=25 tier=1 risk=5.70
+  [R-RSA-001] rsa::pkcs8::DecodePrivateKey::from_pkcs8_der (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:42  blast=25 tier=1 risk=5.70
+  [R-ECDSA-004] ecdsa::signing::SigningKey (Ecdsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:42  blast=25 tier=1 risk=5.70
+  [R-ECDSA-001] ecdsa::signing::SigningKey::<C>::verifying_key (Ecdsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:44  blast=25 tier=1 risk=5.70
+  [R-ECDSA-001] ecdsa::signing::SigningKey::<C>::verifying_key (Ecdsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:56  blast=25 tier=1 risk=5.70
+  [R-RSA-001] rsa::pkcs8::DecodePrivateKey::from_pkcs8_der (Rsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:74  blast=8 tier=1 risk=4.17
+        taint: src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74
+  [R-ED25519-004] ed25519_dalek::SigningKey (EdDsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:74  blast=8 tier=1 risk=4.17
+        taint: src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74
+  [R-ED25519-001] ed25519_dalek::SigningKey::verifying_key (EdDsa, Vulnerable)  src/crypto/rust_crypto/mod.rs:74  blast=8 tier=1 risk=4.17
+        taint: src/crypto/rust_crypto/mod.rs:74 -> src/crypto/rust_crypto/mod.rs:74
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/mod.rs:87  blast=9 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/mod.rs:86  blast=9 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/mod.rs:85  blast=9 tier=3 risk=0.00
+  [R-SIG-999] <dyn signature::Signer>::try_sign (Unknown, Unknown)  src/crypto/mod.rs:50  blast=793 tier=1 risk=10.63 (conservative: upper bound)
+  [R-SIG-999] <dyn signature::Verifier>::verify (Unknown, Unknown)  src/crypto/mod.rs:68  blast=793 tier=1 risk=10.63 (conservative: upper bound)
+  [R-SIG-999] <dyn signature::Verifier>::verify (Unknown, Unknown)  src/decoding.rs:360  blast=1 tier=1 risk=2.00 (conservative: upper bound)
+  [R-SIG-999] <dyn signature::Signer>::try_sign (Unknown, Unknown)  src/encoding.rs:166  blast=793 tier=1 risk=10.63 (conservative: upper bound)
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:50  blast=11 tier=3 risk=0.00
+  [R-RSA-003] <rsa::key::RsaPublicKey>::verify::<rsa::pss::Pss> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:56  blast=5 tier=1 risk=3.58
+  [R-RSA-003] <rsa::key::RsaPublicKey>::verify::<rsa::pss::Pss> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:61  blast=3 tier=1 risk=3.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:50  blast=11 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:50  blast=11 tier=3 risk=0.00
+  [R-RSA-003] <rsa::key::RsaPublicKey>::verify::<rsa::pkcs1v15::Pkcs1v15Sign> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:56  blast=5 tier=1 risk=3.58
+  [R-RSA-003] <rsa::key::RsaPublicKey>::verify::<rsa::pkcs1v15::Pkcs1v15Sign> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:61  blast=3 tier=1 risk=3.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:39  blast=6 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:36  blast=6 tier=3 risk=0.00
+  [R-RSA-002] <rsa::pkcs1v15::signing_key::SigningKey<digest::core_api::wrapper::CoreWrapper<digest::core_api::ct_variable::CtVariableCoreWrapper<sha2::core_api::Sha256VarCore, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, sha2::OidSha256>>> as signature::signer::RandomizedSigner<rsa::pkcs1v15::signature::Signature>>::sign_with_rng::<rand::rngs::thread::ThreadRng> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:40  blast=3 tier=1 risk=3.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:40  blast=3 tier=3 risk=0.00
+  [R-RSA-002] <rsa::pss::blinded_signing_key::BlindedSigningKey<digest::core_api::wrapper::CoreWrapper<digest::core_api::ct_variable::CtVariableCoreWrapper<sha2::core_api::Sha256VarCore, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, sha2::OidSha256>>> as signature::signer::RandomizedSigner<rsa::pss::signature::Signature>>::sign_with_rng::<rand::rngs::thread::ThreadRng> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:37  blast=3 tier=1 risk=3.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:37  blast=3 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:39  blast=6 tier=3 risk=0.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:36  blast=6 tier=3 risk=0.00
+  [R-RSA-002] <rsa::pkcs1v15::signing_key::SigningKey<digest::core_api::wrapper::CoreWrapper<digest::core_api::ct_variable::CtVariableCoreWrapper<sha2::core_api::Sha512VarCore, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, sha2::OidSha512>>> as signature::signer::RandomizedSigner<rsa::pkcs1v15::signature::Signature>>::sign_with_rng::<rand::rngs::thread::ThreadRng> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:40  blast=3 tier=1 risk=3.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:40  blast=3 tier=3 risk=0.00
+  [R-RSA-002] <rsa::pss::blinded_signing_key::BlindedSigningKey<digest::core_api::wrapper::CoreWrapper<digest::core_api::ct_variable::CtVariableCoreWrapper<sha2::core_api::Sha512VarCore, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, sha2::OidSha512>>> as signature::signer::RandomizedSigner<rsa::pss::signature::Signature>>::sign_with_rng::<rand::rngs::thread::ThreadRng> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:37  blast=3 tier=1 risk=3.00
+  [R-SHA2-003] sha2::OidSha512 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:37  blast=3 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:39  blast=6 tier=3 risk=0.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:36  blast=6 tier=3 risk=0.00
+  [R-RSA-002] <rsa::pkcs1v15::signing_key::SigningKey<digest::core_api::wrapper::CoreWrapper<digest::core_api::ct_variable::CtVariableCoreWrapper<sha2::core_api::Sha512VarCore, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, sha2::OidSha384>>> as signature::signer::RandomizedSigner<rsa::pkcs1v15::signature::Signature>>::sign_with_rng::<rand::rngs::thread::ThreadRng> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:40  blast=3 tier=1 risk=3.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:40  blast=3 tier=3 risk=0.00
+  [R-RSA-002] <rsa::pss::blinded_signing_key::BlindedSigningKey<digest::core_api::wrapper::CoreWrapper<digest::core_api::ct_variable::CtVariableCoreWrapper<sha2::core_api::Sha512VarCore, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, sha2::OidSha384>>> as signature::signer::RandomizedSigner<rsa::pss::signature::Signature>>::sign_with_rng::<rand::rngs::thread::ThreadRng> (Rsa, Vulnerable)  src/crypto/rust_crypto/rsa.rs:37  blast=3 tier=1 risk=3.00
+  [R-SHA2-002] sha2::OidSha384 (Hash, Resistant)  src/crypto/rust_crypto/rsa.rs:37  blast=3 tier=3 risk=0.00
+  [R-ED25519-003] <ed25519_dalek::verifying::VerifyingKey as signature::verifier::Verifier<ed25519::Signature>>::verify (EdDsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:58  blast=2 tier=1 risk=2.58
+  [R-ECDSA-004] ecdsa::Signature (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:69  blast=7 tier=1 risk=4.00
+  [R-ECDSA-003] <ecdsa::verifying::VerifyingKey<p256::NistP256> as signature::verifier::Verifier<ecdsa::Signature<p256::NistP256>>>::verify (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:69  blast=3 tier=1 risk=3.00
+  [R-ECDSA-003] <ecdsa::verifying::VerifyingKey<p384::NistP384> as signature::verifier::Verifier<ecdsa::Signature<p384::NistP384>>>::verify (Ecdsa, Vulnerable)  src/crypto/rust_crypto/ecdsa.rs:69  blast=3 tier=1 risk=3.00
+  [R-ED25519-002] <ed25519_dalek::signing::SigningKey as signature::signer::Signer<ed25519::Signature>>::sign (EdDsa, Vulnerable)  src/crypto/rust_crypto/eddsa.rs:28  blast=2 tier=1 risk=2.58
+        taint: src/crypto/rust_crypto/eddsa.rs:28 -> src/crypto/rust_crypto/eddsa.rs:28
+  [R-RSA-002] <jsonwebtoken::crypto::rust_crypto::rsa::Rsa256Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Rsa, Vulnerable)  src/signer.rs:16  blast=31 tier=1 risk=6.00
+  [R-RSA-002] <jsonwebtoken::crypto::rust_crypto::rsa::Rsa384Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Rsa, Vulnerable)  src/signer.rs:16  blast=31 tier=1 risk=6.00
+  [R-RSA-002] <jsonwebtoken::crypto::rust_crypto::rsa::Rsa512Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Rsa, Vulnerable)  src/signer.rs:16  blast=31 tier=1 risk=6.00
+  [R-RSA-002] <jsonwebtoken::crypto::rust_crypto::rsa::RsaPss256Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Rsa, Vulnerable)  src/signer.rs:16  blast=31 tier=1 risk=6.00
+  [R-RSA-002] <jsonwebtoken::crypto::rust_crypto::rsa::RsaPss384Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Rsa, Vulnerable)  src/signer.rs:16  blast=31 tier=1 risk=6.00
+  [R-RSA-002] <jsonwebtoken::crypto::rust_crypto::rsa::RsaPss512Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Rsa, Vulnerable)  src/signer.rs:16  blast=31 tier=1 risk=6.00
+  [R-ECDSA-002] <jsonwebtoken::crypto::rust_crypto::ecdsa::Es256Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Ecdsa, Vulnerable)  src/signer.rs:16  blast=7 tier=1 risk=4.00
+  [R-ECDSA-002] <jsonwebtoken::crypto::rust_crypto::ecdsa::Es384Signer as signature::signer::Signer<alloc::vec::Vec<u8>>>::try_sign (Ecdsa, Vulnerable)  src/signer.rs:16  blast=7 tier=1 risk=4.00
+
+Most severe: Tier 1 (quantum-vulnerable — NIST IR 8547: deprecated after 2030, disallowed after 2035) — RSA, 22 sites; ECDSA, 10 sites; Ed25519, 5 sites
+Most common: RSA, 22 sites (Tier 1)
+
+Migration plan (NIST category 3 unless a profile or a stronger key raises it; CPU timed on Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz, 2026-10-13):
+  RSA (role not established, Tier 1, 14 sites) -> ML-DSA-65 or ML-KEM-768 [FIPS 204 / FIPS 203]; size not established; CPU not established
+  ECDSA (signature, Tier 1, 10 sites) -> ML-DSA-65 [FIPS 204]; size not established; CPU not established
+  RSA (signature, Tier 1, 10 sites) -> ML-DSA-65 [FIPS 204]; size not established; CPU not established
+  Ed25519 (signature, Tier 1, 5 sites) -> ML-DSA-65 [FIPS 204]; 96 -> 5261 B (over one MTU); 48 us -> 220 us per exchange (4.6x)
+
+wrote cbom.json, report.html to docs/real-compare/jsonwebtoken-11.1.0/quantumrust-descend

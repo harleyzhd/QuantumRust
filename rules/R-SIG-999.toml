@@ -1,0 +1,53 @@
+id = "R-SIG-999"
+description = "A signature operation reached through the `signature` crate's traits whose algorithm is not resolvable from the call site."
+
+algorithm_class = "Unknown"
+qv_status = "Unknown"
+
+[match]
+crates = ["signature"]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "to_der",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "try_from",
+    "from_slice",
+    "from_bytes",
+    "to_string",
+    "from_source",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[taint]
+sinks = [
+    "sign",
+    "try_sign",
+    "sign_with_rng",
+    "try_sign_with_rng",
+    "sign_prehash",
+    "try_sign_prehash",
+    "sign_digest",
+    "try_sign_digest",
+    "sign_digest_with_rng",
+]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["sign"]

@@ -1,0 +1,254 @@
+# PQC replacement table, read by `qr-report::migration` and embedded in the
+# binary: what a finding should migrate to, and what that costs in bytes.
+#
+# - Sizes and security categories come from the standards cited on each row:
+#   FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA), and for the
+#   classical schemes the size their encoding fixes.
+# - Signatures migrate to ML-DSA (SLH-DSA as the conservative alternative) and
+#   key establishment to ML-KEM, following NIST IR 8547. The hybrid
+#   constructions named are IETF drafts.
+# - `default_level` is this project's choice: with no profile floor, a
+#   replacement targets NIST category 3. A profile's
+#   `min_quantum_security_level` raises it (CNSA 2.0 -> 5), and a classical
+#   scheme stronger than category 3 is never downgraded.
+#
+# Refactoring scope comes from `analyze --refactor-scope` and computational
+# cost from `pqc_speed.json`. Protocol impact and infrastructure cost depend on
+# the deployment, so the report shows them as "not populated".
+
+# NIST category targeted when no profile sets a floor.
+default_level = 3
+
+# Bytes in one Ethernet frame's payload: an exchange that needs more is
+# fragmented at the network layer.
+mtu_bytes = 1500
+
+# ---------------------------------------------------------------------------
+# Post-quantum parameter sets. `level` is the NIST security category the
+# standard assigns. Sizes in bytes.
+
+[[scheme]]
+name = "ML-KEM-512"
+family = "ML-KEM"
+role = "kem"
+standard = "FIPS 203"
+level = 1
+public_key = 800
+ciphertext = 768
+
+[[scheme]]
+name = "ML-KEM-768"
+family = "ML-KEM"
+role = "kem"
+standard = "FIPS 203"
+level = 3
+public_key = 1184
+ciphertext = 1088
+
+[[scheme]]
+name = "ML-KEM-1024"
+family = "ML-KEM"
+role = "kem"
+standard = "FIPS 203"
+level = 5
+public_key = 1568
+ciphertext = 1568
+
+[[scheme]]
+name = "ML-DSA-44"
+family = "ML-DSA"
+role = "signature"
+standard = "FIPS 204"
+level = 2
+public_key = 1312
+signature = 2420
+
+[[scheme]]
+name = "ML-DSA-65"
+family = "ML-DSA"
+role = "signature"
+standard = "FIPS 204"
+level = 3
+public_key = 1952
+signature = 3309
+
+[[scheme]]
+name = "ML-DSA-87"
+family = "ML-DSA"
+role = "signature"
+standard = "FIPS 204"
+level = 5
+public_key = 2592
+signature = 4627
+
+# SLH-DSA: the "small" (s) variants, with smaller signatures and slower signing.
+[[scheme]]
+name = "SLH-DSA-SHA2-128s"
+family = "SLH-DSA"
+role = "signature"
+standard = "FIPS 205"
+level = 1
+public_key = 32
+signature = 7856
+
+[[scheme]]
+name = "SLH-DSA-SHA2-192s"
+family = "SLH-DSA"
+role = "signature"
+standard = "FIPS 205"
+level = 3
+public_key = 48
+signature = 16224
+
+[[scheme]]
+name = "SLH-DSA-SHA2-256s"
+family = "SLH-DSA"
+role = "signature"
+standard = "FIPS 205"
+level = 5
+public_key = 64
+signature = 29792
+
+# ---------------------------------------------------------------------------
+# Classical schemes being replaced. `strength` is classical security in bits
+# (NIST SP 800-57 Part 1, Table 2). Sizes as the encoding fixes them: an RSA
+# modulus of n bits is n/8 bytes of key and of signature; EC public keys are
+# the uncompressed point without the SEC1 prefix byte; ECDSA signatures are r||s.
+# A P-521 coordinate takes 66 bytes (521 bits, rounded up). secp256k1 (SEC 2)
+# has P-256's sizes and strength.
+
+[[classical]]
+name = "RSA-2048"
+strength = 112
+public_key = 256
+signature = 256
+ciphertext = 256
+
+[[classical]]
+name = "RSA-3072"
+strength = 128
+public_key = 384
+signature = 384
+ciphertext = 384
+
+[[classical]]
+name = "RSA-4096"
+strength = 128
+public_key = 512
+signature = 512
+ciphertext = 512
+
+[[classical]]
+name = "ECDSA-P256"
+strength = 128
+public_key = 64
+signature = 64
+
+[[classical]]
+name = "ECDSA-P384"
+strength = 192
+public_key = 96
+signature = 96
+
+[[classical]]
+name = "ECDSA-P521"
+strength = 256
+public_key = 132
+signature = 132
+
+[[classical]]
+name = "ECDSA-secp256k1"
+strength = 128
+public_key = 64
+signature = 64
+
+[[classical]]
+name = "Ed25519"
+strength = 128
+public_key = 32
+signature = 64
+
+[[classical]]
+name = "X25519"
+strength = 128
+public_key = 32
+
+[[classical]]
+name = "ECDH-P256"
+strength = 128
+public_key = 64
+
+[[classical]]
+name = "ECDH-P384"
+strength = 192
+public_key = 96
+
+[[classical]]
+name = "ECDH-P521"
+strength = 256
+public_key = 132
+
+[[classical]]
+name = "ECDH-secp256k1"
+strength = 128
+public_key = 64
+
+[[classical]]
+name = "X448"
+strength = 224
+public_key = 56
+
+# RFC 8032: a 57-byte public key and a 114-byte signature.
+[[classical]]
+name = "Ed448"
+strength = 224
+public_key = 57
+signature = 114
+
+[[classical]]
+name = "DSA-2048"
+strength = 112
+public_key = 256
+signature = 64
+
+# ---------------------------------------------------------------------------
+# How each role migrates. Hybrids are named, never selected: whether to run a
+# hybrid is a deployment decision, and both constructions are IETF drafts.
+
+[role.signature]
+primary = "ML-DSA"
+alternative = "SLH-DSA"
+alternative_note = "hash-based; signatures 3-7x larger than ML-DSA at the same category (s variants), security resting on the hash alone"
+hybrid = "composite ML-DSA + the existing algorithm (IETF draft-ietf-lamps-pq-composite-sigs)"
+
+[role.kem]
+primary = "ML-KEM"
+hybrid = "X25519MLKEM768, SecP256r1MLKEM768 or SecP384r1MLKEM1024 (IETF draft-ietf-tls-ecdhe-mlkem)"
+
+# ---------------------------------------------------------------------------
+# Tier 2: symmetric ciphers and hashes, replaced within their own kind. The
+# first option that meets the target level, or that the target profile names
+# in its `allow` list, is chosen: SHA-384 under CNSA 2.0, which names it,
+# SHA-512 under a bare level-5 floor.
+
+[[upgrade]]
+kind = "block cipher"
+from = ["AES-128", "AES-192", "TDEA", "Blowfish", "IDEA", "CAST-128", "CAMELLIA", "Camellia-128", "Camellia-192", "Camellia-256"]
+to = [{ name = "AES-256", level = 5 }]
+standard = "FIPS 197; CNSA 2.0 for the 256-bit bar"
+
+[[upgrade]]
+kind = "hash"
+from = ["SHA-1", "MD5", "SHA-224", "SHA3-224", "SHA-2", "SHA-3", "BLAKE2", "BLAKE2b", "BLAKE2s", "BLAKE3", "hash"]
+to = [{ name = "SHA-256", level = 2 }, { name = "SHA-384", level = 4 }, { name = "SHA-512", level = 5 }]
+standard = "FIPS 180-4"
+
+# A stream cipher or AEAD a profile does not name: CNSA 2.0 lists AES-256 and
+# not ChaCha20, nor an AEAD whose algorithm the call does not name (`ring`).
+# ChaCha20 and AES-256 are both category 5, so nothing replaces ChaCha20
+# without a profile.
+[[upgrade]]
+kind = "AEAD / stream cipher"
+from = ["ChaCha20", "ChaCha20-Poly1305", "AEAD"]
+to = [{ name = "AES-256", level = 5 }]
+standard = "FIPS 197 (AES-256-GCM, SP 800-38D); CNSA 2.0 names AES-256"

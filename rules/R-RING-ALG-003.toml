@@ -1,0 +1,42 @@
+id = "R-RING-ALG-003"
+description = "A `ring` algorithm below the 256-bit bar, or a legacy digest, selected by a static."
+
+algorithm_class = "Unknown"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+type_names = [
+    "ring::aead::AES_128_GCM",
+    "ring::digest::SHA1_FOR_LEGACY_USE_ONLY",
+    "ring::hmac::HMAC_SHA1_FOR_LEGACY_USE_ONLY",
+    "ring::pbkdf2::PBKDF2_HMAC_SHA1",
+]
+
+[crypto]
+primitive = "unknown"
+nist_quantum_security_level = 1
+
+[[parameter_sets]]
+identifier = "AES-128"
+name = "AES-128"
+nist_quantum_security_level = 1
+type_names = ["ring::aead::AES_128_GCM"]
+
+[[parameter_sets]]
+identifier = "SHA-1"
+name = "SHA-1"
+nist_quantum_security_level = 0
+type_names = ["ring::digest::SHA1_FOR_LEGACY_USE_ONLY"]
+
+[[parameter_sets]]
+identifier = "HMAC-SHA-1"
+name = "HMAC-SHA-1"
+nist_quantum_security_level = 0
+type_names = ["ring::hmac::HMAC_SHA1_FOR_LEGACY_USE_ONLY"]
+
+[[parameter_sets]]
+identifier = "PBKDF2-HMAC-SHA-1"
+name = "PBKDF2-HMAC-SHA-1"
+nist_quantum_security_level = 0
+type_names = ["ring::pbkdf2::PBKDF2_HMAC_SHA1"]

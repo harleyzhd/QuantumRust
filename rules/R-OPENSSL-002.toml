@@ -1,0 +1,27 @@
+id = "R-OPENSSL-002"
+description = "AES-256 and ChaCha20 symmetric encryption via the `openssl` safe bindings."
+
+algorithm_class = "Aead"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "openssl::symm::Cipher::aes_256_gcm",
+    "openssl::symm::Cipher::aes_256_cbc",
+    "openssl::symm::Cipher::aes_256_ctr",
+    "openssl::symm::Cipher::aes_256_ecb",
+    "openssl::symm::Cipher::aes_256_xts",
+    "openssl::symm::Cipher::chacha20_poly1305",
+    "openssl::symm::Cipher::chacha20",
+]
+
+[taint]
+sinks = ["encrypt", "decrypt"]
+
+[crypto]
+primitive = "ae"
+algorithm_family = "AES"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "AES-256"
+nist_quantum_security_level = 5

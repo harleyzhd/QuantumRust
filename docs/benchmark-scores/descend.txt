@@ -1,0 +1,24 @@
+
+E1 score with --descend: 114 positive, 18 negative mutants
+
+  all findings      precision  96.2%   recall  89.5%   F1  92.7%   (TP 102, FP 4, FN 12)
+  vulnerable-only   precision 100.0%   recall  50.0%   F1  66.7%   (TP 57, FP 0, FN 57)
+
+  recall by failure mode
+    M0  12/12
+    M1  12/12
+    M10  12/12
+    M2  12/12
+    M3  12/12
+    M4  0/12
+    M5  2/2
+    M6  12/12
+    M7  8/8
+    M8  12/12
+    M9  8/8
+
+  findings on negative mutants (4):
+    N0-n-0062        sha2::OidSha256 [quantum-resistant]
+    N0-n-0063        sha2::OidSha256 [quantum-resistant]
+    N1-n-0064        sha2::OidSha256 [quantum-resistant]
+    N1-n-0065        sha2::OidSha256 [quantum-resistant]

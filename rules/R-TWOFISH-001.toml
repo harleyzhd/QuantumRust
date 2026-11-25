@@ -1,0 +1,13 @@
+id = "R-TWOFISH-001"
+description = "Twofish, named as a generic argument. The algorithm is established; the key size, which decides the verdict, is not."
+
+algorithm_class = "Symmetric"
+qv_status = "Unknown"
+
+[match]
+type_names = ["twofish::Twofish"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "Twofish"
+crypto_functions = ["encrypt", "decrypt"]

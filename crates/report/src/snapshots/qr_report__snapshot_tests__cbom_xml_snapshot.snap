@@ -1,0 +1,139 @@
+---
+source: crates/report/src/lib.rs
+assertion_line: 1420
+expression: "emit_cbom_xml(&representative(), &RuleSet::builtin())"
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.7" version="1">
+  <metadata>
+    <tools>
+      <components>
+        <component type="application">
+          <name>quantumrust</name>
+          <version>1.0.0</version>
+        </component>
+      </components>
+    </tools>
+  </metadata>
+  <components>
+    <component type="cryptographic-asset" bom-ref="crypto-ddf84394bd686abc">
+      <name>rsa::RsaPrivateKey::new</name>
+      <properties>
+        <property name="quantumrust:rule">R-RSA-001</property>
+        <property name="quantumrust:quantum-status">quantum-vulnerable</property>
+        <property name="quantumrust:taint-chain">src/main.rs:21 -&gt; src/main.rs:23</property>
+      </properties>
+      <evidence>
+        <occurrences>
+          <occurrence>
+            <location>src/main.rs</location>
+            <line>21</line>
+            <symbol>rsa::RsaPrivateKey::new</symbol>
+            <additionalContext>matched by rule R-RSA-001</additionalContext>
+          </occurrence>
+        </occurrences>
+      </evidence>
+      <cryptoProperties>
+        <assetType>algorithm</assetType>
+        <algorithmProperties>
+          <primitive>unknown</primitive>
+          <parameterSetIdentifier>2048</parameterSetIdentifier>
+          <cryptoFunctions>
+            <cryptoFunction>keygen</cryptoFunction>
+          </cryptoFunctions>
+          <nistQuantumSecurityLevel>0</nistQuantumSecurityLevel>
+        </algorithmProperties>
+        <oid>1.2.840.113549.1.1.1</oid>
+      </cryptoProperties>
+    </component>
+    <component type="cryptographic-asset" bom-ref="crypto-d9bfbe78a92f1713">
+      <name>&lt;dyn rsa::signature::Signer&gt;::sign</name>
+      <properties>
+        <property name="quantumrust:rule">R-RSA-002</property>
+        <property name="quantumrust:quantum-status">quantum-vulnerable</property>
+      </properties>
+      <evidence>
+        <occurrences>
+          <occurrence>
+            <location>src/main.rs</location>
+            <line>29</line>
+            <symbol>&lt;dyn rsa::signature::Signer&gt;::sign</symbol>
+            <additionalContext>matched by rule R-RSA-002</additionalContext>
+          </occurrence>
+        </occurrences>
+      </evidence>
+      <cryptoProperties>
+        <assetType>algorithm</assetType>
+        <algorithmProperties>
+          <primitive>signature</primitive>
+          <parameterSetIdentifier>2048</parameterSetIdentifier>
+          <cryptoFunctions>
+            <cryptoFunction>sign</cryptoFunction>
+          </cryptoFunctions>
+          <nistQuantumSecurityLevel>0</nistQuantumSecurityLevel>
+        </algorithmProperties>
+        <oid>1.2.840.113549.1.1.1</oid>
+      </cryptoProperties>
+    </component>
+    <component type="cryptographic-asset" bom-ref="crypto-1beef56dfdf34dbd">
+      <name>rsa::sha2::OidSha256</name>
+      <properties>
+        <property name="quantumrust:rule">R-SHA2-001</property>
+        <property name="quantumrust:quantum-status">quantum-resistant</property>
+      </properties>
+      <evidence>
+        <occurrences>
+          <occurrence>
+            <location>src/main.rs</location>
+            <line>23</line>
+            <symbol>rsa::sha2::OidSha256</symbol>
+            <additionalContext>matched by rule R-SHA2-001</additionalContext>
+          </occurrence>
+        </occurrences>
+      </evidence>
+      <cryptoProperties>
+        <assetType>algorithm</assetType>
+        <algorithmProperties>
+          <primitive>hash</primitive>
+          <algorithmFamily>SHA-2</algorithmFamily>
+          <parameterSetIdentifier>SHA-256</parameterSetIdentifier>
+          <cryptoFunctions>
+            <cryptoFunction>digest</cryptoFunction>
+          </cryptoFunctions>
+          <nistQuantumSecurityLevel>2</nistQuantumSecurityLevel>
+        </algorithmProperties>
+        <oid>2.16.840.1.101.3.4.2.1</oid>
+      </cryptoProperties>
+    </component>
+    <component type="cryptographic-asset" bom-ref="crypto-c47f425f74a39048">
+      <name>&lt;aes::Aes128 as crypto_common::KeyInit&gt;::new</name>
+      <properties>
+        <property name="quantumrust:rule">R-AES-002</property>
+        <property name="quantumrust:quantum-status">deprecated</property>
+      </properties>
+      <evidence>
+        <occurrences>
+          <occurrence>
+            <location>src/main.rs</location>
+            <line>40</line>
+            <symbol>&lt;aes::Aes128 as crypto_common::KeyInit&gt;::new</symbol>
+            <additionalContext>matched by rule R-AES-002</additionalContext>
+          </occurrence>
+        </occurrences>
+      </evidence>
+      <cryptoProperties>
+        <assetType>algorithm</assetType>
+        <algorithmProperties>
+          <primitive>block-cipher</primitive>
+          <algorithmFamily>AES</algorithmFamily>
+          <parameterSetIdentifier>AES-128</parameterSetIdentifier>
+          <cryptoFunctions>
+            <cryptoFunction>encrypt</cryptoFunction>
+            <cryptoFunction>decrypt</cryptoFunction>
+          </cryptoFunctions>
+          <nistQuantumSecurityLevel>1</nistQuantumSecurityLevel>
+        </algorithmProperties>
+      </cryptoProperties>
+    </component>
+  </components>
+</bom>

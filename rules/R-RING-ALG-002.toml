@@ -1,0 +1,119 @@
+id = "R-RING-ALG-002"
+description = "A quantum-resistant AEAD or digest algorithm selected by a `ring` static."
+
+algorithm_class = "Unknown"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+type_names = [
+    "ring::aead::AES_256_GCM",
+    "ring::aead::CHACHA20_POLY1305",
+    "ring::digest::SHA256",
+    "ring::digest::SHA384",
+    "ring::digest::SHA512",
+    "ring::digest::SHA512_256",
+    "ring::hmac::HMAC_SHA256",
+    "ring::hmac::HMAC_SHA384",
+    "ring::hmac::HMAC_SHA512",
+    "ring::hkdf::HKDF_SHA256",
+    "ring::hkdf::HKDF_SHA384",
+    "ring::hkdf::HKDF_SHA512",
+    "ring::pbkdf2::PBKDF2_HMAC_SHA256",
+    "ring::pbkdf2::PBKDF2_HMAC_SHA384",
+    "ring::pbkdf2::PBKDF2_HMAC_SHA512",
+]
+
+[crypto]
+primitive = "unknown"
+nist_quantum_security_level = 5
+
+[[parameter_sets]]
+identifier = "AES-256"
+name = "AES-256"
+nist_quantum_security_level = 5
+type_names = ["ring::aead::AES_256_GCM"]
+
+[[parameter_sets]]
+identifier = "ChaCha20-Poly1305"
+name = "ChaCha20-Poly1305"
+nist_quantum_security_level = 5
+type_names = ["ring::aead::CHACHA20_POLY1305"]
+
+[[parameter_sets]]
+identifier = "SHA-256"
+name = "SHA-256"
+nist_quantum_security_level = 2
+type_names = ["ring::digest::SHA256"]
+
+[[parameter_sets]]
+identifier = "SHA-384"
+name = "SHA-384"
+nist_quantum_security_level = 4
+type_names = ["ring::digest::SHA384"]
+
+[[parameter_sets]]
+identifier = "SHA-512"
+name = "SHA-512"
+nist_quantum_security_level = 5
+type_names = ["ring::digest::SHA512"]
+
+[[parameter_sets]]
+identifier = "SHA-512/256"
+name = "SHA-512/256"
+nist_quantum_security_level = 2
+type_names = ["ring::digest::SHA512_256"]
+
+[[parameter_sets]]
+identifier = "HMAC-SHA-256"
+name = "HMAC-SHA-256"
+nist_quantum_security_level = 2
+type_names = ["ring::hmac::HMAC_SHA256"]
+
+[[parameter_sets]]
+identifier = "HMAC-SHA-384"
+name = "HMAC-SHA-384"
+nist_quantum_security_level = 4
+type_names = ["ring::hmac::HMAC_SHA384"]
+
+[[parameter_sets]]
+identifier = "HMAC-SHA-512"
+name = "HMAC-SHA-512"
+nist_quantum_security_level = 5
+type_names = ["ring::hmac::HMAC_SHA512"]
+
+[[parameter_sets]]
+identifier = "HKDF-SHA-256"
+name = "HKDF-SHA-256"
+nist_quantum_security_level = 2
+type_names = ["ring::hkdf::HKDF_SHA256"]
+
+[[parameter_sets]]
+identifier = "HKDF-SHA-384"
+name = "HKDF-SHA-384"
+nist_quantum_security_level = 4
+type_names = ["ring::hkdf::HKDF_SHA384"]
+
+[[parameter_sets]]
+identifier = "HKDF-SHA-512"
+name = "HKDF-SHA-512"
+nist_quantum_security_level = 5
+type_names = ["ring::hkdf::HKDF_SHA512"]
+
+[[parameter_sets]]
+identifier = "PBKDF2-HMAC-SHA-256"
+name = "PBKDF2-HMAC-SHA-256"
+nist_quantum_security_level = 2
+type_names = ["ring::pbkdf2::PBKDF2_HMAC_SHA256"]
+
+[[parameter_sets]]
+identifier = "PBKDF2-HMAC-SHA-384"
+name = "PBKDF2-HMAC-SHA-384"
+nist_quantum_security_level = 4
+type_names = ["ring::pbkdf2::PBKDF2_HMAC_SHA384"]
+
+[[parameter_sets]]
+identifier = "PBKDF2-HMAC-SHA-512"
+name = "PBKDF2-HMAC-SHA-512"
+nist_quantum_security_level = 5
+type_names = ["ring::pbkdf2::PBKDF2_HMAC_SHA512"]

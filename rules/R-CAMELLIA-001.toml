@@ -1,0 +1,16 @@
+id = "R-CAMELLIA-001"
+description = "Camellia-256, named as a generic argument."
+
+algorithm_class = "Symmetric"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+type_names = ["camellia::Camellia256"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "CAMELLIA"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "Camellia-256"
+nist_quantum_security_level = 5

@@ -1,0 +1,25 @@
+id = "R-SHA3-002"
+description = "SHA3-224 and SHAKE-128 via the `sha3` crate — below the 256-bit quantum-resistance bar."
+
+algorithm_class = "Hash"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+signatures = [
+    "sha3::Sha3_224::new",
+    "sha3::Sha3_224::digest",
+    "sha3::Keccak224::new",
+    "sha3::Shake128::default",
+    "sha3::Shake128::new",
+]
+
+type_names = ["sha3::Sha3_224Core", "sha3::Keccak224Core", "sha3::Shake128Core"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "SHA-3"
+crypto_functions = ["digest"]
+oid = "2.16.840.1.101.3.4.2.7"
+parameter_set_identifier = "SHA3-224"
+nist_quantum_security_level = 1

@@ -1,0 +1,18 @@
+id = "R-RING-006"
+description = "Digest computation via `ring`."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "ring::digest::digest",
+    "ring::digest::Context::new",
+    "ring::digest::Context::finish",
+]
+
+[crypto]
+primitive = "hash"
+crypto_functions = ["digest"]
+nist_quantum_security_level = 2

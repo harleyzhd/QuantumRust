@@ -1,0 +1,21 @@
+id = "R-RING-004"
+description = "Key agreement via `ring::agreement`."
+
+algorithm_class = "Ecdh"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ring::agreement::EphemeralPrivateKey::generate",
+    "ring::agreement::EphemeralPrivateKey::compute_public_key",
+    "ring::agreement::agree_ephemeral",
+]
+
+[taint]
+sinks = ["agree_ephemeral"]
+
+[crypto]
+primitive = "key-agree"
+crypto_functions = ["keygen", "keyderive"]
+nist_quantum_security_level = 0

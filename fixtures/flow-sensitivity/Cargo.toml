@@ -1,0 +1,12 @@
+[package]
+name = "flow-sensitivity"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "flow_sensitivity"
+path = "src/lib.rs"
+
+[dependencies]
+
+[workspace]

@@ -1,0 +1,16 @@
+[package]
+name = "dep-descent"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "dep_descent"
+path = "src/lib.rs"
+
+[dependencies]
+sha2 = "0.10"
+vault = { path = "deps/vault" }
+relay = { path = "deps/relay" }
+
+[workspace]
+exclude = ["deps"]

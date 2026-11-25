@@ -1,0 +1,17 @@
+# CVSS v3.1 Environmental Security Requirements (CR / IR / AR): the
+# Criticality term of the risk score, read by `qr-risk`.
+#
+# A criticality map (`analyze --criticality`) marks which parts of a codebase
+# matter more: High for security paths such as TLS termination, key
+# establishment or token signing, Low for tests, benchmarks and dev tools.
+# Without a map every finding is Medium.
+#
+# These are the published CVSS v3.1 values. CVSS v4.0 keeps the metrics but
+# publishes no numeric weights for them.
+#
+# Blast radius damping is fixed in code as f(b) = 1 + log2(b + 1).
+
+[criticality]
+High = 1.5
+Medium = 1.0
+Low = 0.5

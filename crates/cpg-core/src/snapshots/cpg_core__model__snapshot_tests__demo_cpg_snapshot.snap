@@ -1,0 +1,174 @@
+---
+source: crates/cpg-core/src/model.rs
+expression: "Cpg::demo()"
+---
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": 0,
+        "layer": "Mir",
+        "kind": "Function",
+        "symbol": "demo_crate::main",
+        "canonical": null,
+        "location": {
+          "file": "src/main.rs",
+          "line": 10
+        },
+        "safety_ctx": "Safe",
+        "const_args": [],
+        "type_args": [],
+        "static_args": []
+      },
+      {
+        "id": 1,
+        "layer": "Mir",
+        "kind": "CallSite",
+        "symbol": "rsa::RsaPrivateKey::sign",
+        "canonical": null,
+        "location": {
+          "file": "src/main.rs",
+          "line": 15
+        },
+        "safety_ctx": "Safe",
+        "const_args": [],
+        "type_args": [],
+        "static_args": []
+      },
+      {
+        "id": 2,
+        "layer": "Mir",
+        "kind": "TraitMethod",
+        "symbol": "<dyn signature::Signer>::sign",
+        "canonical": null,
+        "location": {
+          "file": "src/main.rs",
+          "line": 15
+        },
+        "safety_ctx": "Safe",
+        "const_args": [],
+        "type_args": [],
+        "static_args": []
+      },
+      {
+        "id": 3,
+        "layer": "Llvm",
+        "kind": "Vtable",
+        "symbol": "vtable::signature::Signer::sign",
+        "canonical": null,
+        "location": null,
+        "safety_ctx": "Safe",
+        "const_args": [],
+        "type_args": [],
+        "static_args": []
+      },
+      {
+        "id": 4,
+        "layer": "Llvm",
+        "kind": "FfiBoundary",
+        "symbol": "openssl_sys::RSA_sign",
+        "canonical": null,
+        "location": {
+          "file": "src/ffi.rs",
+          "line": 5
+        },
+        "safety_ctx": "Ffi",
+        "const_args": [],
+        "type_args": [],
+        "static_args": []
+      },
+      {
+        "id": 5,
+        "layer": "Mir",
+        "kind": "Predicate",
+        "symbol": "demo_crate::main::{config.use_rsa}",
+        "canonical": null,
+        "location": {
+          "file": "src/main.rs",
+          "line": 14
+        },
+        "safety_ctx": "Safe",
+        "const_args": [],
+        "type_args": [],
+        "static_args": []
+      }
+    ],
+    "node_holes": [],
+    "edge_property": "directed",
+    "edges": [
+      [
+        0,
+        1,
+        {
+          "kind": "Call"
+        }
+      ],
+      [
+        0,
+        2,
+        {
+          "kind": "Call"
+        }
+      ],
+      [
+        2,
+        1,
+        {
+          "kind": "TraitResolve"
+        }
+      ],
+      [
+        2,
+        3,
+        {
+          "kind": "CrossLayerRef"
+        }
+      ],
+      [
+        1,
+        4,
+        {
+          "kind": "DataDep"
+        }
+      ],
+      [
+        0,
+        5,
+        {
+          "kind": "Contains"
+        }
+      ],
+      [
+        0,
+        1,
+        {
+          "kind": "Contains"
+        }
+      ],
+      [
+        0,
+        2,
+        {
+          "kind": "Contains"
+        }
+      ],
+      [
+        5,
+        1,
+        {
+          "kind": "ControlDep"
+        }
+      ],
+      [
+        5,
+        2,
+        {
+          "kind": "ControlFlow"
+        }
+      ]
+    ]
+  },
+  "mode": "Dual",
+  "next_id": 6,
+  "source": null
+}

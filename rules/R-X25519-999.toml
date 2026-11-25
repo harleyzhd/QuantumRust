@@ -1,0 +1,51 @@
+id = "R-X25519-999"
+description = "Any other API of the X25519 crates that no enumerated key-exchange rule names."
+
+algorithm_class = "EcdhX25519"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+crates = ["x25519", "x448", "curve25519_dalek"]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[crypto]
+primitive = "unknown"
+algorithm_family = "ECDH"
+oid = "1.3.101.110"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "X25519"
+name = "X25519"
+nist_quantum_security_level = 0
+crates = ["x25519"]
+paths = ["curve25519_dalek::MontgomeryPoint"]
+
+[[parameter_sets]]
+identifier = "X448"
+name = "X448"
+nist_quantum_security_level = 0
+crates = ["x448"]

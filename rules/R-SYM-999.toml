@@ -1,0 +1,92 @@
+id = "R-SYM-999"
+description = "A symmetric cipher operation whose algorithm or key size no enumerated rule names."
+
+algorithm_class = "Symmetric"
+qv_status = "Unknown"
+
+[match]
+crates = [
+    "aes",
+    "chacha20",
+    "chacha20poly1305",
+    "xchacha20poly1305",
+    "salsa20",
+    "camellia",
+    "des",
+    "blowfish",
+    "rc2",
+    "twofish",
+    "aead",
+    "cipher",
+    "ctr",
+    "cbc",
+    "ofb",
+    "cfb",
+    "eax",
+    "ocb3",
+    "ecb",
+    "cmac",
+    "idea",
+    "cast5",
+]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "key_size",
+    "block_size",
+    "nonce_size",
+    "tag_size",
+    "assume_unique_for_key",
+    "assume_unique_for_key_and_counter",
+    "empty",
+    "advance",
+    "algorithm",
+    "as_slice",
+    "as_mut_slice",
+    "from_slice",
+    "as_array",
+    "into_bytes",
+    "to_owned",
+    "to_usize",
+    "to_u8",
+    "to_u16",
+    "to_u32",
+    "to_u64",
+    "to_i32",
+    "to_isize",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+    "update_assoc",
+    "tag_clone",
+    "clone_from_slice",
+]
+
+[taint]
+sinks = [
+    "encrypt_in_place",
+    "decrypt_in_place",
+    "encrypt_in_place_detached",
+    "decrypt_in_place_detached",
+    "apply_keystream",
+    "apply_keystream_b2b",
+]
+
+[crypto]
+primitive = "unknown"

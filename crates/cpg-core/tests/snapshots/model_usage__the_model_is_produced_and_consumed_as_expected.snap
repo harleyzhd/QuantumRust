@@ -1,0 +1,24 @@
+---
+source: crates/cpg-core/tests/model_usage.rs
+expression: report
+---
+EdgeKind
+  ArgFlow        built in: mir-extract                              used outside extraction: callgraph, taint
+  Call           built in: llvm-extract, mir-extract                used outside extraction: callgraph, quantumrust-cli, rules
+  Contains       built in: cpg-fusion, llvm-extract, mir-extract    used outside extraction: callgraph, quantumrust-cli, rules
+  ControlDep     built in: mir-extract                              used outside extraction: NOTHING
+  ControlFlow    built in: mir-extract                              used outside extraction: NOTHING
+  CrossLayerRef  built in: cpg-fusion                               used outside extraction: rules
+  DataDep        built in: llvm-extract, mir-extract                used outside extraction: callgraph, taint
+  ReturnFlow     built in: mir-extract                              used outside extraction: callgraph, taint
+  TraitResolve   built in: mir-extract                              used outside extraction: callgraph, quantumrust-cli
+
+NodeKind
+  CallSite       built in: cpg-fusion, llvm-extract, mir-extract    used outside extraction: callgraph, quantumrust-cli, rules
+  FfiBoundary    built in: cpg-fusion, llvm-extract, mir-extract    used outside extraction: callgraph, rules
+  FnRef          built in: mir-extract                              used outside extraction: callgraph, rules
+  Function       built in: cpg-fusion, llvm-extract, mir-extract    used outside extraction: callgraph, quantumrust-cli, rules
+  IndirectCall   built in: mir-extract                              used outside extraction: callgraph
+  Predicate      built in: mir-extract                              used outside extraction: NOTHING
+  TraitMethod    built in: cpg-fusion, mir-extract                  used outside extraction: callgraph, rules
+  Vtable         built in: cpg-fusion, llvm-extract                 used outside extraction: NOTHING

@@ -1,0 +1,15 @@
+id = "R-BLOWFISH-001"
+description = "Blowfish, named as a generic argument. A 64-bit block cipher, superseded and Sweet32-exposed."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+type_names = ["blowfish::Blowfish", "blowfish::BlowfishLE"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "Blowfish"
+crypto_functions = ["encrypt", "decrypt"]
+nist_quantum_security_level = 0

@@ -1,0 +1,16 @@
+id = "R-CAMELLIA-003"
+description = "Camellia-192, named as a generic argument — below the 256-bit bar."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+type_names = ["camellia::Camellia192"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "CAMELLIA"
+parameter_set_identifier = "Camellia-192"
+crypto_functions = ["encrypt", "decrypt"]
+nist_quantum_security_level = 3

@@ -1,0 +1,12 @@
+[package]
+name = "fn-pointer"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "fn_pointer"
+path = "src/lib.rs"
+
+[dependencies]
+
+[workspace]

@@ -1,0 +1,596 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "crypto-ddf84394bd686abc",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 21,
+            "location": "src/main.rs",
+            "symbol": "rsa::RsaPrivateKey::new"
+          }
+        ]
+      },
+      "name": "rsa::RsaPrivateKey::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:21 -> src/main.rs:21 -> src/main.rs:22 -> src/main.rs:23"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-e9af171b8abe1cfb",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 22,
+            "location": "src/main.rs",
+            "symbol": "rsa::pkcs1v15::SigningKey::<D>::new"
+          }
+        ]
+      },
+      "name": "rsa::pkcs1v15::SigningKey::<D>::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:22 -> src/main.rs:23"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-77aedb3700a728d8",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 22,
+            "location": "src/main.rs",
+            "symbol": "rsa::sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "rsa::sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-c839cc9860714a50",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "sign"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "signature"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-002",
+            "line": 23,
+            "location": "src/main.rs",
+            "symbol": "rsa::signature::RandomizedSigner::sign_with_rng"
+          }
+        ]
+      },
+      "name": "rsa::signature::RandomizedSigner::sign_with_rng",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-1beef56dfdf34dbd",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 23,
+            "location": "src/main.rs",
+            "symbol": "rsa::sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "rsa::sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-d9bfbe78a92f1713",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "sign"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "signature"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-002",
+            "line": 29,
+            "location": "src/main.rs",
+            "symbol": "<dyn rsa::signature::Signer>::sign"
+          }
+        ]
+      },
+      "name": "<dyn rsa::signature::Signer>::sign",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-f10763a8a39f160c",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "sign"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "signature"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-002",
+            "line": 53,
+            "location": "src/main.rs",
+            "symbol": "openssl_sys::RSA_sign"
+          }
+        ]
+      },
+      "name": "openssl_sys::RSA_sign",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-59dbd5275c92ace3",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 68,
+            "location": "src/main.rs",
+            "symbol": "rsa::RsaPrivateKey::new"
+          }
+        ]
+      },
+      "name": "rsa::RsaPrivateKey::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:68 -> src/main.rs:68 -> src/main.rs:69 -> src/main.rs:100 -> src/main.rs:101 -> src/main.rs:78"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-5c9ce1f78dacb13a",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 69,
+            "location": "src/main.rs",
+            "symbol": "rsa::pkcs1v15::SigningKey::<D>::new"
+          }
+        ]
+      },
+      "name": "rsa::pkcs1v15::SigningKey::<D>::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:69 -> src/main.rs:100 -> src/main.rs:101 -> src/main.rs:78"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-12fea8d0d217e7a3",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 69,
+            "location": "src/main.rs",
+            "symbol": "rsa::sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "rsa::sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-dfce6eea64a726ac",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "sign"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "signature"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-002",
+            "line": 78,
+            "location": "src/main.rs",
+            "symbol": "rsa::signature::RandomizedSigner::sign_with_rng"
+          }
+        ]
+      },
+      "name": "rsa::signature::RandomizedSigner::sign_with_rng",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-13a75295920145b9",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 78,
+            "location": "src/main.rs",
+            "symbol": "rsa::sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "rsa::sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-9f34409b2aa0429e",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 92,
+            "location": "src/main.rs",
+            "symbol": "rsa::RsaPrivateKey::new"
+          }
+        ]
+      },
+      "name": "rsa::RsaPrivateKey::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:92 -> src/main.rs:92 -> src/main.rs:93 -> src/main.rs:94 -> src/main.rs:29"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-8b043e11e54b267b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.113549.1.1.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-RSA-001",
+            "line": 93,
+            "location": "src/main.rs",
+            "symbol": "rsa::pkcs1v15::SigningKey::<D>::new"
+          }
+        ]
+      },
+      "name": "rsa::pkcs1v15::SigningKey::<D>::new",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-RSA-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/main.rs:93 -> src/main.rs:94 -> src/main.rs:29"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-b35156ff30457f1c",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 93,
+            "location": "src/main.rs",
+            "symbol": "rsa::sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "rsa::sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    }
+  ],
+  "metadata": {
+    "tools": {
+      "components": [
+        {
+          "name": "quantumrust",
+          "type": "application",
+          "version": "0.0.0"
+        }
+      ]
+    }
+  },
+  "specVersion": "1.7",
+  "version": 1
+}

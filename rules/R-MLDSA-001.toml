@@ -1,0 +1,35 @@
+id = "R-MLDSA-001"
+description = "ML-DSA (FIPS 204) key generation, signing and verification."
+
+algorithm_class = "Unknown"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "pqcrypto_mldsa::keypair",
+    "pqcrypto_mldsa::detached_sign",
+    "pqcrypto_mldsa::verify_detached_signature",
+    "pqcrypto_mldsa::sign",
+    "pqcrypto_mldsa::open",
+    "ml_dsa::sign",
+    "ml_dsa::verify",
+    "fips204::try_keygen",
+    "fips204::try_sign",
+    "fips204::verify",
+    "pqcrypto_dilithium::keypair",
+    "pqcrypto_dilithium::detached_sign",
+    "pqcrypto_dilithium::verify_detached_signature",
+    "ml_dsa::SigningKey::from_seed",
+    "ml_dsa::KeyGen::key_gen",
+    "ml_dsa::Keypair::verifying_key",
+    "ml_dsa::SigningKey::sign_deterministic",
+]
+
+[taint]
+sinks = ["detached_sign", "try_sign"]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "ML-DSA"
+crypto_functions = ["keygen", "sign", "verify"]

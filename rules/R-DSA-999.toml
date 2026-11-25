@@ -1,0 +1,46 @@
+id = "R-DSA-999"
+description = "Any other API of the `dsa` crate that no enumerated DSA rule names."
+
+algorithm_class = "Dsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+crates = ["dsa"]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "p",
+    "q",
+    "g",
+    "x",
+    "y",
+    "r",
+    "s",
+    "from_components",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[crypto]
+primitive = "unknown"
+algorithm_family = "DSA"
+oid = "1.2.840.10040.4.1"
+nist_quantum_security_level = 0

@@ -1,0 +1,29 @@
+id = "R-X448-001"
+description = "X448 secret generation and Diffie-Hellman via `cx448::x448` and the `x448` crate."
+
+algorithm_class = "EcdhX25519"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "cx448::x448::Secret::new",
+    "cx448::x448::Secret::from",
+    "cx448::x448::PublicKey::from",
+    "cx448::x448::Secret::as_diffie_hellman",
+    "x448::Secret::new",
+    "x448::Secret::from",
+    "x448::PublicKey::from",
+    "x448::Secret::as_diffie_hellman",
+]
+
+[taint]
+sinks = ["as_diffie_hellman", "as_bytes", "to_bytes"]
+
+[crypto]
+primitive = "key-agree"
+algorithm_family = "ECDH"
+crypto_functions = ["keygen", "keyderive"]
+oid = "1.3.101.111"
+parameter_set_identifier = "X448"
+nist_quantum_security_level = 0

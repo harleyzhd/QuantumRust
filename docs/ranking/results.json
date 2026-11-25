@@ -1,0 +1,1436 @@
+{
+  "fallback": {
+    "M0-F-RSA-2048-p-0000": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-RSA-2048-p-0001": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-RSA-2048-p-0002": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+        "line": 12,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-RSA-2048-p-0003": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+        "line": 10,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M4-F-RSA-2048-p-0004": [],
+    "M5-F-RSA-2048-p-0005": [
+      {
+        "rule": "R-RSA-002",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+        "line": 15,
+        "blast": 5,
+        "score": 3.58,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 0.9986157454310449
+      }
+    ],
+    "M0-F-RSA-3072-p-0006": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-RSA-3072-p-0007": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-RSA-3072-p-0008": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+        "line": 12,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-RSA-3072-p-0009": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+        "line": 10,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M0-F-ECC-P-256-p-0012": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-ECC-P-256-p-0013": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-ECC-P-256-p-0014": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+        "line": 12,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-ECC-P-256-p-0015": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+        "line": 10,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M4-F-ECC-P-256-p-0016": [],
+    "M0-F-KEX-X25519-p-0017": [
+      {
+        "rule": "R-X25519-001",
+        "cls": "EcdhX25519",
+        "status": "Vulnerable",
+        "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-KEX-X25519-p-0018": [
+      {
+        "rule": "R-X25519-001",
+        "cls": "EcdhX25519",
+        "status": "Vulnerable",
+        "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-KEX-X25519-p-0019": [
+      {
+        "rule": "R-X25519-001",
+        "cls": "EcdhX25519",
+        "status": "Vulnerable",
+        "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+        "line": 12,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M0-F-HASH-SHA-256-p-0022": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M1-F-HASH-SHA-256-p-0023": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M2-F-HASH-SHA-256-p-0024": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M3-F-HASH-SHA-256-p-0025": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-HASH-SHA-256-p-0026": [],
+    "M0-F-HASH-SHA-512-p-0027": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M1-F-HASH-SHA-512-p-0028": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M2-F-HASH-SHA-512-p-0029": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M0-F-HASH-DEP-MD5-p-0037": [
+      {
+        "rule": "R-MD5-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-HASH-DEP-MD5-p-0038": [
+      {
+        "rule": "R-MD5-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-HASH-DEP-MD5-p-0039": [
+      {
+        "rule": "R-MD5-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M0-F-SYM-AES-128-p-0042": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-SYM-AES-128-p-0043": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-SYM-AES-128-p-0044": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+        "line": 13,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-SYM-AES-128-p-0045": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M4-F-SYM-AES-128-p-0046": [],
+    "M3-F-SYM-AES-256-p-0050": [
+      {
+        "rule": "R-AES-001",
+        "cls": "Symmetric",
+        "status": "Resistant",
+        "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-SYM-AES-256-p-0051": [],
+    "M0-F-SYM-ChaCha20-p-0052": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M1-F-SYM-ChaCha20-p-0053": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M2-F-SYM-ChaCha20-p-0054": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+        "line": 12,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M3-F-SYM-ChaCha20-p-0055": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+        "line": 10,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-SYM-ChaCha20-p-0056": [],
+    "M3-F-PQC-ML-KEM-768-p-0060": [
+      {
+        "rule": "R-MLKEM-001",
+        "cls": "Kem",
+        "status": "Resistant",
+        "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+        "line": 10,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-PQC-ML-KEM-768-p-0061": [],
+    "N0-n-0062": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "N0-n-0062/src/lib.rs",
+        "line": 8,
+        "blast": 6,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "N1-n-0065": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "N1-n-0065/src/lib.rs",
+        "line": 9,
+        "blast": 6,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "N2-n-0066": [],
+    "N3-n-0069": [],
+    "N4-n-0071": [],
+    "N5-n-0072": [],
+    "N5-n-0074": [],
+    "N5-n-0076": [],
+    "M6-F-RSA-3072-p-0079": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M6-F-HASH-SHA-256-p-0082": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M6-F-HASH-SHA-512-p-0083": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M6-F-HASH-DEP-SHA-1-p-0084": [
+      {
+        "rule": "R-SHA1-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M6-F-SYM-AES-128-p-0086": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M6-F-PQC-ML-KEM-768-p-0089": [
+      {
+        "rule": "R-MLKEM-001",
+        "cls": "Kem",
+        "status": "Resistant",
+        "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M7-F-HASH-SHA-256-p-0090": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+        "line": 8,
+        "blast": 3,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M7-F-HASH-SHA-512-p-0091": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+        "line": 8,
+        "blast": 3,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M7-F-HASH-DEP-SHA-1-p-0092": [
+      {
+        "rule": "R-SHA1-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+        "line": 8,
+        "blast": 3,
+        "score": 3.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M7-F-SYM-AES-128-p-0094": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+        "line": 9,
+        "blast": 3,
+        "score": 3.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M7-F-PQC-ML-KEM-768-p-0097": [
+      {
+        "rule": "R-MLKEM-001",
+        "cls": "Kem",
+        "status": "Resistant",
+        "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+        "line": 7,
+        "blast": 2,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M8-F-RSA-3072-p-0099": [],
+    "M8-F-ECC-P-256-p-0100": [],
+    "M8-F-KEX-X25519-p-0101": [],
+    "M8-F-HASH-DEP-MD5-p-0105": [],
+    "M8-F-SYM-AES-256-p-0107": [],
+    "M8-F-SYM-ChaCha20-p-0108": [],
+    "M9-F-HASH-DEP-MD5-p-0113": [],
+    "M9-F-SYM-AES-256-p-0115": [],
+    "M9-F-SYM-ChaCha20-p-0116": [],
+    "M10-F-RSA-3072-p-0119": [],
+    "M10-F-HASH-SHA-256-p-0122": [],
+    "M10-F-HASH-SHA-512-p-0123": [],
+    "M10-F-HASH-DEP-SHA-1-p-0124": [],
+    "M10-F-SYM-AES-128-p-0126": [],
+    "M10-F-PQC-ML-KEM-768-p-0129": [],
+    "N6-n-0130": []
+  },
+  "cha": {
+    "M0-F-RSA-2048-p-0000": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M0-F-RSA-2048-p-0000/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-RSA-2048-p-0001": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M1-F-RSA-2048-p-0001/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-RSA-2048-p-0002": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M2-F-RSA-2048-p-0002/src/lib.rs",
+        "line": 12,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-RSA-2048-p-0003": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M3-F-RSA-2048-p-0003/src/lib.rs",
+        "line": 10,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M4-F-RSA-2048-p-0004": [],
+    "M5-F-RSA-2048-p-0005": [
+      {
+        "rule": "R-RSA-002",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M5-F-RSA-2048-p-0005/src/lib.rs",
+        "line": 15,
+        "blast": 5,
+        "score": 3.58,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 0.9986157454310449
+      }
+    ],
+    "M0-F-RSA-3072-p-0006": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M0-F-RSA-3072-p-0006/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-RSA-3072-p-0007": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M1-F-RSA-3072-p-0007/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-RSA-3072-p-0008": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M2-F-RSA-3072-p-0008/src/lib.rs",
+        "line": 12,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-RSA-3072-p-0009": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M3-F-RSA-3072-p-0009/src/lib.rs",
+        "line": 10,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M0-F-ECC-P-256-p-0012": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M0-F-ECC-P-256-p-0012/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-ECC-P-256-p-0013": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M1-F-ECC-P-256-p-0013/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-ECC-P-256-p-0014": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M2-F-ECC-P-256-p-0014/src/lib.rs",
+        "line": 12,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-ECC-P-256-p-0015": [
+      {
+        "rule": "R-ECDSA-001",
+        "cls": "Ecdsa",
+        "status": "Vulnerable",
+        "file": "M3-F-ECC-P-256-p-0015/src/lib.rs",
+        "line": 10,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M4-F-ECC-P-256-p-0016": [],
+    "M0-F-KEX-X25519-p-0017": [
+      {
+        "rule": "R-X25519-001",
+        "cls": "EcdhX25519",
+        "status": "Vulnerable",
+        "file": "M0-F-KEX-X25519-p-0017/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-KEX-X25519-p-0018": [
+      {
+        "rule": "R-X25519-001",
+        "cls": "EcdhX25519",
+        "status": "Vulnerable",
+        "file": "M1-F-KEX-X25519-p-0018/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-KEX-X25519-p-0019": [
+      {
+        "rule": "R-X25519-001",
+        "cls": "EcdhX25519",
+        "status": "Vulnerable",
+        "file": "M2-F-KEX-X25519-p-0019/src/lib.rs",
+        "line": 12,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M0-F-HASH-SHA-256-p-0022": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M0-F-HASH-SHA-256-p-0022/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M1-F-HASH-SHA-256-p-0023": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M1-F-HASH-SHA-256-p-0023/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M2-F-HASH-SHA-256-p-0024": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M2-F-HASH-SHA-256-p-0024/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M3-F-HASH-SHA-256-p-0025": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M3-F-HASH-SHA-256-p-0025/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-HASH-SHA-256-p-0026": [],
+    "M0-F-HASH-SHA-512-p-0027": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M0-F-HASH-SHA-512-p-0027/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M1-F-HASH-SHA-512-p-0028": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M1-F-HASH-SHA-512-p-0028/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M2-F-HASH-SHA-512-p-0029": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M2-F-HASH-SHA-512-p-0029/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M0-F-HASH-DEP-MD5-p-0037": [
+      {
+        "rule": "R-MD5-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M0-F-HASH-DEP-MD5-p-0037/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-HASH-DEP-MD5-p-0038": [
+      {
+        "rule": "R-MD5-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M1-F-HASH-DEP-MD5-p-0038/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-HASH-DEP-MD5-p-0039": [
+      {
+        "rule": "R-MD5-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M2-F-HASH-DEP-MD5-p-0039/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M0-F-SYM-AES-128-p-0042": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M0-F-SYM-AES-128-p-0042/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M1-F-SYM-AES-128-p-0043": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M1-F-SYM-AES-128-p-0043/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M2-F-SYM-AES-128-p-0044": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M2-F-SYM-AES-128-p-0044/src/lib.rs",
+        "line": 13,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M3-F-SYM-AES-128-p-0045": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M3-F-SYM-AES-128-p-0045/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M4-F-SYM-AES-128-p-0046": [],
+    "M3-F-SYM-AES-256-p-0050": [
+      {
+        "rule": "R-AES-001",
+        "cls": "Symmetric",
+        "status": "Resistant",
+        "file": "M3-F-SYM-AES-256-p-0050/src/lib.rs",
+        "line": 11,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-SYM-AES-256-p-0051": [],
+    "M0-F-SYM-ChaCha20-p-0052": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M0-F-SYM-ChaCha20-p-0052/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M1-F-SYM-ChaCha20-p-0053": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M1-F-SYM-ChaCha20-p-0053/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M2-F-SYM-ChaCha20-p-0054": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M2-F-SYM-ChaCha20-p-0054/src/lib.rs",
+        "line": 12,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M3-F-SYM-ChaCha20-p-0055": [
+      {
+        "rule": "R-CHACHA-002",
+        "cls": "Aead",
+        "status": "Resistant",
+        "file": "M3-F-SYM-ChaCha20-p-0055/src/lib.rs",
+        "line": 10,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-SYM-ChaCha20-p-0056": [],
+    "M3-F-PQC-ML-KEM-768-p-0060": [
+      {
+        "rule": "R-MLKEM-001",
+        "cls": "Kem",
+        "status": "Resistant",
+        "file": "M3-F-PQC-ML-KEM-768-p-0060/src/lib.rs",
+        "line": 10,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M4-F-PQC-ML-KEM-768-p-0061": [],
+    "N0-n-0062": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "N0-n-0062/src/lib.rs",
+        "line": 8,
+        "blast": 6,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "N1-n-0065": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "N1-n-0065/src/lib.rs",
+        "line": 9,
+        "blast": 6,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "N2-n-0066": [],
+    "N3-n-0069": [],
+    "N4-n-0071": [],
+    "N5-n-0072": [],
+    "N5-n-0074": [],
+    "N5-n-0076": [],
+    "M6-F-RSA-3072-p-0079": [
+      {
+        "rule": "R-RSA-001",
+        "cls": "Rsa",
+        "status": "Vulnerable",
+        "file": "M6-F-RSA-3072-p-0079/src/lib.rs",
+        "line": 8,
+        "blast": 1,
+        "score": 2.0,
+        "tier": 1,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M6-F-HASH-SHA-256-p-0082": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M6-F-HASH-SHA-256-p-0082/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M6-F-HASH-SHA-512-p-0083": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M6-F-HASH-SHA-512-p-0083/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M6-F-HASH-DEP-SHA-1-p-0084": [
+      {
+        "rule": "R-SHA1-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M6-F-HASH-DEP-SHA-1-p-0084/src/lib.rs",
+        "line": 7,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M6-F-SYM-AES-128-p-0086": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M6-F-SYM-AES-128-p-0086/src/lib.rs",
+        "line": 9,
+        "blast": 0,
+        "score": 1.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M6-F-PQC-ML-KEM-768-p-0089": [
+      {
+        "rule": "R-MLKEM-001",
+        "cls": "Kem",
+        "status": "Resistant",
+        "file": "M6-F-PQC-ML-KEM-768-p-0089/src/lib.rs",
+        "line": 8,
+        "blast": 0,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M7-F-HASH-SHA-256-p-0090": [
+      {
+        "rule": "R-SHA2-001",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M7-F-HASH-SHA-256-p-0090/src/lib.rs",
+        "line": 8,
+        "blast": 3,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M7-F-HASH-SHA-512-p-0091": [
+      {
+        "rule": "R-SHA2-003",
+        "cls": "Hash",
+        "status": "Resistant",
+        "file": "M7-F-HASH-SHA-512-p-0091/src/lib.rs",
+        "line": 8,
+        "blast": 3,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M7-F-HASH-DEP-SHA-1-p-0092": [
+      {
+        "rule": "R-SHA1-001",
+        "cls": "Hash",
+        "status": "Deprecated",
+        "file": "M7-F-HASH-DEP-SHA-1-p-0092/src/lib.rs",
+        "line": 8,
+        "blast": 3,
+        "score": 3.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M7-F-SYM-AES-128-p-0094": [
+      {
+        "rule": "R-AES-002",
+        "cls": "Symmetric",
+        "status": "Deprecated",
+        "file": "M7-F-SYM-AES-128-p-0094/src/lib.rs",
+        "line": 9,
+        "blast": 3,
+        "score": 3.0,
+        "tier": 2,
+        "conservative": false,
+        "criticality": 1.0
+      }
+    ],
+    "M7-F-PQC-ML-KEM-768-p-0097": [
+      {
+        "rule": "R-MLKEM-001",
+        "cls": "Kem",
+        "status": "Resistant",
+        "file": "M7-F-PQC-ML-KEM-768-p-0097/src/lib.rs",
+        "line": 7,
+        "blast": 2,
+        "score": 0.0,
+        "tier": 3,
+        "conservative": false,
+        "criticality": null
+      }
+    ],
+    "M8-F-RSA-3072-p-0099": [],
+    "M8-F-ECC-P-256-p-0100": [],
+    "M8-F-KEX-X25519-p-0101": [],
+    "M8-F-HASH-DEP-MD5-p-0105": [],
+    "M8-F-SYM-AES-256-p-0107": [],
+    "M8-F-SYM-ChaCha20-p-0108": [],
+    "M9-F-HASH-DEP-MD5-p-0113": [],
+    "M9-F-SYM-AES-256-p-0115": [],
+    "M9-F-SYM-ChaCha20-p-0116": [],
+    "M10-F-RSA-3072-p-0119": [],
+    "M10-F-HASH-SHA-256-p-0122": [],
+    "M10-F-HASH-SHA-512-p-0123": [],
+    "M10-F-HASH-DEP-SHA-1-p-0124": [],
+    "M10-F-SYM-AES-128-p-0126": [],
+    "M10-F-PQC-ML-KEM-768-p-0129": [],
+    "N6-n-0130": []
+  }
+}

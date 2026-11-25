@@ -1,0 +1,21 @@
+id = "R-3DES-001"
+description = "Triple DES (TDEA), named as a generic argument. Disallowed by NIST SP 800-131A after 2023."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+type_names = [
+    "des::TdesEde3",
+    "des::TdesEde2",
+    "des::TdesEee3",
+    "des::TdesEee2",
+]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "3DES"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "TDEA"
+nist_quantum_security_level = 0

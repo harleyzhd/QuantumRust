@@ -1,0 +1,20 @@
+id = "R-RSA-008"
+description = "An RSASSA-PSS key or signature identified by type, when the call's symbol names only the generic signing trait."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+type_names = [
+    "rsa::pss::SigningKey",
+    "rsa::pss::BlindedSigningKey",
+    "rsa::pss::VerifyingKey",
+    "rsa::pss::Signature",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "RSASSA-PSS"
+oid = "1.2.840.113549.1.1.10"
+nist_quantum_security_level = 0

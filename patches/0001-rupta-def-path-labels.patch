@@ -1,0 +1,41 @@
+diff --git a/src/graph/call_graph.rs b/src/graph/call_graph.rs
+index 8d79d94..4ca291f 100644
+--- a/src/graph/call_graph.rs
++++ b/src/graph/call_graph.rs
+@@ -28,21 +28,28 @@ pub trait CGFunction: Copy + Clone + PartialEq + Eq + Hash + Debug {
+     fn dot_fmt(&self, acx: &AnalysisContext, f: &mut fmt::Formatter) -> fmt::Result;
+ }
+ 
++// QuantumRust patch: render call-graph labels with `tcx.def_path_str`.
++//
++// `FunctionReference::to_string` builds its label by string-slicing the Debug
++// form of a DefId, which yields the *raw* def path — `crate::{impl#0}::method`.
++// A consumer holding its own compilation of the same crate renders the same
++// definition as `<Type as Trait>::method` via `tcx.def_path_str`, so the two
++// never compare equal and every consumer has to guess. Rendering here with the
++// same function the consumer uses makes the labels directly comparable.
++//
++// Output serialization only — the analysis is untouched, so results are
++// identical to upstream.
+ impl CGFunction for FuncId {
+     fn dot_fmt(&self, acx: &AnalysisContext, f: &mut fmt::Formatter) -> fmt::Result {
+-        f.write_fmt(format_args!(
+-            "{}",
+-            acx.get_function_reference(*self).to_string()
+-        ))
++        let func_ref = acx.get_function_reference(*self);
++        f.write_fmt(format_args!("{}", acx.tcx.def_path_str(func_ref.def_id)))
+     }
+ }
+ 
+ impl CGFunction for CSFuncId {
+     fn dot_fmt(&self, acx: &AnalysisContext, f: &mut fmt::Formatter) -> fmt::Result {
+-        f.write_fmt(format_args!(
+-            "{}",
+-            acx.get_function_reference(self.func_id).to_string(),
+-        ))
++        let func_ref = acx.get_function_reference(self.func_id);
++        f.write_fmt(format_args!("{}", acx.tcx.def_path_str(func_ref.def_id)))
+     }
+ }
+ 

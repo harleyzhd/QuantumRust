@@ -1,0 +1,25 @@
+id = "R-X25519-002"
+description = "X25519 Diffie-Hellman key agreement via the `x25519-dalek` crate."
+
+algorithm_class = "EcdhX25519"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "x25519_dalek::diffie_hellman",
+    "x25519_dalek::x25519",
+    "x25519::diffie_hellman",
+    "x25519::x25519",
+]
+
+[taint]
+sinks = ["diffie_hellman", "x25519"]
+
+[crypto]
+primitive = "key-agree"
+algorithm_family = "ECDH"
+crypto_functions = ["keyderive"]
+oid = "1.3.101.110"
+parameter_set_identifier = "X25519"
+nist_quantum_security_level = 0

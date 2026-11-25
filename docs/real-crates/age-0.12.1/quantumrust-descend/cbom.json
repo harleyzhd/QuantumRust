@@ -1,0 +1,1872 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "crypto-a443ed53c9ae2ec2",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 99,
+            "location": "src/primitives/stream.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-dfe7904bd20c556d",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 188,
+            "location": "src/primitives/stream.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-39b7ffea67fe2ba6",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 204,
+            "location": "src/primitives/stream.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-2e8e42fd7f545839",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 33,
+            "location": "src/primitives.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-870b5608a635225b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 44,
+            "location": "src/primitives.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-9fc01400a5218480",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "hash"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-HASH-999",
+            "line": 68,
+            "location": "src/primitives.rs",
+            "symbol": "scrypt::scrypt"
+          }
+        ]
+      },
+      "name": "scrypt::scrypt",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-HASH-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "unknown"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-52bdfa52292952f7",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-PQC-999",
+            "line": 74,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "ml_kem::EncodedSizeUser::from_bytes"
+          }
+        ]
+      },
+      "name": "ml_kem::EncodedSizeUser::from_bytes",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-PQC-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-0768d4b532b38f0e",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ML-KEM",
+          "cryptoFunctions": [
+            "keygen",
+            "encapsulate",
+            "decapsulate"
+          ],
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-MLKEM-001",
+            "line": 149,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "ml_kem::kem::DecapsulationKey::<P>::encapsulation_key"
+          }
+        ]
+      },
+      "name": "ml_kem::kem::DecapsulationKey::<P>::encapsulation_key",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-MLKEM-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-14b174fdfac51077",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 150,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::SecretKey::<C>::public_key"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::SecretKey::<C>::public_key",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-fa3d19586b7de41b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ML-KEM",
+          "cryptoFunctions": [
+            "keygen",
+            "encapsulate",
+            "decapsulate"
+          ],
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-MLKEM-001",
+            "line": 176,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "ml_kem::kem::Decapsulate::decapsulate"
+          }
+        ]
+      },
+      "name": "ml_kem::kem::Decapsulate::decapsulate",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-MLKEM-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-2dbad12152187197",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 180,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::SecretKey::<C>::to_nonzero_scalar"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::SecretKey::<C>::to_nonzero_scalar",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/tagpq/kem.rs:180 -> src/native/tagpq/kem.rs:180"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-065dd04bab63c1fe",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keygen",
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.10045.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDH-001",
+            "line": 180,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::ecdh::diffie_hellman"
+          }
+        ]
+      },
+      "name": "p256::ecdh::diffie_hellman",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDH-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-a84de10faa9fa82e",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 186,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::SecretKey::<C>::public_key"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::SecretKey::<C>::public_key",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/tagpq/kem.rs:186 -> src/native/tagpq/kem.rs:186 -> src/native/tagpq/kem.rs:186"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-b08fec426204a94b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ML-KEM",
+          "cryptoFunctions": [
+            "keygen",
+            "encapsulate",
+            "decapsulate"
+          ],
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-MLKEM-001",
+            "line": 204,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "ml_kem::kem::Encapsulate::encapsulate"
+          }
+        ]
+      },
+      "name": "ml_kem::kem::Encapsulate::encapsulate",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-MLKEM-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-dc12977f627d8ab2",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keygen",
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.10045.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDH-001",
+            "line": 209,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::ecdh::EphemeralSecret::<C>::random"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::ecdh::EphemeralSecret::<C>::random",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDH-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/tagpq/kem.rs:209 -> src/native/tagpq/kem.rs:211"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-04d5aebdaf12c142",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keygen",
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.10045.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDH-001",
+            "line": 210,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::ecdh::EphemeralSecret::<C>::public_key"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::ecdh::EphemeralSecret::<C>::public_key",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDH-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/tagpq/kem.rs:210 -> src/native/tagpq/kem.rs:210 -> src/native/tagpq/kem.rs:216"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-fc090e27c7259c65",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keygen",
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.2.840.10045.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDH-001",
+            "line": 211,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::ecdh::EphemeralSecret::<C>::diffie_hellman"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::ecdh::EphemeralSecret::<C>::diffie_hellman",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDH-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-6214c265dcb4125b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 240,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::SecretKey::<C>::public_key"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::SecretKey::<C>::public_key",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-24e6a874c3f69ee9",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 250,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "p256::elliptic_curve::SecretKey::<C>::from_bytes"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::SecretKey::<C>::from_bytes",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-f04431b47cb3f930",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-3",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.8"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA3-001",
+            "line": 267,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "sha3::Shake256Core"
+          }
+        ]
+      },
+      "name": "sha3::Shake256Core",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA3-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-66ba22b776abfb5b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-3",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.8"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA3-001",
+            "line": 293,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "sha3::Sha3_256Core"
+          }
+        ]
+      },
+      "name": "sha3::Sha3_256Core",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA3-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-c0d74b38a52caaa8",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ML-KEM",
+          "cryptoFunctions": [
+            "keygen",
+            "encapsulate",
+            "decapsulate"
+          ],
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-MLKEM-001",
+            "line": 39,
+            "location": "src/native/tagpq.rs",
+            "symbol": "ml_kem::KemCore::generate_deterministic"
+          }
+        ]
+      },
+      "name": "ml_kem::KemCore::generate_deterministic",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-MLKEM-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-8b69d8578eb282e8",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "X25519",
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-001",
+            "line": 71,
+            "location": "src/native/x25519.rs",
+            "symbol": "x25519_dalek::StaticSecret::random_from_rng"
+          }
+        ]
+      },
+      "name": "x25519_dalek::StaticSecret::random_from_rng",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-7c07ee1cc6ca1652",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "X25519",
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-002",
+            "line": 118,
+            "location": "src/native/x25519.rs",
+            "symbol": "x25519_dalek::StaticSecret::diffie_hellman"
+          }
+        ]
+      },
+      "name": "x25519_dalek::StaticSecret::diffie_hellman",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/x25519.rs:118 -> src/native/x25519.rs:121"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-88bfd06d1042d80a",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "X25519",
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-001",
+            "line": 203,
+            "location": "src/native/x25519.rs",
+            "symbol": "x25519_dalek::EphemeralSecret::random_from_rng"
+          }
+        ]
+      },
+      "name": "x25519_dalek::EphemeralSecret::random_from_rng",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/x25519.rs:203 -> src/native/x25519.rs:205"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-a3d2de46ad731f66",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "cryptoFunctions": [
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0,
+          "parameterSetIdentifier": "X25519",
+          "primitive": "key-agree"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-002",
+            "line": 205,
+            "location": "src/native/x25519.rs",
+            "symbol": "x25519_dalek::EphemeralSecret::diffie_hellman"
+          }
+        ]
+      },
+      "name": "x25519_dalek::EphemeralSecret::diffie_hellman",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/x25519.rs:205 -> src/native/x25519.rs:212"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-2bbd80c40be77e21",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 12,
+            "location": "src/native.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-1791ad44766c58ac",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 19,
+            "location": "src/native.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-645a9359458023a7",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-3",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.8"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA3-001",
+            "line": 282,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "sha3::Shake256Core"
+          }
+        ]
+      },
+      "name": "sha3::Shake256Core",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA3-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-e5a981d673555d4b",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ML-KEM",
+          "cryptoFunctions": [
+            "keygen",
+            "encapsulate",
+            "decapsulate"
+          ],
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-MLKEM-001",
+            "line": 206,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "<ml_kem::kem::EncapsulationKey<ml_kem::MlKem768Params> as kem::Encapsulate<hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>, hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>>>::encapsulate::<rand_core::os::OsRng>"
+          }
+        ]
+      },
+      "name": "<ml_kem::kem::EncapsulationKey<ml_kem::MlKem768Params> as kem::Encapsulate<hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>, hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>>>::encapsulate::<rand_core::os::OsRng>",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-MLKEM-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-62f16b7fd3cd1764",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 206,
+            "location": "src/primitives/stream.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-93a1c9453da35cba",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 190,
+            "location": "src/primitives/stream.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-389fb00a00c1010f",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-999",
+            "line": 89,
+            "location": "src/native/x25519.rs",
+            "symbol": "<&x25519_dalek::x25519::StaticSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into"
+          }
+        ]
+      },
+      "name": "<&x25519_dalek::x25519::StaticSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-970357513e67fbc4",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-3",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.8"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA3-001",
+            "line": 234,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "sha3::Shake256Core"
+          }
+        ]
+      },
+      "name": "sha3::Shake256Core",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA3-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-cff1b036132a9708",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-3",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.8"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA3-001",
+            "line": 287,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "sha3::Sha3_256Core"
+          }
+        ]
+      },
+      "name": "sha3::Sha3_256Core",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA3-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-0c1bf6f76cc95be7",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-999",
+            "line": 117,
+            "location": "src/native/x25519.rs",
+            "symbol": "<&x25519_dalek::x25519::StaticSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into"
+          }
+        ]
+      },
+      "name": "<&x25519_dalek::x25519::StaticSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/x25519.rs:117 -> src/native/x25519.rs:133"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-2bfe784a23f4a165",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ECDH",
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm",
+        "oid": "1.3.101.110"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-X25519-999",
+            "line": 204,
+            "location": "src/native/x25519.rs",
+            "symbol": "<&x25519_dalek::x25519::EphemeralSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into"
+          }
+        ]
+      },
+      "name": "<&x25519_dalek::x25519::EphemeralSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-X25519-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/x25519.rs:204 -> src/native/x25519.rs:222"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-7519f0a21f0da6ed",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ML-KEM",
+          "cryptoFunctions": [
+            "keygen",
+            "encapsulate",
+            "decapsulate"
+          ],
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-MLKEM-001",
+            "line": 178,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "<ml_kem::kem::DecapsulationKey<ml_kem::MlKem768Params> as kem::Decapsulate<hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>, hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>>>::decapsulate"
+          }
+        ]
+      },
+      "name": "<ml_kem::kem::DecapsulationKey<ml_kem::MlKem768Params> as kem::Decapsulate<hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>, hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>>>::decapsulate",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-MLKEM-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-461bca916e34439e",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 188,
+            "location": "src/native/tagpq/kem.rs",
+            "symbol": "<elliptic_curve::secret_key::SecretKey<p256::NistP256>>::public_key"
+          }
+        ]
+      },
+      "name": "<elliptic_curve::secret_key::SecretKey<p256::NistP256>>::public_key",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:taint-chain",
+          "value": "src/native/tagpq/kem.rs:188 -> src/native/tagpq/kem.rs:189 -> src/native/tagpq/kem.rs:190"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-abd989932d420c18",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 25,
+            "location": "src/keys.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-057e8c9e669db093",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 42,
+            "location": "src/keys.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-ea1258a2320d21de",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 135,
+            "location": "src/native/x25519.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-690696cc6ffab0b6",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 225,
+            "location": "src/native/x25519.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-686c69096225df26",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "SHA-2",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2,
+          "parameterSetIdentifier": "SHA-256",
+          "primitive": "hash"
+        },
+        "assetType": "algorithm",
+        "oid": "2.16.840.1.101.3.4.2.1"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-SHA2-001",
+            "line": 9,
+            "location": "src/i18n.rs",
+            "symbol": "sha2::OidSha256"
+          }
+        ]
+      },
+      "name": "sha2::OidSha256",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-SHA2-001"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "rust_embed_utils::read_file_from_fs (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-embed-utils-8.9.0/src/lib.rs:95) -> sha2::Digest::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-embed-utils-8.9.0/src/lib.rs:99)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-96aa71e676e22c2d",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 153,
+            "location": "src/native/scrypt.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::aead_encrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:18) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:19)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-025e1b2bcb24fe93",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 226,
+            "location": "src/native/x25519.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::aead_encrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:18) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:19)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-44530408ce6021f7",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 267,
+            "location": "src/native/scrypt.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::aead_decrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:33) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:42)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-c452ffd78c267874",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "algorithmFamily": "ChaCha20",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5,
+          "primitive": "ae"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-CHACHA-002",
+            "line": 140,
+            "location": "src/native/x25519.rs",
+            "symbol": "chacha20poly1305::ChaChaPoly1305"
+          }
+        ]
+      },
+      "name": "chacha20poly1305::ChaChaPoly1305",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-CHACHA-002"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-resistant"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "age_core::primitives::aead_decrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:33) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:42)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "crypto-658f26954e39a6e5",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "nistQuantumSecurityLevel": 0,
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "additionalContext": "matched by rule R-ECDSA-999",
+            "line": 68,
+            "location": "src/native/tag.rs",
+            "symbol": "p256::elliptic_curve::PublicKey::<C>::from_sec1_bytes"
+          }
+        ]
+      },
+      "name": "p256::elliptic_curve::PublicKey::<C>::from_sec1_bytes",
+      "properties": [
+        {
+          "name": "quantumrust:rule",
+          "value": "R-ECDSA-999"
+        },
+        {
+          "name": "quantumrust:quantum-status",
+          "value": "quantum-vulnerable"
+        },
+        {
+          "name": "quantumrust:via",
+          "value": "<hpke::dhkex::ecdh_nistp::p256::PublicKey as hpke::Deserializable>::from_bytes (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hpke-0.12.0/src/dhkex/ecdh_nistp.rs:73) -> p256::elliptic_curve::PublicKey::<C>::from_sec1_bytes (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hpke-0.12.0/src/dhkex/ecdh_nistp.rs:83)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    }
+  ],
+  "metadata": {
+    "tools": {
+      "components": [
+        {
+          "name": "quantumrust",
+          "type": "application",
+          "version": "0.0.0"
+        }
+      ]
+    }
+  },
+  "specVersion": "1.7",
+  "version": 1
+}

@@ -1,0 +1,905 @@
+{
+  "note": "Timings of each scheme in pqc_replacements.toml, measured in one sitting by benchmark/pqc-speed with the crates below (the versions sequoia-openpgp 2.4.1 locks; k256, which sequoia does not use, is the newest 0.13), release build. median_us is what the report uses: the median, across the runs, of each run's median (run_medians_us). These are this machine's numbers for these Rust implementations, not a property of the algorithms: optimised C or assembly can be several times faster, and the post-quantum crates are pre-1.0.",
+  "date": "2026-11-07",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz",
+    "logical_cpus": "8",
+    "physical_cpus": "4",
+    "memory_gb": 8.0,
+    "os": "Darwin 24.6.0"
+  },
+  "rustc": "rustc 1.98.0-nightly (14210df0e 2026-05-31)",
+  "crates": {
+    "cx448": "0.1.1",
+    "dsa": "0.6.3",
+    "ed25519-dalek": "2.2.0",
+    "k256": "0.13.4",
+    "ml-dsa": "0.1.1",
+    "ml-kem": "0.3.2",
+    "p256": "0.13.2",
+    "p384": "0.13.1",
+    "p521": "0.13.3",
+    "rsa": "0.9.10",
+    "sha2": "0.10.9",
+    "slh-dsa": "0.0.3",
+    "x25519-dalek": "2.0.1"
+  },
+  "runs": 3,
+  "schemes": {
+    "DSA-2048": {
+      "keygen": {
+        "median_us": 1263.198,
+        "mean_us": 1310.7307024901704,
+        "min_us": 1171.475,
+        "iterations": 2215,
+        "run_medians_us": [
+          1263.198,
+          1252.137,
+          1313.3719999999998
+        ]
+      },
+      "sign": {
+        "median_us": 663.059,
+        "mean_us": 707.1433599717122,
+        "min_us": 608.52,
+        "iterations": 4081,
+        "run_medians_us": [
+          651.173,
+          695.443,
+          663.059
+        ]
+      },
+      "verify": {
+        "median_us": 1308.9270000000001,
+        "mean_us": 1370.8463000000008,
+        "min_us": 1196.993,
+        "iterations": 2132,
+        "run_medians_us": [
+          1300.914,
+          1343.4840000000002,
+          1308.9270000000001
+        ]
+      }
+    },
+    "ECDH-P256": {
+      "dh": {
+        "median_us": 143.678,
+        "mean_us": 153.83161407019736,
+        "min_us": 138.62,
+        "iterations": 19457,
+        "run_medians_us": [
+          144.155,
+          143.678,
+          143.674
+        ]
+      },
+      "keygen": {
+        "median_us": 151.61100000000002,
+        "mean_us": 163.1524783673468,
+        "min_us": 140.906,
+        "iterations": 17372,
+        "run_medians_us": [
+          161.796,
+          151.61100000000002,
+          151.505
+        ]
+      }
+    },
+    "ECDH-P384": {
+      "dh": {
+        "median_us": 606.992,
+        "mean_us": 643.830734063103,
+        "min_us": 576.707,
+        "iterations": 4690,
+        "run_medians_us": [
+          606.992,
+          609.5939999999999,
+          597.342
+        ]
+      },
+      "keygen": {
+        "median_us": 600.535,
+        "mean_us": 644.3065244845369,
+        "min_us": 577.962,
+        "iterations": 4663,
+        "run_medians_us": [
+          612.645,
+          600.535,
+          598.653
+        ]
+      }
+    },
+    "ECDH-P521": {
+      "dh": {
+        "median_us": 865.329,
+        "mean_us": 907.6314990925595,
+        "min_us": 822.894,
+        "iterations": 3307,
+        "run_medians_us": [
+          878.7769999999999,
+          865.329,
+          850.442
+        ]
+      },
+      "keygen": {
+        "median_us": 1010.945,
+        "mean_us": 1066.0660000000003,
+        "min_us": 825.358,
+        "iterations": 2807,
+        "run_medians_us": [
+          1010.945,
+          1020.864,
+          1007.406
+        ]
+      }
+    },
+    "ECDH-secp256k1": {
+      "dh": {
+        "median_us": 60.591,
+        "mean_us": 64.74664537673408,
+        "min_us": 58.968999999999994,
+        "iterations": 46311,
+        "run_medians_us": [
+          60.591,
+          60.581,
+          60.591
+        ]
+      },
+      "keygen": {
+        "median_us": 61.775,
+        "mean_us": 66.41655730725718,
+        "min_us": 60.03,
+        "iterations": 45266,
+        "run_medians_us": [
+          61.797000000000004,
+          61.683,
+          61.775
+        ]
+      }
+    },
+    "ECDSA-P256": {
+      "keygen": {
+        "median_us": 153.494,
+        "mean_us": 165.9349772500835,
+        "min_us": 143.23,
+        "iterations": 17988,
+        "run_medians_us": [
+          152.025,
+          155.407,
+          153.494
+        ]
+      },
+      "sign": {
+        "median_us": 175.93,
+        "mean_us": 187.60573230711475,
+        "min_us": 165.862,
+        "iterations": 15893,
+        "run_medians_us": [
+          175.93,
+          178.249,
+          175.876
+        ]
+      },
+      "verify": {
+        "median_us": 296.286,
+        "mean_us": 313.76005963590745,
+        "min_us": 278.784,
+        "iterations": 9539,
+        "run_medians_us": [
+          296.286,
+          294.121,
+          296.292
+        ]
+      }
+    },
+    "ECDSA-P384": {
+      "keygen": {
+        "median_us": 602.264,
+        "mean_us": 644.868122501612,
+        "min_us": 578.228,
+        "iterations": 4650,
+        "run_medians_us": [
+          602.264,
+          599.9,
+          612.8000000000001
+        ]
+      },
+      "sign": {
+        "median_us": 684.05,
+        "mean_us": 722.9768778018799,
+        "min_us": 639.5,
+        "iterations": 4141,
+        "run_medians_us": [
+          679.543,
+          685.1840000000001,
+          684.05
+        ]
+      },
+      "verify": {
+        "median_us": 1238.825,
+        "mean_us": 1307.7468313725499,
+        "min_us": 1155.5610000000001,
+        "iterations": 2313,
+        "run_medians_us": [
+          1238.825,
+          1236.237,
+          1242.8300000000002
+        ]
+      }
+    },
+    "ECDSA-P521": {
+      "keygen": {
+        "median_us": 1036.4759999999999,
+        "mean_us": 1093.509560655737,
+        "min_us": 827.393,
+        "iterations": 2739,
+        "run_medians_us": [
+          1036.4759999999999,
+          1036.013,
+          1051.155
+        ]
+      },
+      "sign": {
+        "median_us": 1085.2740000000001,
+        "mean_us": 1145.2252402745999,
+        "min_us": 883.976,
+        "iterations": 2615,
+        "run_medians_us": [
+          1078.903,
+          1088.5179999999998,
+          1085.2740000000001
+        ]
+      },
+      "verify": {
+        "median_us": 1710.358,
+        "mean_us": 1766.2167671957652,
+        "min_us": 1598.6799999999998,
+        "iterations": 1692,
+        "run_medians_us": [
+          1708.3790000000001,
+          1710.358,
+          1722.545
+        ]
+      }
+    },
+    "ECDSA-secp256k1": {
+      "keygen": {
+        "median_us": 61.830999999999996,
+        "mean_us": 67.69124125305103,
+        "min_us": 59.994,
+        "iterations": 44176,
+        "run_medians_us": [
+          61.830999999999996,
+          61.669,
+          61.936
+        ]
+      },
+      "sign": {
+        "median_us": 55.61,
+        "mean_us": 60.77119226788455,
+        "min_us": 53.882,
+        "iterations": 49551,
+        "run_medians_us": [
+          55.61,
+          55.578,
+          55.623
+        ]
+      },
+      "verify": {
+        "median_us": 101.97,
+        "mean_us": 110.7197444592198,
+        "min_us": 98.90899999999999,
+        "iterations": 26997,
+        "run_medians_us": [
+          101.97,
+          101.772,
+          104.465
+        ]
+      }
+    },
+    "Ed25519": {
+      "keygen": {
+        "median_us": 19.002,
+        "mean_us": 21.069447249999893,
+        "min_us": 18.359,
+        "iterations": 60000,
+        "run_medians_us": [
+          19.002,
+          19.369999999999997,
+          18.958000000000002
+        ]
+      },
+      "sign": {
+        "median_us": 18.735,
+        "mean_us": 20.32688394999989,
+        "min_us": 18.134999999999998,
+        "iterations": 60000,
+        "run_medians_us": [
+          18.735,
+          18.706999999999997,
+          18.737000000000002
+        ]
+      },
+      "verify": {
+        "median_us": 28.66,
+        "mean_us": 31.199239449999855,
+        "min_us": 27.488,
+        "iterations": 60000,
+        "run_medians_us": [
+          28.563000000000002,
+          28.66,
+          29.192
+        ]
+      }
+    },
+    "Ed448": {
+      "keygen": {
+        "median_us": 984.5240000000001,
+        "mean_us": 1037.2114917012445,
+        "min_us": 928.386,
+        "iterations": 2887,
+        "run_medians_us": [
+          996.9810000000001,
+          983.9169999999999,
+          984.5240000000001
+        ]
+      },
+      "sign": {
+        "median_us": 1084.355,
+        "mean_us": 1126.5125518018003,
+        "min_us": 1014.937,
+        "iterations": 2664,
+        "run_medians_us": [
+          1084.355,
+          1087.564,
+          1067.405
+        ]
+      },
+      "verify": {
+        "median_us": 2945.1400000000003,
+        "mean_us": 3093.178993827158,
+        "min_us": 2668.446,
+        "iterations": 982,
+        "run_medians_us": [
+          2990.891,
+          2945.1400000000003,
+          2887.446
+        ]
+      }
+    },
+    "ML-DSA-44": {
+      "keygen": {
+        "median_us": 168.595,
+        "mean_us": 183.2459611294461,
+        "min_us": 161.92499999999998,
+        "iterations": 16145,
+        "run_medians_us": [
+          168.595,
+          177.436,
+          167.877
+        ]
+      },
+      "sign": {
+        "median_us": 308.474,
+        "mean_us": 415.72817713097766,
+        "min_us": 102.504,
+        "iterations": 7270,
+        "run_medians_us": [
+          308.474,
+          303.085,
+          334.459
+        ]
+      },
+      "verify": {
+        "median_us": 43.932,
+        "mean_us": 47.946285099999805,
+        "min_us": 42.147,
+        "iterations": 60000,
+        "run_medians_us": [
+          43.932,
+          44.944,
+          43.838
+        ]
+      }
+    },
+    "ML-DSA-65": {
+      "keygen": {
+        "median_us": 274.91499999999996,
+        "mean_us": 300.83602136623574,
+        "min_us": 262.846,
+        "iterations": 10021,
+        "run_medians_us": [
+          274.91499999999996,
+          283.18100000000004,
+          272.98999999999995
+        ]
+      },
+      "sign": {
+        "median_us": 482.23,
+        "mean_us": 642.9636471722363,
+        "min_us": 145.61700000000002,
+        "iterations": 4628,
+        "run_medians_us": [
+          482.23,
+          499.09200000000004,
+          482.23
+        ]
+      },
+      "verify": {
+        "median_us": 61.93900000000001,
+        "mean_us": 68.11593607586325,
+        "min_us": 59.054,
+        "iterations": 44041,
+        "run_medians_us": [
+          61.93900000000001,
+          63.57899999999999,
+          61.784000000000006
+        ]
+      }
+    },
+    "ML-DSA-87": {
+      "keygen": {
+        "median_us": 445.22499999999997,
+        "mean_us": 468.743854195967,
+        "min_us": 408.142,
+        "iterations": 6308,
+        "run_medians_us": [
+          446.69,
+          445.22499999999997,
+          424.473
+        ]
+      },
+      "sign": {
+        "median_us": 554.799,
+        "mean_us": 747.1644095665168,
+        "min_us": 206.523,
+        "iterations": 4041,
+        "run_medians_us": [
+          554.799,
+          562.241,
+          529.739
+        ]
+      },
+      "verify": {
+        "median_us": 92.38000000000001,
+        "mean_us": 99.5552689125888,
+        "min_us": 86.49799999999999,
+        "iterations": 30178,
+        "run_medians_us": [
+          92.38000000000001,
+          93.21,
+          90.732
+        ]
+      }
+    },
+    "ML-KEM-1024": {
+      "decaps": {
+        "median_us": 91.328,
+        "mean_us": 100.66945136578983,
+        "min_us": 87.873,
+        "iterations": 29720,
+        "run_medians_us": [
+          91.328,
+          92.795,
+          91.185
+        ]
+      },
+      "encaps": {
+        "median_us": 79.321,
+        "mean_us": 86.19480471177113,
+        "min_us": 76.21000000000001,
+        "iterations": 34512,
+        "run_medians_us": [
+          80.979,
+          78.688,
+          79.321
+        ]
+      },
+      "keygen": {
+        "median_us": 83.481,
+        "mean_us": 89.68214358836191,
+        "min_us": 78.575,
+        "iterations": 32884,
+        "run_medians_us": [
+          84.66600000000001,
+          83.481,
+          83.375
+        ]
+      }
+    },
+    "ML-KEM-512": {
+      "decaps": {
+        "median_us": 34.078,
+        "mean_us": 37.75693870000004,
+        "min_us": 32.458,
+        "iterations": 60000,
+        "run_medians_us": [
+          35.445,
+          33.598,
+          34.078
+        ]
+      },
+      "encaps": {
+        "median_us": 28.005,
+        "mean_us": 30.34076784999979,
+        "min_us": 26.493,
+        "iterations": 60000,
+        "run_medians_us": [
+          28.394,
+          27.423000000000002,
+          28.005
+        ]
+      },
+      "keygen": {
+        "median_us": 29.824,
+        "mean_us": 31.90448990000044,
+        "min_us": 28.154,
+        "iterations": 60000,
+        "run_medians_us": [
+          29.811,
+          29.916,
+          29.824
+        ]
+      }
+    },
+    "ML-KEM-768": {
+      "decaps": {
+        "median_us": 59.071,
+        "mean_us": 64.0755929657916,
+        "min_us": 55.444,
+        "iterations": 47065,
+        "run_medians_us": [
+          59.527,
+          59.071,
+          57.403
+        ]
+      },
+      "encaps": {
+        "median_us": 50.160000000000004,
+        "mean_us": 54.40264964299332,
+        "min_us": 47.041,
+        "iterations": 50166,
+        "run_medians_us": [
+          51.442,
+          50.160000000000004,
+          49.061
+        ]
+      },
+      "keygen": {
+        "median_us": 52.638,
+        "mean_us": 59.60117720460933,
+        "min_us": 48.736000000000004,
+        "iterations": 50524,
+        "run_medians_us": [
+          53.561,
+          52.160000000000004,
+          52.638
+        ]
+      }
+    },
+    "RSA-2048": {
+      "decrypt": {
+        "median_us": 1603.237,
+        "mean_us": 1647.1722483552642,
+        "min_us": 1469.408,
+        "iterations": 1693,
+        "run_medians_us": [
+          2050.938,
+          1603.237,
+          1584.676
+        ]
+      },
+      "encrypt": {
+        "median_us": 188.254,
+        "mean_us": 224.02141259524893,
+        "min_us": 177.46099999999998,
+        "iterations": 13870,
+        "run_medians_us": [
+          190.059,
+          185.27499999999998,
+          188.254
+        ]
+      },
+      "keygen": {
+        "median_us": 135989.166,
+        "mean_us": 240093.80639999997,
+        "min_us": 95034.08200000001,
+        "iterations": 14,
+        "run_medians_us": [
+          423318.056,
+          135989.166,
+          119830.957
+        ]
+      },
+      "sign": {
+        "median_us": 1604.664,
+        "mean_us": 1711.7851367521373,
+        "min_us": 1461.31,
+        "iterations": 1682,
+        "run_medians_us": [
+          2027.849,
+          1577.916,
+          1604.664
+        ]
+      },
+      "verify": {
+        "median_us": 185.015,
+        "mean_us": 217.21861247554918,
+        "min_us": 172.05599999999998,
+        "iterations": 13662,
+        "run_medians_us": [
+          225.995,
+          178.734,
+          185.015
+        ]
+      }
+    },
+    "RSA-3072": {
+      "decrypt": {
+        "median_us": 4728.099999999999,
+        "mean_us": 4837.129690821255,
+        "min_us": 4300.164000000001,
+        "iterations": 526,
+        "run_medians_us": [
+          7881.729,
+          4728.099999999999,
+          4670.648999999999
+        ]
+      },
+      "encrypt": {
+        "median_us": 390.582,
+        "mean_us": 419.60713176668065,
+        "min_us": 372.031,
+        "iterations": 6784,
+        "run_medians_us": [
+          458.938,
+          390.582,
+          388.623
+        ]
+      },
+      "keygen": {
+        "median_us": 964783.1730000001,
+        "mean_us": 943652.642,
+        "min_us": 436502.874,
+        "iterations": 9,
+        "run_medians_us": [
+          821878.528,
+          1245800.0620000002,
+          964783.1730000001
+        ]
+      },
+      "sign": {
+        "median_us": 4698.241,
+        "mean_us": 4778.600057142857,
+        "min_us": 4400.77,
+        "iterations": 590,
+        "run_medians_us": [
+          5786.511,
+          4682.363,
+          4698.241
+        ]
+      },
+      "verify": {
+        "median_us": 381.13,
+        "mean_us": 408.3160906492449,
+        "min_us": 363.56,
+        "iterations": 6706,
+        "run_medians_us": [
+          502.742,
+          381.13,
+          379.469
+        ]
+      }
+    },
+    "RSA-4096": {
+      "decrypt": {
+        "median_us": 10752.326,
+        "mean_us": 10933.981249999997,
+        "min_us": 10036.128,
+        "iterations": 277,
+        "run_medians_us": [
+          10937.669,
+          10430.171,
+          10752.326
+        ]
+      },
+      "encrypt": {
+        "median_us": 676.303,
+        "mean_us": 711.470832859175,
+        "min_us": 636.661,
+        "iterations": 4178,
+        "run_medians_us": [
+          676.303,
+          668.285,
+          688.323
+        ]
+      },
+      "keygen": {
+        "median_us": 1983061.571,
+        "mean_us": 1645777.267,
+        "min_us": 708985.136,
+        "iterations": 9,
+        "run_medians_us": [
+          1983061.571,
+          2133442.4099999997,
+          1615514.723
+        ]
+      },
+      "sign": {
+        "median_us": 10507.023000000001,
+        "mean_us": 10701.430702127658,
+        "min_us": 9936.466,
+        "iterations": 279,
+        "run_medians_us": [
+          10435.448999999999,
+          10507.023000000001,
+          10711.583
+        ]
+      },
+      "verify": {
+        "median_us": 666.608,
+        "mean_us": 709.6293215046139,
+        "min_us": 627.743,
+        "iterations": 4226,
+        "run_medians_us": [
+          666.608,
+          659.1360000000001,
+          681.3159999999999
+        ]
+      }
+    },
+    "SLH-DSA-SHA2-128s": {
+      "keygen": {
+        "median_us": 175947.75100000002,
+        "mean_us": 177046.57133333336,
+        "min_us": 170903.443,
+        "iterations": 18,
+        "run_medians_us": [
+          178386.561,
+          175947.75100000002,
+          172987.16
+        ]
+      },
+      "sign": {
+        "median_us": 1317920.7820000001,
+        "mean_us": 1321757.4943333336,
+        "min_us": 1308343.0890000002,
+        "iterations": 9,
+        "run_medians_us": [
+          1351883.6169999999,
+          1313359.162,
+          1317920.7820000001
+        ]
+      },
+      "verify": {
+        "median_us": 1283.8529999999998,
+        "mean_us": 1328.3991606905731,
+        "min_us": 1196.1190000000001,
+        "iterations": 2206,
+        "run_medians_us": [
+          1372.0169999999998,
+          1270.508,
+          1283.8529999999998
+        ]
+      }
+    },
+    "SLH-DSA-SHA2-192s": {
+      "keygen": {
+        "median_us": 257480.26200000002,
+        "mean_us": 252553.77025,
+        "min_us": 247171.932,
+        "iterations": 12,
+        "run_medians_us": [
+          257480.26200000002,
+          251223.613,
+          261639.83200000002
+        ]
+      },
+      "sign": {
+        "median_us": 2295104.4839999997,
+        "mean_us": 2295433.0293333335,
+        "min_us": 2289467.266,
+        "iterations": 9,
+        "run_medians_us": [
+          2295104.4839999997,
+          2291131.816,
+          2400605.6689999998
+        ]
+      },
+      "verify": {
+        "median_us": 1877.238,
+        "mean_us": 1926.8395337186878,
+        "min_us": 1702.1090000000002,
+        "iterations": 1467,
+        "run_medians_us": [
+          1862.6490000000001,
+          1877.238,
+          1981.011
+        ]
+      }
+    },
+    "SLH-DSA-SHA2-256s": {
+      "keygen": {
+        "median_us": 166311.763,
+        "mean_us": 165968.80785714285,
+        "min_us": 161178.98799999998,
+        "iterations": 20,
+        "run_medians_us": [
+          164658.28,
+          166311.763,
+          182887.255
+        ]
+      },
+      "sign": {
+        "median_us": 2023721.29,
+        "mean_us": 2036120.4393333334,
+        "min_us": 1998237.5879999998,
+        "iterations": 9,
+        "run_medians_us": [
+          2006708.025,
+          2023721.29,
+          2092666.7000000002
+        ]
+      },
+      "verify": {
+        "median_us": 2732.088,
+        "mean_us": 2800.660525139666,
+        "min_us": 2488.479,
+        "iterations": 1071,
+        "run_medians_us": [
+          2732.088,
+          2675.698,
+          2766.342
+        ]
+      }
+    },
+    "X25519": {
+      "dh": {
+        "median_us": 49.092,
+        "mean_us": 52.70765863835641,
+        "min_us": 47.759,
+        "iterations": 46566,
+        "run_medians_us": [
+          98.033,
+          49.088,
+          49.092
+        ]
+      },
+      "keygen": {
+        "median_us": 18.437,
+        "mean_us": 19.969230550000113,
+        "min_us": 17.84,
+        "iterations": 60000,
+        "run_medians_us": [
+          32.675999999999995,
+          18.437,
+          18.406
+        ]
+      }
+    },
+    "X448": {
+      "dh": {
+        "median_us": 553.126,
+        "mean_us": 595.9309922526822,
+        "min_us": 537.374,
+        "iterations": 4068,
+        "run_medians_us": [
+          1047.3410000000001,
+          553.126,
+          553.012
+        ]
+      },
+      "keygen": {
+        "median_us": 566.701,
+        "mean_us": 600.0920738295321,
+        "min_us": 538.575,
+        "iterations": 4349,
+        "run_medians_us": [
+          963.265,
+          555.941,
+          566.701
+        ]
+      }
+    }
+  }
+}

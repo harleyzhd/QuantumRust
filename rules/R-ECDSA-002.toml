@@ -1,0 +1,64 @@
+id = "R-ECDSA-002"
+description = "ECDSA signature generation via the `ecdsa` crate and its curve backends."
+
+algorithm_class = "Ecdsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ecdsa::sign",
+    "ecdsa::try_sign",
+    "ecdsa::sign_prehash",
+    "ecdsa::try_sign_prehash",
+    "ecdsa::try_sign_prehashed",
+    "ecdsa::sign_prehashed",
+    "ecdsa::SignPrimitive::try_sign_prehashed",
+    "ecdsa::SignPrimitive::try_sign_prehashed_rfc6979",
+    "ecdsa::sign_digest",
+    "ecdsa::try_sign_digest",
+    "ecdsa::sign_recoverable",
+    "ecdsa::sign_prehash_recoverable",
+    "ecdsa::sign_digest_recoverable",
+    "k256::sign",
+    "k256::sign_recoverable",
+    "k256::sign_prehash_recoverable",
+]
+
+[taint]
+sinks = [
+    "sign_recoverable",
+    "sign_prehash_recoverable",
+    "sign_digest_recoverable",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "ECDSA"
+crypto_functions = ["sign"]
+oid = "1.2.840.10045.2.1"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "P-256"
+name = "ECDSA-P256"
+nist_quantum_security_level = 0
+type_names = ["p256::NistP256"]
+
+[[parameter_sets]]
+identifier = "P-384"
+name = "ECDSA-P384"
+nist_quantum_security_level = 0
+type_names = ["p384::NistP384"]
+
+[[parameter_sets]]
+identifier = "P-521"
+name = "ECDSA-P521"
+nist_quantum_security_level = 0
+type_names = ["p521::NistP521"]
+
+[[parameter_sets]]
+identifier = "secp256k1"
+name = "ECDSA-secp256k1"
+nist_quantum_security_level = 0
+type_names = ["k256::Secp256k1"]

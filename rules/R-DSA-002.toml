@@ -1,0 +1,15 @@
+id = "R-DSA-002"
+description = "A DSA key or signature identified by type, when the call's symbol names only the generic signing trait."
+
+algorithm_class = "Dsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+type_names = ["dsa::SigningKey", "dsa::VerifyingKey", "dsa::Signature"]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "DSA"
+oid = "1.2.840.10040.4.1"
+nist_quantum_security_level = 0

@@ -1,0 +1,16 @@
+[package]
+name = "multi-unit"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "multi_unit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "multi-unit-bin"
+path = "src/main.rs"
+
+[dependencies]
+
+[workspace]

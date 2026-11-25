@@ -1,0 +1,48 @@
+id = "R-ECDH-001"
+description = "ECDH key agreement over the NIST curves via the `p256`/`p384`/`k256` crates."
+
+algorithm_class = "Ecdh"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ecdh::EphemeralSecret::random",
+    "ecdh::diffie_hellman",
+    "ecdh::EphemeralSecret::diffie_hellman",
+    "ecdh::EphemeralSecret::public_key",
+]
+
+[taint]
+sinks = ["diffie_hellman"]
+
+[crypto]
+primitive = "key-agree"
+algorithm_family = "ECDH"
+crypto_functions = ["keygen", "keyderive"]
+oid = "1.2.840.10045.2.1"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "P-256"
+name = "ECDH-P256"
+nist_quantum_security_level = 0
+type_names = ["p256::NistP256"]
+
+[[parameter_sets]]
+identifier = "P-384"
+name = "ECDH-P384"
+nist_quantum_security_level = 0
+type_names = ["p384::NistP384"]
+
+[[parameter_sets]]
+identifier = "P-521"
+name = "ECDH-P521"
+nist_quantum_security_level = 0
+type_names = ["p521::NistP521"]
+
+[[parameter_sets]]
+identifier = "secp256k1"
+name = "ECDH-secp256k1"
+nist_quantum_security_level = 0
+type_names = ["k256::Secp256k1"]

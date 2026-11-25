@@ -1,0 +1,36 @@
+id = "R-DSA-001"
+description = "DSA key generation, signing and verification via the `dsa` crate."
+
+algorithm_class = "Dsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "dsa::Components::generate",
+    "dsa::SigningKey::generate",
+    "dsa::SigningKey::from_components",
+    "dsa::VerifyingKey::from_components",
+    "dsa::sign",
+    "dsa::try_sign",
+    "dsa::sign_prehashed",
+    "dsa::sign_prehash",
+    "dsa::SigningKey::verifying_key",
+    "dsa::sign_digest",
+    "dsa::verify",
+    "dsa::verify_digest",
+    "dsa::verify_prehash",
+    "DSA_generate_key",
+    "DSA_sign",
+    "DSA_verify",
+]
+
+[taint]
+sinks = ["sign_prehashed", "DSA_sign"]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "DSA"
+crypto_functions = ["keygen", "sign", "verify"]
+oid = "1.2.840.10040.4.1"
+nist_quantum_security_level = 0

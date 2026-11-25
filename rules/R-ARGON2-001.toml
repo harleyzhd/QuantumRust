@@ -1,0 +1,20 @@
+id = "R-ARGON2-001"
+description = "Argon2 key derivation and password hashing via the `argon2` crate."
+
+algorithm_class = "Kdf"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "argon2::Argon2::new",
+    "argon2::Argon2::hash_password_into",
+    "argon2::Argon2::hash_password_into_with_memory",
+    "argon2::Argon2::hash_password",
+    "argon2::Argon2::verify_password",
+]
+
+[crypto]
+primitive = "kdf"
+algorithm_family = "Argon2"
+crypto_functions = ["keyderive"]

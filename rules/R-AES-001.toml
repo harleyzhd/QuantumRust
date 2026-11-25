@@ -1,0 +1,33 @@
+id = "R-AES-001"
+description = "AES-256 block cipher via the `aes` crate."
+
+algorithm_class = "Symmetric"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "aes::Aes256::new",
+    "aes::Aes256::new_from_slice",
+    "aes::Aes256Enc::new",
+    "aes::Aes256Dec::new",
+]
+
+type_names = ["aes::Aes256", "aes::Aes256Enc", "aes::Aes256Dec"]
+
+[taint]
+sinks = [
+    "encrypt_block",
+    "decrypt_block",
+    "encrypt_blocks",
+    "decrypt_blocks",
+    "encrypt_block_b2b",
+    "decrypt_block_b2b",
+]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "AES"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "AES-256"
+nist_quantum_security_level = 5

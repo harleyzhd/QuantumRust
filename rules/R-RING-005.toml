@@ -1,0 +1,30 @@
+id = "R-RING-005"
+description = "AEAD key construction, sealing and opening via `ring`."
+
+algorithm_class = "Aead"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "ring::aead::UnboundKey::new",
+    "ring::aead::LessSafeKey::new",
+    "ring::aead::LessSafeKey::seal_in_place_append_tag",
+    "ring::aead::LessSafeKey::seal_in_place_separate_tag",
+    "ring::aead::LessSafeKey::open_in_place",
+    "ring::aead::SealingKey::seal_in_place_append_tag",
+    "ring::aead::OpeningKey::open_in_place",
+    "ring::aead::BoundKey::new",
+]
+
+[taint]
+sinks = [
+    "seal_in_place_append_tag",
+    "seal_in_place_separate_tag",
+    "open_in_place",
+]
+
+[crypto]
+primitive = "ae"
+crypto_functions = ["encrypt", "decrypt"]
+nist_quantum_security_level = 5

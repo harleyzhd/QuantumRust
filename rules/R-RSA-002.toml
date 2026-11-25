@@ -1,0 +1,46 @@
+id = "R-RSA-002"
+description = "RSA signature generation via the `rsa` crate's pkcs1v15/pss signers and the OpenSSL FFI."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rsa::sign",
+    "rsa::try_sign",
+    "rsa::sign_with_rng",
+    "rsa::try_sign_with_rng",
+    "rsa::sign_prehash",
+    "rsa::try_sign_prehash",
+    "rsa::sign_prehash_with_rng",
+    "rsa::sign_digest",
+    "rsa::try_sign_digest",
+    "rsa::sign_digest_with_rng",
+    "rsa::try_sign_digest_with_rng",
+    "RSA_sign",
+    "RSA_private_encrypt",
+]
+
+[taint]
+sinks = [
+    "sign",
+    "try_sign",
+    "sign_with_rng",
+    "try_sign_with_rng",
+    "sign_prehash",
+    "try_sign_prehash",
+    "sign_prehash_with_rng",
+    "sign_digest",
+    "try_sign_digest",
+    "sign_digest_with_rng",
+    "try_sign_digest_with_rng",
+    "RSA_sign",
+    "RSA_private_encrypt",
+]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["sign"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

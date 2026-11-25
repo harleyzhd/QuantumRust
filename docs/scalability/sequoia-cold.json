@@ -1,0 +1,96 @@
+{
+  "name": "sequoia",
+  "root": "/Users/harleyding/qr-scratch/sequoia-openpgp-2.4.1",
+  "profile": "release",
+  "warmup": false,
+  "cold": true,
+  "descend": false,
+  "extraction_cache_existed": false,
+  "loc": {
+    "files": 171,
+    "physical": 130935,
+    "code": 75885
+  },
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz",
+    "logical_cpus": "8",
+    "physical_cpus": "4",
+    "memory_gb": 8.0,
+    "os": "Darwin 24.6.0",
+    "rustc": "rustc 1.98.0-nightly (14210df0e 2026-05-31)"
+  },
+  "wall_including_startup_s": 124.03261417500471,
+  "findings": 241,
+  "timings": {
+    "note": "peak_* is the high-water mark reached by the end of each stage (getrusage ru_maxrss); children = the largest single waited-for child process, i.e. one rustc extraction driver",
+    "peak_children_mb": 1414.9609375,
+    "peak_self_mb": 586.61328125,
+    "stages": [
+      {
+        "cpu_children_s": 203.653443,
+        "cpu_self_s": 0.192771,
+        "peak_children_mb": 639.71875,
+        "peak_self_mb": 119.06640625,
+        "stage": "extract-mir",
+        "wall_s": 48.328698798
+      },
+      {
+        "cpu_children_s": 227.913444,
+        "cpu_self_s": 3.447619,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "extract-llvm",
+        "wall_s": 72.631139655
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 0.4126120000000002,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "fuse",
+        "wall_s": 0.416042809
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 1.0450179999999998,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "rule-matching",
+        "wall_s": 1.049011521
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 0.41084299999999985,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "taint",
+        "wall_s": 0.410927142
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 0.0056280000000006325,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "call-graph",
+        "wall_s": 0.005628176
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 1.0829129999999996,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "risk-scoring",
+        "wall_s": 1.083234787
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 0.0011519999999993757,
+        "peak_children_mb": 1414.9609375,
+        "peak_self_mb": 586.61328125,
+        "stage": "report",
+        "wall_s": 0.001160183
+      }
+    ],
+    "total_wall_s": 123.925880677
+  }
+}

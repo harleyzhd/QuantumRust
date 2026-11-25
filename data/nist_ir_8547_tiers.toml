@@ -1,0 +1,25 @@
+# NIST IR 8547 transition tiers and their severity ranks.
+#
+# Read by `qr-risk` and embedded in the binary. Override at run time with
+# `analyze --score-tables <dir>`.
+#
+# IR 8547 orders algorithms (must migrate, should migrate, resistant) but gives
+# no numeric severity. These ranks only encode that order, with Tier3 at zero.
+# Findings are ranked by tier first, and the ranks are never multiplied into
+# the score, so any values in the same order give the same ranking.
+
+[[tier]]
+name = "Tier1"          # deprecated by 2030, disallowed by 2035
+severity_rank = 2.0     # broken by Shor: RSA, finite-field and elliptic-curve DLP
+examples = ["RSA-2048 long-term confidentiality", "ECDSA-P256 signature"]
+
+[[tier]]
+name = "Tier2"          # needs migration for reasons other than Shor
+severity_rank = 1.0     # deprecated, classically weak, or below the rule set's
+                        # 256-bit bar: SHA-1, MD5, 3DES, AES-128, SHA-224
+examples = ["SHA-1 in a signature context", "AES-128 under the CNSA 2.0 bar"]
+
+[[tier]]
+name = "Tier3"          # quantum-resistant or out of scope
+severity_rank = 0.0
+examples = ["AES-256", "ML-KEM", "ML-DSA"]

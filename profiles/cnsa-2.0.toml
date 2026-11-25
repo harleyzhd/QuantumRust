@@ -1,0 +1,28 @@
+# CNSA 2.0: NSA's Commercial National Security Algorithm Suite 2.0.
+#
+# The strictest profile. CNSA 2.0 requires AES-256, SHA-384, ML-KEM-1024 and
+# ML-DSA-87, all NIST category 5, so a quantum-resistant primitive can still
+# fail it: SHA-256 is resistant, and fails because CNSA 2.0 asks for SHA-384.
+
+id = "cnsa-2.0"
+name = "CNSA 2.0"
+description = "NSA Commercial National Security Algorithm Suite 2.0: AES-256, SHA-384, ML-KEM-1024, ML-DSA-87."
+reference = "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3148990/"
+
+# NIST category 5. Fails AES-128 (1), AES-192 (3), SHA-256 (2) and ML-KEM-768 (3).
+min_quantum_security_level = 5
+
+# The suite is a closed list. Algorithms it names are judged by status, so
+# SHA-384 (category 4) passes. Any other algorithm fails, even at category 5,
+# as ChaCha20 and Camellia-256 do. LMS and XMSS are the stateful hash-based
+# signatures it names for firmware.
+allow = ["AES-256", "SHA-384", "SHA-512", "ML-KEM-1024", "ML-DSA-87", "LMS", "XMSS"]
+closed = true
+
+[status]
+vulnerable = "fail"
+deprecated = "fail"
+resistant = "pass"
+# An algorithm the analysis could not resolve cannot be certified against a
+# suite that lists its algorithms exactly.
+unknown = "review"

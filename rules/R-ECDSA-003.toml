@@ -1,0 +1,50 @@
+id = "R-ECDSA-003"
+description = "ECDSA signature verification via the `ecdsa` crate and its curve backends."
+
+algorithm_class = "Ecdsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "ecdsa::verify",
+    "ecdsa::verify_prehash",
+    "ecdsa::verify_prehashed",
+    "ecdsa::VerifyPrimitive::verify_prehashed",
+    "ecdsa::verify_digest",
+    "k256::verify",
+    "k256::recover_from_msg",
+    "k256::recover_from_prehash",
+    "k256::recover_from_digest",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "ECDSA"
+crypto_functions = ["verify"]
+oid = "1.2.840.10045.2.1"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "P-256"
+name = "ECDSA-P256"
+nist_quantum_security_level = 0
+type_names = ["p256::NistP256"]
+
+[[parameter_sets]]
+identifier = "P-384"
+name = "ECDSA-P384"
+nist_quantum_security_level = 0
+type_names = ["p384::NistP384"]
+
+[[parameter_sets]]
+identifier = "P-521"
+name = "ECDSA-P521"
+nist_quantum_security_level = 0
+type_names = ["p521::NistP521"]
+
+[[parameter_sets]]
+identifier = "secp256k1"
+name = "ECDSA-secp256k1"
+nist_quantum_security_level = 0
+type_names = ["k256::Secp256k1"]

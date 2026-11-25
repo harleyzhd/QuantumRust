@@ -1,0 +1,29 @@
+id = "R-X25519-001"
+description = "X25519 ephemeral/static secret generation via the `x25519-dalek` crate."
+
+algorithm_class = "EcdhX25519"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "x25519_dalek::EphemeralSecret::random",
+    "x25519_dalek::EphemeralSecret::random_from_rng",
+    "x25519_dalek::StaticSecret::random",
+    "x25519_dalek::StaticSecret::random_from_rng",
+    "x25519_dalek::ReusableSecret::random",
+    "x25519_dalek::ReusableSecret::random_from_rng",
+    "x25519::EphemeralSecret::random",
+    "x25519::StaticSecret::random",
+]
+
+[taint]
+sinks = ["to_bytes", "as_bytes"]
+
+[crypto]
+primitive = "key-agree"
+algorithm_family = "ECDH"
+crypto_functions = ["keygen"]
+oid = "1.3.101.110"
+parameter_set_identifier = "X25519"
+nist_quantum_security_level = 0

@@ -1,0 +1,52 @@
+id = "R-RSA-999"
+description = "Any other API of the `rsa` crate, or an OpenSSL `RSA_*` entry point, that no enumerated RSA rule names."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+crates = ["rsa"]
+
+exclude = [
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "size",
+    "RSA_free",
+    "RSA_size",
+    "RSA_up_ref",
+    "RSA_bits",
+    "public",
+    "modulus_len",
+    "public_modulus_len",
+    "public_key",
+    "deref",
+    "deref_mut",
+    "n",
+    "e",
+    "d",
+    "primes",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+]
+
+[crypto]
+primitive = "unknown"
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

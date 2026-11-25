@@ -1,0 +1,25 @@
+id = "R-SHA2-001"
+description = "SHA-256 hashing via the `sha2` crate."
+
+algorithm_class = "Hash"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "sha2::Sha256::new",
+    "sha2::Sha256::digest",
+    "sha2::Sha256::new_with_prefix",
+    "sha2::Sha512_256::new",
+    "sha2::Sha512_256::digest",
+]
+
+type_names = ["sha2::OidSha256", "sha2::OidSha512_256", "sha2::Sha256"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "SHA-2"
+crypto_functions = ["digest"]
+oid = "2.16.840.1.101.3.4.2.1"
+parameter_set_identifier = "SHA-256"
+nist_quantum_security_level = 2

@@ -1,0 +1,87 @@
+[2m2026-10-28T06:41:58.309572Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m extracting dual-level CPG from /Users/harleyding/Desktop/Mad/ThesisB/analysed-crates/age-0.12.1
+[2m2026-10-28T06:41:58.820029Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m dependency descent [3mdepth[0m[2m=[0m3 [3mcrates[0m[2m=[0m{"age_core", "hpke", "i18n_embed", "rust_embed", "rust_embed_utils"}
+[2m2026-10-28T06:42:02.287380Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m fused dual-level CPG [3mmir_nodes[0m[2m=[0m2530 [3mllvm_nodes[0m[2m=[0m1773 [3mcross_layer_edges[0m[2m=[0m674
+[2m2026-10-28T06:42:02.290686Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m loaded CPG [3mnodes[0m[2m=[0m4303 [3medges[0m[2m=[0m12766
+[2m2026-10-28T06:42:02.356943Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m matched rules [3mfindings[0m[2m=[0m49 [3mwith_taint_chain[0m[2m=[0m10
+[2m2026-10-28T06:42:02.357923Z[0m [32m INFO[0m [2mquantumrust[0m[2m:[0m no criticality map: every finding scores the neutral Medium band
+
+Findings (49):
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/primitives/stream.rs:99  blast=713 tier=3 risk=0.00
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/primitives/stream.rs:188  blast=713 tier=3 risk=0.00
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/primitives/stream.rs:204  blast=713 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/primitives.rs:33  blast=54 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/primitives.rs:44  blast=54 tier=3 risk=0.00
+  [R-HASH-999] scrypt::scrypt (Hash, Unknown)  src/primitives.rs:68  blast=1 tier=2 risk=2.00 (conservative: upper bound)
+  [R-PQC-999] ml_kem::EncodedSizeUser::from_bytes (Unknown, Resistant)  src/native/tagpq/kem.rs:74  blast=23 tier=3 risk=0.00
+  [R-MLKEM-001] ml_kem::kem::DecapsulationKey::<P>::encapsulation_key (Kem, Resistant)  src/native/tagpq/kem.rs:149  blast=3 tier=3 risk=0.00
+  [R-ECDSA-999] p256::elliptic_curve::SecretKey::<C>::public_key (Ecdsa, Vulnerable)  src/native/tagpq/kem.rs:150  blast=3 tier=1 risk=3.00
+  [R-MLKEM-001] ml_kem::kem::Decapsulate::decapsulate (Kem, Resistant)  src/native/tagpq/kem.rs:176  blast=48 tier=3 risk=0.00
+  [R-ECDSA-999] p256::elliptic_curve::SecretKey::<C>::to_nonzero_scalar (Ecdsa, Vulnerable)  src/native/tagpq/kem.rs:180  blast=48 tier=1 risk=6.61
+        taint: src/native/tagpq/kem.rs:180 -> src/native/tagpq/kem.rs:180
+  [R-ECDH-001] p256::ecdh::diffie_hellman (EcdhX25519, Vulnerable)  src/native/tagpq/kem.rs:180  blast=48 tier=1 risk=6.61
+  [R-ECDSA-999] p256::elliptic_curve::SecretKey::<C>::public_key (Ecdsa, Vulnerable)  src/native/tagpq/kem.rs:186  blast=48 tier=1 risk=6.61
+        taint: src/native/tagpq/kem.rs:186 -> src/native/tagpq/kem.rs:186 -> src/native/tagpq/kem.rs:186
+  [R-MLKEM-001] ml_kem::kem::Encapsulate::encapsulate (Kem, Resistant)  src/native/tagpq/kem.rs:204  blast=48 tier=3 risk=0.00
+  [R-ECDH-001] p256::elliptic_curve::ecdh::EphemeralSecret::<C>::random (EcdhX25519, Vulnerable)  src/native/tagpq/kem.rs:209  blast=48 tier=1 risk=6.61
+        taint: src/native/tagpq/kem.rs:209 -> src/native/tagpq/kem.rs:211
+  [R-ECDH-001] p256::elliptic_curve::ecdh::EphemeralSecret::<C>::public_key (EcdhX25519, Vulnerable)  src/native/tagpq/kem.rs:210  blast=48 tier=1 risk=6.61
+        taint: src/native/tagpq/kem.rs:210 -> src/native/tagpq/kem.rs:210 -> src/native/tagpq/kem.rs:216
+  [R-ECDH-001] p256::elliptic_curve::ecdh::EphemeralSecret::<C>::diffie_hellman (EcdhX25519, Vulnerable)  src/native/tagpq/kem.rs:211  blast=48 tier=1 risk=6.61
+  [R-ECDSA-999] p256::elliptic_curve::SecretKey::<C>::public_key (Ecdsa, Vulnerable)  src/native/tagpq/kem.rs:240  blast=56 tier=1 risk=6.83
+  [R-ECDSA-999] p256::elliptic_curve::SecretKey::<C>::from_bytes (Ecdsa, Vulnerable)  src/native/tagpq/kem.rs:250  blast=56 tier=1 risk=6.83
+  [R-SHA3-001] sha3::Shake256Core (Hash, Resistant)  src/native/tagpq/kem.rs:267  blast=0 tier=3 risk=0.00
+  [R-SHA3-001] sha3::Sha3_256Core (Hash, Resistant)  src/native/tagpq/kem.rs:293  blast=48 tier=3 risk=0.00
+  [R-MLKEM-001] ml_kem::KemCore::generate_deterministic (Kem, Resistant)  src/native/tagpq.rs:39  blast=56 tier=3 risk=0.00
+  [R-X25519-001] x25519_dalek::StaticSecret::random_from_rng (EcdhX25519, Vulnerable)  src/native/x25519.rs:71  blast=1 tier=1 risk=2.00
+  [R-X25519-002] x25519_dalek::StaticSecret::diffie_hellman (EcdhX25519, Vulnerable)  src/native/x25519.rs:118  blast=69 tier=1 risk=7.13
+        taint: src/native/x25519.rs:118 -> src/native/x25519.rs:121
+  [R-X25519-001] x25519_dalek::EphemeralSecret::random_from_rng (EcdhX25519, Vulnerable)  src/native/x25519.rs:203  blast=15 tier=1 risk=5.00
+        taint: src/native/x25519.rs:203 -> src/native/x25519.rs:205
+  [R-X25519-002] x25519_dalek::EphemeralSecret::diffie_hellman (EcdhX25519, Vulnerable)  src/native/x25519.rs:205  blast=9 tier=1 risk=4.32
+        taint: src/native/x25519.rs:205 -> src/native/x25519.rs:212
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/native.rs:12  blast=24 tier=3 risk=0.00
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/native.rs:19  blast=10 tier=3 risk=0.00
+  [R-SHA3-001] sha3::Shake256Core (Hash, Resistant)  src/native/tagpq/kem.rs:282  blast=0 tier=3 risk=0.00
+  [R-MLKEM-001] <ml_kem::kem::EncapsulationKey<ml_kem::MlKem768Params> as kem::Encapsulate<hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>, hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>>>::encapsulate::<rand_core::os::OsRng> (Kem, Resistant)  src/native/tagpq/kem.rs:206  blast=13 tier=3 risk=0.00
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/primitives/stream.rs:206  blast=4 tier=3 risk=0.00
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/primitives/stream.rs:190  blast=2 tier=3 risk=0.00
+  [R-X25519-999] <&x25519_dalek::x25519::StaticSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into (EcdhX25519, Vulnerable)  src/native/x25519.rs:89  blast=0 tier=1 risk=1.00
+  [R-SHA3-001] sha3::Shake256Core (Hash, Resistant)  src/native/tagpq/kem.rs:234  blast=4 tier=3 risk=0.00
+  [R-SHA3-001] sha3::Sha3_256Core (Hash, Resistant)  src/native/tagpq/kem.rs:287  blast=6 tier=3 risk=0.00
+  [R-X25519-999] <&x25519_dalek::x25519::StaticSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into (EcdhX25519, Vulnerable)  src/native/x25519.rs:117  blast=2 tier=1 risk=2.58
+        taint: src/native/x25519.rs:117 -> src/native/x25519.rs:133
+  [R-X25519-999] <&x25519_dalek::x25519::EphemeralSecret as core::convert::Into<x25519_dalek::x25519::PublicKey>>::into (EcdhX25519, Vulnerable)  src/native/x25519.rs:204  blast=5 tier=1 risk=3.58
+        taint: src/native/x25519.rs:204 -> src/native/x25519.rs:222
+  [R-MLKEM-001] <ml_kem::kem::DecapsulationKey<ml_kem::MlKem768Params> as kem::Decapsulate<hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>, hybrid_array::Array<u8, typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UInt<typenum::uint::UTerm, typenum::bit::B1>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>, typenum::bit::B0>>>>::decapsulate (Kem, Resistant)  src/native/tagpq/kem.rs:178  blast=13 tier=3 risk=0.00
+  [R-ECDSA-999] <elliptic_curve::secret_key::SecretKey<p256::NistP256>>::public_key (Ecdsa, Vulnerable)  src/native/tagpq/kem.rs:188  blast=11 tier=1 risk=4.58
+        taint: src/native/tagpq/kem.rs:188 -> src/native/tagpq/kem.rs:189 -> src/native/tagpq/kem.rs:190
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/keys.rs:25  blast=713 tier=3 risk=0.00
+        via: age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/keys.rs:42  blast=713 tier=3 risk=0.00
+        via: age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/native/x25519.rs:135  blast=69 tier=3 risk=0.00
+        via: age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/native/x25519.rs:225  blast=2 tier=3 risk=0.00
+        via: age_core::primitives::hkdf (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:51) -> hkdf::Hkdf::<H, I>::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:53)
+  [R-SHA2-001] sha2::OidSha256 (Hash, Resistant)  src/i18n.rs:9  blast=27 tier=3 risk=0.00
+        via: rust_embed_utils::read_file_from_fs (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-embed-utils-8.9.0/src/lib.rs:95) -> sha2::Digest::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-embed-utils-8.9.0/src/lib.rs:99)
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/native/scrypt.rs:153  blast=1 tier=3 risk=0.00
+        via: age_core::primitives::aead_encrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:18) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:19)
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/native/x25519.rs:226  blast=1 tier=3 risk=0.00
+        via: age_core::primitives::aead_encrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:18) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:19)
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/native/scrypt.rs:267  blast=69 tier=3 risk=0.00
+        via: age_core::primitives::aead_decrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:33) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:42)
+  [R-CHACHA-002] chacha20poly1305::ChaChaPoly1305 (Aead, Resistant)  src/native/x25519.rs:140  blast=69 tier=3 risk=0.00
+        via: age_core::primitives::aead_decrypt (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:33) -> chacha20poly1305::KeyInit::new (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/age-core-0.12.0/src/primitives.rs:42)
+  [R-ECDSA-999] p256::elliptic_curve::PublicKey::<C>::from_sec1_bytes (Ecdsa, Vulnerable)  src/native/tag.rs:68  blast=17 tier=1 risk=5.17
+        via: <hpke::dhkex::ecdh_nistp::p256::PublicKey as hpke::Deserializable>::from_bytes (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hpke-0.12.0/src/dhkex/ecdh_nistp.rs:73) -> p256::elliptic_curve::PublicKey::<C>::from_sec1_bytes (/Users/harleyding/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hpke-0.12.0/src/dhkex/ecdh_nistp.rs:83)
+
+Most severe: Tier 1 (quantum-vulnerable — NIST IR 8547: deprecated after 2030, disallowed after 2035) — ECDH, 7 sites; ECDSA, 7 sites; X25519, 4 sites
+Most common: ChaCha20, 9 sites (Tier 3)
+
+Migration plan (NIST category 3 unless a profile or a stronger key raises it; CPU timed on Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz, 2026-10-13):
+  ECDH (key establishment, Tier 1, 7 sites) -> ML-KEM-768 [FIPS 203]; 128 -> 2272 B (over one MTU); 593 us -> 156 us per exchange (0.3x)
+  ECDSA (role not established, Tier 1, 7 sites) -> ML-DSA-65 or ML-KEM-768 [FIPS 204 / FIPS 203]; size not established; CPU not established
+  X25519 (key establishment, Tier 1, 4 sites) -> ML-KEM-768 [FIPS 203]; 64 -> 2272 B (over one MTU); 135 us -> 156 us per exchange (1.2x)
+
+wrote cbom.json, report.html to docs/real-compare/age-0.12.1/quantumrust-descend

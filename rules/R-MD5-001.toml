@@ -1,0 +1,25 @@
+id = "R-MD5-001"
+description = "MD5 hashing via the `md-5` or `md5` crate."
+
+algorithm_class = "Hash"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+signatures = [
+    "md5::Md5::new",
+    "md5::Md5::digest",
+    "md5::Md5::new_with_prefix",
+    "md5::compute",
+    "md4::Md4::new",
+    "md4::Md4::digest",
+]
+
+type_names = ["md5::Md5Core", "md4::Md4Core"]
+
+[crypto]
+primitive = "hash"
+algorithm_family = "MD5"
+crypto_functions = ["digest"]
+oid = "1.2.840.113549.2.5"
+parameter_set_identifier = "MD5"

@@ -1,0 +1,23 @@
+id = "R-RSA-006"
+description = "RSASSA-PSS signing/verifying key construction via the `rsa` crate."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rsa::pss::SigningKey::new",
+    "rsa::pss::SigningKey::new_with_salt_len",
+    "rsa::pss::SigningKey::random",
+    "rsa::pss::BlindedSigningKey::new",
+    "rsa::pss::BlindedSigningKey::random",
+    "rsa::pss::VerifyingKey::new",
+]
+
+[crypto]
+primitive = "signature"
+algorithm_family = "RSASSA-PSS"
+crypto_functions = ["keygen"]
+oid = "1.2.840.113549.1.1.10"
+nist_quantum_security_level = 0

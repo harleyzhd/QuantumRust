@@ -1,0 +1,81 @@
+id = "R-RING-ALG-001"
+description = "A quantum-vulnerable signature or key-agreement algorithm selected by a `ring` static."
+
+algorithm_class = "Unknown"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+type_names = [
+    "ring::signature::ED25519",
+    "ring::signature::RSA_PKCS1_SHA256",
+    "ring::signature::RSA_PKCS1_SHA384",
+    "ring::signature::RSA_PKCS1_SHA512",
+    "ring::signature::RSA_PKCS1_2048_8192_SHA256",
+    "ring::signature::RSA_PKCS1_2048_8192_SHA384",
+    "ring::signature::RSA_PKCS1_2048_8192_SHA512",
+    "ring::signature::RSA_PSS_SHA256",
+    "ring::signature::RSA_PSS_SHA384",
+    "ring::signature::RSA_PSS_SHA512",
+    "ring::signature::RSA_PSS_2048_8192_SHA256",
+    "ring::signature::RSA_PSS_2048_8192_SHA384",
+    "ring::signature::RSA_PSS_2048_8192_SHA512",
+    "ring::signature::ECDSA_P256_SHA256_ASN1",
+    "ring::signature::ECDSA_P256_SHA256_FIXED",
+    "ring::signature::ECDSA_P256_SHA256_ASN1_SIGNING",
+    "ring::signature::ECDSA_P256_SHA256_FIXED_SIGNING",
+    "ring::signature::ECDSA_P384_SHA384_ASN1",
+    "ring::signature::ECDSA_P384_SHA384_FIXED",
+    "ring::signature::ECDSA_P384_SHA384_ASN1_SIGNING",
+    "ring::signature::ECDSA_P384_SHA384_FIXED_SIGNING",
+    "ring::signature::ED25519_PUBLIC_KEY_LEN",
+    "ring::agreement::X25519",
+    "ring::agreement::ECDH_P256",
+    "ring::agreement::ECDH_P384",
+]
+
+[crypto]
+primitive = "unknown"
+nist_quantum_security_level = 0
+
+[[parameter_sets]]
+identifier = "Ed25519"
+name = "Ed25519"
+nist_quantum_security_level = 0
+type_names = ["ring::signature::ED25519", "ring::signature::ED25519_PUBLIC_KEY_LEN"]
+
+[[parameter_sets]]
+identifier = "RSA"
+name = "RSA"
+nist_quantum_security_level = 0
+type_names = ["ring::signature::RSA_PKCS1_SHA256", "ring::signature::RSA_PKCS1_SHA384", "ring::signature::RSA_PKCS1_SHA512", "ring::signature::RSA_PKCS1_2048_8192_SHA256", "ring::signature::RSA_PKCS1_2048_8192_SHA384", "ring::signature::RSA_PKCS1_2048_8192_SHA512", "ring::signature::RSA_PSS_SHA256", "ring::signature::RSA_PSS_SHA384", "ring::signature::RSA_PSS_SHA512", "ring::signature::RSA_PSS_2048_8192_SHA256", "ring::signature::RSA_PSS_2048_8192_SHA384", "ring::signature::RSA_PSS_2048_8192_SHA512"]
+
+[[parameter_sets]]
+identifier = "ECDSA-P256"
+name = "ECDSA-P256"
+nist_quantum_security_level = 0
+type_names = ["ring::signature::ECDSA_P256_SHA256_ASN1", "ring::signature::ECDSA_P256_SHA256_FIXED", "ring::signature::ECDSA_P256_SHA256_ASN1_SIGNING", "ring::signature::ECDSA_P256_SHA256_FIXED_SIGNING"]
+
+[[parameter_sets]]
+identifier = "ECDSA-P384"
+name = "ECDSA-P384"
+nist_quantum_security_level = 0
+type_names = ["ring::signature::ECDSA_P384_SHA384_ASN1", "ring::signature::ECDSA_P384_SHA384_FIXED", "ring::signature::ECDSA_P384_SHA384_ASN1_SIGNING", "ring::signature::ECDSA_P384_SHA384_FIXED_SIGNING"]
+
+[[parameter_sets]]
+identifier = "X25519"
+name = "X25519"
+nist_quantum_security_level = 0
+type_names = ["ring::agreement::X25519"]
+
+[[parameter_sets]]
+identifier = "ECDH-P256"
+name = "ECDH-P256"
+nist_quantum_security_level = 0
+type_names = ["ring::agreement::ECDH_P256"]
+
+[[parameter_sets]]
+identifier = "ECDH-P384"
+name = "ECDH-P384"
+nist_quantum_security_level = 0
+type_names = ["ring::agreement::ECDH_P384"]

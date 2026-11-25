@@ -1,0 +1,17 @@
+# FIPS 203/204/205: the post-quantum standards.
+#
+# Asks whether each asset is a standardised post-quantum algorithm or still
+# needs migrating. It judges on quantum status alone and sets no level floor,
+# since ML-KEM-512 conforms to FIPS 203 at category 1. Everything that fails is
+# migration work remaining.
+
+id = "fips-pqc"
+name = "FIPS 203/204/205"
+description = "The standardised post-quantum algorithms: ML-KEM (203), ML-DSA (204), SLH-DSA (205). Classical primitives fail as migration work remaining."
+reference = "https://csrc.nist.gov/pubs/fips/203/final"
+
+[status]
+vulnerable = "fail"
+deprecated = "fail"
+resistant = "pass"
+unknown = "review"

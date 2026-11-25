@@ -1,0 +1,29 @@
+id = "R-TLS-001"
+description = "A TLS session configured through `rustls`, implying classical key exchange."
+
+algorithm_class = "Unknown"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rustls::ClientConfig::builder",
+    "rustls::ClientConfig::builder_with_protocol_versions",
+    "rustls::ClientConfig::builder_with_provider",
+    "rustls::ServerConfig::builder",
+    "rustls::ServerConfig::builder_with_protocol_versions",
+    "rustls::ServerConfig::builder_with_provider",
+    "rustls::ClientConnection::new",
+    "rustls::ServerConnection::new",
+    "rustls::StreamOwned::new",
+    "tokio_rustls::TlsConnector::connect",
+    "tokio_rustls::TlsAcceptor::accept",
+    "native_tls::TlsConnector::new",
+    "native_tls::TlsAcceptor::new",
+]
+
+[crypto]
+asset_type = "protocol"
+primitive = "key-agree"
+crypto_functions = ["keyderive"]
+nist_quantum_security_level = 0

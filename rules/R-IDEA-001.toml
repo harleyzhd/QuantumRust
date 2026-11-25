@@ -1,0 +1,15 @@
+id = "R-IDEA-001"
+description = "IDEA, named as a generic argument. A 64-bit block cipher, Sweet32-exposed."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+type_names = ["idea::Idea"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "IDEA"
+crypto_functions = ["encrypt", "decrypt"]
+nist_quantum_security_level = 0

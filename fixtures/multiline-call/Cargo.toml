@@ -1,0 +1,13 @@
+[package]
+name = "multiline-call"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[workspace]
+
+[dependencies]
+chacha20poly1305 = "0.10"

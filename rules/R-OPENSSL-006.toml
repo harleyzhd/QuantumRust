@@ -1,0 +1,24 @@
+id = "R-OPENSSL-006"
+description = "A signing or verification operation via `openssl::sign`, with the algorithm carried by the key."
+
+algorithm_class = "Unknown"
+qv_status = "Unknown"
+
+[match]
+signatures = [
+    "openssl::sign::Signer::new",
+    "openssl::sign::Signer::sign",
+    "openssl::sign::Signer::sign_to_vec",
+    "openssl::sign::Signer::sign_oneshot",
+    "openssl::sign::Signer::sign_oneshot_to_vec",
+    "openssl::sign::Verifier::new",
+    "openssl::sign::Verifier::verify",
+    "openssl::sign::Verifier::verify_oneshot",
+]
+
+[taint]
+sinks = ["sign_to_vec", "sign_oneshot_to_vec"]
+
+[crypto]
+primitive = "signature"
+crypto_functions = ["sign", "verify"]

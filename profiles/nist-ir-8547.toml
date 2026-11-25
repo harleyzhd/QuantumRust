@@ -1,0 +1,26 @@
+# NIST IR 8547: Transition to Post-Quantum Cryptography Standards.
+#
+# Classical public-key algorithms are deprecated after 2030 and disallowed
+# after 2035. Symmetric and hash primitives pass at 128-bit post-quantum
+# strength (256-bit classical), so this profile passes SHA-256 where CNSA 2.0
+# fails it.
+
+id = "nist-ir-8547"
+name = "NIST IR 8547"
+description = "NIST transition to PQC: classical public-key disallowed by 2035; symmetric and hash acceptable at 128-bit post-quantum strength."
+reference = "https://csrc.nist.gov/pubs/ir/8547/ipd"
+
+# NIST category 2: the level SHA-256 provides.
+min_quantum_security_level = 2
+
+[status]
+vulnerable = "fail"
+deprecated = "fail"
+resistant = "pass"
+unknown = "review"
+
+# IR 8547 keeps AES-128 and AES-192 approved, since Grover's algorithm is not a
+# practical threat to them, so both pass despite the level floor.
+[verdicts]
+"AES-128" = "pass"
+"AES-192" = "pass"

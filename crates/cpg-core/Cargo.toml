@@ -1,0 +1,18 @@
+[package]
+name = "cpg-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Dual-level (MIR + LLVM-IR) Code Property Graph model and provider traits."
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+petgraph.workspace = true
+thiserror.workspace = true
+toml.workspace = true
+
+[dev-dependencies]
+insta = { version = "1", features = ["json"] }
+tempfile = "3"

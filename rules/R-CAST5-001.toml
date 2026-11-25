@@ -1,0 +1,16 @@
+id = "R-CAST5-001"
+description = "CAST5 / CAST-128, named as a generic argument. A 64-bit block cipher, Sweet32-exposed."
+
+algorithm_class = "Symmetric"
+qv_status = "Deprecated"
+nist_tier = "Tier2"
+
+[match]
+type_names = ["cast5::Cast5"]
+
+[crypto]
+primitive = "block-cipher"
+algorithm_family = "CAST5"
+crypto_functions = ["encrypt", "decrypt"]
+parameter_set_identifier = "CAST-128"
+nist_quantum_security_level = 0

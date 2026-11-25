@@ -1,0 +1,3 @@
+[alias]
+# `cargo xtask <task>`: install the tool and run the evaluation scripts (xtask/).
+xtask = "run -q -p xtask --"

@@ -1,0 +1,68 @@
+id = "R-HASH-999"
+description = "A hashing operation, via a hash crate or the generic `digest` traits, whose algorithm no enumerated rule names."
+
+algorithm_class = "Hash"
+qv_status = "Unknown"
+
+[match]
+crates = [
+    "sha2", "sha3", "sha1", "md5", "md4", "blake2", "blake3", "digest",
+    "hmac", "hkdf", "pbkdf2", "scrypt", "argon2", "ripemd", "shake",
+    "sha1collisiondetection",
+]
+
+exclude = [
+    "update",
+    "chain_update",
+    "finalize",
+    "finalize_reset",
+    "finalize_into",
+    "finalize_into_reset",
+    "reset",
+    "output_size",
+    "to_vec",
+    "to_bytes",
+    "as_bytes",
+    "as_ref",
+    "as_mut",
+    "clone",
+    "fmt",
+    "eq",
+    "ne",
+    "cmp",
+    "partial_cmp",
+    "hash",
+    "drop",
+    "len",
+    "is_empty",
+    "output_len",
+    "block_len",
+    "algorithm",
+    "into_bytes",
+    "chain",
+    "finalize_xof",
+    "read",
+    "as_slice",
+    "as_mut_slice",
+    "to_string",
+    "subtle::CtOption::is_some",
+    "subtle::CtOption::unwrap",
+    "as_display",
+    "as_dyn_error",
+    "ParamsBuilder::new",
+    "ParamsBuilder::build",
+    "Params::new",
+    "t_cost",
+    "p_cost",
+    "m_cost",
+    "block_count",
+    "detect_collisions",
+    "use_ubc",
+    "safe_hash",
+    "finalize_into_dirty_cd",
+]
+
+type_names = ["sha2::Sha256VarCore", "sha2::Sha512VarCore"]
+
+[crypto]
+primitive = "hash"

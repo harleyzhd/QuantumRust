@@ -1,0 +1,28 @@
+[package]
+name = "quantumrust-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "QuantumRust command line: analyses a crate and writes a CBOM and an HTML report."
+
+[[bin]]
+name = "quantumrust"
+path = "src/main.rs"
+
+[dependencies]
+cpg-core.workspace = true
+mir-extract.workspace = true
+llvm-extract.workspace = true
+callgraph.workspace = true
+cpg-fusion.workspace = true
+qr-rules.workspace = true
+qr-taint.workspace = true
+qr-risk.workspace = true
+qr-report.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+libc.workspace = true

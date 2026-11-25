@@ -1,0 +1,19 @@
+id = "R-RING-008"
+description = "HKDF and PBKDF2 key derivation via `ring`."
+
+algorithm_class = "Kdf"
+qv_status = "Resistant"
+nist_tier = "Tier3"
+
+[match]
+signatures = [
+    "ring::pbkdf2::derive",
+    "ring::pbkdf2::verify",
+    "ring::hkdf::Salt::new",
+    "ring::hkdf::Prk::expand",
+]
+
+[crypto]
+primitive = "kdf"
+crypto_functions = ["keyderive"]
+nist_quantum_security_level = 2

@@ -1,0 +1,96 @@
+{
+  "name": "multi-unit",
+  "root": "/Users/harleyding/Desktop/Mad/ThesisB/repo/fixtures/multi-unit",
+  "profile": "release",
+  "warmup": true,
+  "cold": false,
+  "descend": false,
+  "extraction_cache_existed": true,
+  "loc": {
+    "files": 2,
+    "physical": 23,
+    "code": 13
+  },
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz",
+    "logical_cpus": "8",
+    "physical_cpus": "4",
+    "memory_gb": 8.0,
+    "os": "Darwin 24.6.0",
+    "rustc": "rustc 1.98.0-nightly (14210df0e 2026-05-31)"
+  },
+  "wall_including_startup_s": 0.3976751450027223,
+  "findings": 0,
+  "timings": {
+    "note": "peak_* is the high-water mark reached by the end of each stage (getrusage ru_maxrss); children = the largest single waited-for child process, i.e. one rustc extraction driver",
+    "peak_children_mb": 44.734375,
+    "peak_self_mb": 14.12890625,
+    "stages": [
+      {
+        "cpu_children_s": 0.182405,
+        "cpu_self_s": 0.005324000000000002,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 12.54296875,
+        "stage": "extract-mir",
+        "wall_s": 0.208976543
+      },
+      {
+        "cpu_children_s": 0.14467500000000003,
+        "cpu_self_s": 0.004896999999999999,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 13.078125,
+        "stage": "extract-llvm",
+        "wall_s": 0.161792612
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 9.499999999999786e-05,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 13.12109375,
+        "stage": "fuse",
+        "wall_s": 9.4028e-05
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 0.003249999999999996,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 13.90625,
+        "stage": "rule-matching",
+        "wall_s": 0.003266886
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 9.900000000000186e-05,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 13.94140625,
+        "stage": "taint",
+        "wall_s": 9.8691e-05
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 2.0000000000006124e-05,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 13.953125,
+        "stage": "call-graph",
+        "wall_s": 1.9811e-05
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 0.00021599999999999397,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 14.12109375,
+        "stage": "risk-scoring",
+        "wall_s": 0.000216701
+      },
+      {
+        "cpu_children_s": 0.0,
+        "cpu_self_s": 9.000000000009e-06,
+        "peak_children_mb": 44.734375,
+        "peak_self_mb": 14.12890625,
+        "stage": "report",
+        "wall_s": 9.022e-06
+      }
+    ],
+    "total_wall_s": 0.374486215
+  }
+}

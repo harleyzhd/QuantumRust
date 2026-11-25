@@ -1,0 +1,48 @@
+id = "R-RSA-001"
+description = "RSA private/public key generation, construction and import, including the OpenSSL FFI keygen surface."
+
+algorithm_class = "Rsa"
+qv_status = "Vulnerable"
+nist_tier = "Tier1"
+
+[match]
+signatures = [
+    "rsa::RsaPrivateKey::new",
+    "rsa::RsaPrivateKey::new_with_exp",
+    "rsa::RsaPrivateKey::from_components",
+    "rsa::RsaPrivateKey::from_p_q",
+    "rsa::RsaPrivateKey::from_primes",
+    "rsa::RsaPrivateKey::to_public_key",
+    "rsa::RsaPublicKey::new",
+    "rsa::RsaPublicKey::new_with_max_size",
+    "rsa::RsaPublicKey::new_unchecked",
+    "rsa::from_pkcs1_der",
+    "rsa::from_pkcs1_pem",
+    "rsa::from_pkcs8_der",
+    "rsa::from_pkcs8_pem",
+    "rsa::from_public_key_der",
+    "rsa::from_public_key_pem",
+    "RSA_generate_key_ex",
+    "RSA_generate_key_fips",
+    "PEM_read_bio_RSAPrivateKey",
+    "d2i_RSAPrivateKey",
+]
+
+[parameter]
+key_size_arg = 1
+
+[taint]
+sinks = [
+    "to_pkcs1_der",
+    "to_pkcs1_pem",
+    "to_pkcs8_der",
+    "to_pkcs8_pem",
+    "i2d_RSAPrivateKey",
+    "PEM_write_bio_RSAPrivateKey",
+]
+
+[crypto]
+primitive = "unknown"
+crypto_functions = ["keygen"]
+oid = "1.2.840.113549.1.1.1"
+nist_quantum_security_level = 0

@@ -1,0 +1,10 @@
+[package]
+name = "callgraph"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Call graphs for the blast radius: Rupta, class-hierarchy analysis, or the CPG's own call edges."
+
+[dependencies]
+cpg-core.workspace = true

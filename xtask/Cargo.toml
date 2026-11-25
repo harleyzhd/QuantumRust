@@ -1,0 +1,11 @@
+[package]
+name = "xtask"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Install the tool, generate the mutation benchmark and run the evaluation scripts."
+publish = false
+
+[dependencies]
+anyhow.workspace = true

@@ -1,0 +1,17 @@
+[package]
+name = "qr-report"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "CycloneDX 1.7 CBOM output in JSON and XML, compliance profiles, PQC migration advice and the HTML report."
+
+[dependencies]
+cpg-core.workspace = true
+qr-rules.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+
+[dev-dependencies]
+insta = { version = "1", features = ["json"] }
